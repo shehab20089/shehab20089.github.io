@@ -79,6 +79,7 @@ No design issues are open.
 | 2026-10-16 | Selected Work · Also shipped | Removed the "Amplifidor Platform" card, now case study 08. The grid is back to three cards, as in the reference. |
 | 2026-10-16 | Beyond the keyboard | Replaced the Unreal Engine and Pixel art cards with Godot and Mobile dev; Game dev is unchanged. Still three cards, so the layout matches the reference. |
 | 2026-10-16 | Selected Work · SparkFlow | The impact line now says SparkFlow replaced BitBang's Jira subscription and every team project moved onto it (it previously said "now in controlled staging"). Both résumés say the same, and the Frontend résumé moves the SparkFlow bullet up to third. |
+| 2026-10-16 | Selected Work · order | Case studies reordered strongest first: GoPay, Amplifidor, SparkFlow, WalaPlus, Shamel360, Fatura, Møller Auto, 21 Farmer, Printerbase. Numbers follow the new order and the palette lists them the same way; rows above this one use the numbers of their day. |
 | 2026-10-16 | Selected Work · intro | "A few of the frontends I've led." became "Products I've led or helped build."; the rest of the intro is unchanged. |
 | 2026-10-16 | Experience · BitBang | The description now covers Amplifidor, Shamel360 and SparkFlow (the in-house platform that replaced the company's Jira), not just GoPay. |
 | 2026-10-16 | Meta | Removed `meta.ogImage` and `meta.ogImageNote`, handoff leftovers that nothing read: the share image is the generated `og.png` (ledger #2). |

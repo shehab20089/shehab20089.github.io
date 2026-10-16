@@ -178,8 +178,118 @@
       ]
     },
     {
-      "slug": "walaplus",
+      "slug": "amplifidor",
       "number": "02",
+      "name": "Amplifidor",
+      "sector": "Creator economy · Influencer × Brand",
+      "blurb": "A two-sided influencer × brand platform — brands launch affiliate programs; creators, agents and agencies join, promote them and get paid per milestone.",
+      "problem": "Brands wanted to work with creators on measurable terms. Creators — and the agents and agencies who manage them — needed one profile that proves their reach, a way into paid programs, and payouts tied to real results.",
+      "solution": "A React and TypeScript frontend over a GraphQL API (Apollo, 126 typed operations), on a scalable architecture with a shared component layer. I built the creator profile and link-in-bio, the per-platform audience insights and the SAR wallet, set up the English / Arabic localization with full RTL, and worked across groups, programs and settings.",
+      "impact": "One bilingual codebase serving four account types — creators, agents, brands and agencies — with 1,500+ interface strings in English and Arabic.",
+      "role": "Senior Frontend Engineer — BitBang",
+      "stack": [
+        "React · TypeScript",
+        "GraphQL · Apollo",
+        "Tailwind · Radix",
+        "i18n · RTL"
+      ],
+      "live": null,
+      "images": [
+        {
+          "src": "assets/amplifidor-profile.png",
+          "caption": "Creator profile & link-in-bio",
+          "alt": "Amplifidor — creator profile with connected social accounts, featured links, posts and brand collaborations",
+          "width": 1920,
+          "height": 3011
+        },
+        {
+          "src": "assets/amplifidor-insights.png",
+          "caption": "Audience insights per platform",
+          "alt": "Amplifidor — TikTok audience insights: followers, audience demographics, growth and top content",
+          "width": 1920,
+          "height": 4608
+        },
+        {
+          "src": "assets/amplifidor-home.png",
+          "caption": "Home — brand programs and profile progress",
+          "alt": "Amplifidor — creator home with link in bio, brand programs feed and profile completion",
+          "width": 1920,
+          "height": 2774
+        },
+        {
+          "src": "assets/amplifidor-performance.png",
+          "caption": "Program performance & milestone rewards",
+          "alt": "Amplifidor — program performance: clicks by platform, milestone rewards and traffic locations",
+          "width": 1920,
+          "height": 2143
+        },
+        {
+          "src": "assets/amplifidor-wallet.png",
+          "caption": "Wallet & payouts",
+          "alt": "Amplifidor — wallet balance in SAR with earnings, withdrawals and fees",
+          "width": 1920,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "slug": "sparkflow",
+      "number": "03",
+      "name": "SparkFlow",
+      "sector": "Internal platform · Project management",
+      "blurb": "BitBang's in-house, Jira-style project-management platform — boards, backlog, sprints and reporting, with test management built in.",
+      "problem": "Several of us — me included — were between client projects. I pitched turning that bench time into a product BitBang could use: one place to plan, track and test delivery work, with Microsoft sign-in, strict project isolation and QA tied to the same issues.",
+      "solution": "A NestJS (Fastify) API over PostgreSQL and Prisma, Redis-backed realtime and BullMQ background jobs, and a React frontend: workspaces, teams, boards, backlog, sprints, epics and issue links, a shared rich-text editor with mentions, notifications, dashboards and reports — plus a native test-management module from test cases to bugs, retests and verification.",
+      "impact": "Bench time turned into the platform that replaced BitBang's Jira subscription — every team project now runs on it, backed by 94 data models, 57 migrations and 600+ automated test files.",
+      "role": "Initiator & Full-Stack Engineer — BitBang",
+      "stack": [
+        "NestJS · Fastify",
+        "PostgreSQL · Prisma",
+        "Redis · BullMQ",
+        "React · TypeScript"
+      ],
+      "live": null,
+      "images": [
+        {
+          "src": "assets/sparkflow-dashboard.png",
+          "caption": "Project dashboard",
+          "alt": "SparkFlow — project dashboard with sprint progress and team workload",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "assets/sparkflow-board.png",
+          "caption": "Scrum board",
+          "alt": "SparkFlow — Scrum board",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "assets/sparkflow-backlog.png",
+          "caption": "Backlog grouped by sprint",
+          "alt": "SparkFlow — Backlog grouped by sprint",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "assets/sparkflow-sprint.png",
+          "caption": "Sprint planning and team workload",
+          "alt": "SparkFlow — Sprint planning and team workload",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "assets/sparkflow-reports.png",
+          "caption": "Reports & analytics",
+          "alt": "SparkFlow — Reports & analytics",
+          "width": 1920,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "slug": "walaplus",
+      "number": "04",
       "name": "WalaPlus",
       "sector": "Loyalty · Rewards SaaS",
       "blurb": "A loyalty and employee-rewards platform for Saudi enterprises — points, offers and cashback across a network of real retail brands.",
@@ -229,8 +339,63 @@
       ]
     },
     {
+      "slug": "shamel360",
+      "number": "05",
+      "name": "Shamel360",
+      "sector": "Supply chain · Warehouse fulfillment",
+      "blurb": "Shamel360's warehouse fulfillment portal — inbound receiving, outbound picking and shipping, live inventory, products and merchants in one console.",
+      "problem": "Fulfillment teams holding stock for many merchants needed one console for the whole flow: receiving inbound shipments, picking and dispatching orders through last-mile carriers, and tracking every merchant's stock as it moves through the warehouse.",
+      "solution": "A React 19 and TypeScript portal over a REST API (TanStack Query, Zustand, Radix / shadcn, Tailwind): a configurable dashboard, inbound and outbound boards that follow every order's status, inventory and stock history, the product catalogue, merchants and finance. I laid the app's foundation — routing with lazy loading and guards, the layout, the shared table, filter and form components — and built the inventory stock list and the product configurations and approvals.",
+      "impact": "One console for the full fulfillment loop across multiple warehouses — 38 routes over nearly 100 API endpoints, built on the routing, layout and shared components I set up.",
+      "role": "Senior Frontend Engineer — BitBang",
+      "stack": [
+        "React 19 · TypeScript",
+        "TanStack Query · Zustand",
+        "Radix · shadcn/ui",
+        "Tailwind · Vite"
+      ],
+      "live": null,
+      "images": [
+        {
+          "src": "assets/shamel-dashboard.png",
+          "caption": "Operations dashboard — inbound",
+          "alt": "Shamel360 — inbound operations dashboard with order summary, top items, charts and merchant rankings",
+          "width": 1920,
+          "height": 2832
+        },
+        {
+          "src": "assets/shamel-outbound.png",
+          "caption": "Outbound orders by status",
+          "alt": "Shamel360 — outbound orders board with columns from pre-order to picked",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "assets/shamel-inventory.png",
+          "caption": "Inventory stock list",
+          "alt": "Shamel360 — inventory stock list with on-hand, can-order and inbound quantities per product",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "assets/shamel-stock-history.png",
+          "caption": "Stock movement history",
+          "alt": "Shamel360 — stock history log of additions and removals with old and new quantities",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "assets/shamel-products.png",
+          "caption": "Product catalogue",
+          "alt": "Shamel360 — product catalogue with codes, merchants, weights, prices and status",
+          "width": 1920,
+          "height": 1200
+        }
+      ]
+    },
+    {
       "slug": "fatura",
-      "number": "03",
+      "number": "06",
       "name": "Fatura",
       "sector": "Fintech · B2B Distribution",
       "blurb": "A B2B wholesale-ordering and credit platform for FMCG distribution — including the operation that runs Coca-Cola’s distribution in Egypt.",
@@ -285,7 +450,7 @@
     },
     {
       "slug": "moller-auto",
-      "number": "04",
+      "number": "07",
       "name": "Møller Auto",
       "sector": "Automotive · E-commerce",
       "blurb": "The used-car marketplace for Volkswagen and Audi’s official dealer network across the Baltics.",
@@ -342,52 +507,8 @@
       ]
     },
     {
-      "slug": "printerbase",
-      "number": "05",
-      "name": "Printerbase",
-      "sector": "E-commerce · Retail",
-      "blurb": "One of the UK’s established printer, ink & toner retailers — 200,000+ customers, rated 4.8/5 on Trustpilot.",
-      "problem": "A large-catalog retailer needed conversion-focused storefront and content pages that stayed consistent across a sprawling site.",
-      "solution": "Storefront and content surfaces built to convert — product discovery and comparison, subscription-print and managed-print journeys, and the checkout basket — all aligned to the brand system.",
-      "impact": "Part of a storefront serving 200,000+ customers, rated 4.8/5 on Trustpilot and 4.9/5 on Google.",
-      "role": "Frontend Developer — Scandiweb",
-      "stack": [
-        "JavaScript",
-        "E-commerce",
-        "Conversion",
-        "Responsive"
-      ],
-      "live": {
-        "url": "https://printerbase.co.uk",
-        "label": "printerbase.co.uk"
-      },
-      "images": [
-        {
-          "src": "assets/printerbase-home.jpeg",
-          "caption": "Storefront home",
-          "alt": "Printerbase — storefront home page",
-          "width": 1788,
-          "height": 6669
-        },
-        {
-          "src": "assets/printerbase-brands.jpeg",
-          "caption": "Shop by brand",
-          "alt": "Printerbase — Shop by brand",
-          "width": 1788,
-          "height": 1551
-        },
-        {
-          "src": "assets/printerbase-subscription.jpeg",
-          "caption": "Subscription print",
-          "alt": "Printerbase — Subscription print",
-          "width": 1788,
-          "height": 2901
-        }
-      ]
-    },
-    {
       "slug": "21-farmer",
-      "number": "06",
+      "number": "08",
       "name": "21 Farmer",
       "sector": "AgriTech · IoT",
       "blurb": "A real-time dashboard that turns field IoT sensors into decisions for farmers.",
@@ -430,167 +551,46 @@
       ]
     },
     {
-      "slug": "sparkflow",
-      "number": "07",
-      "name": "SparkFlow",
-      "sector": "Internal platform · Project management",
-      "blurb": "BitBang's in-house, Jira-style project-management platform — boards, backlog, sprints and reporting, with test management built in.",
-      "problem": "Several of us — me included — were between client projects. I pitched turning that bench time into a product BitBang could use: one place to plan, track and test delivery work, with Microsoft sign-in, strict project isolation and QA tied to the same issues.",
-      "solution": "A NestJS (Fastify) API over PostgreSQL and Prisma, Redis-backed realtime and BullMQ background jobs, and a React frontend: workspaces, teams, boards, backlog, sprints, epics and issue links, a shared rich-text editor with mentions, notifications, dashboards and reports — plus a native test-management module from test cases to bugs, retests and verification.",
-      "impact": "Bench time turned into the platform that replaced BitBang's Jira subscription — every team project now runs on it, backed by 94 data models, 57 migrations and 600+ automated test files.",
-      "role": "Initiator & Full-Stack Engineer — BitBang",
-      "stack": [
-        "NestJS · Fastify",
-        "PostgreSQL · Prisma",
-        "Redis · BullMQ",
-        "React · TypeScript"
-      ],
-      "live": null,
-      "images": [
-        {
-          "src": "assets/sparkflow-dashboard.png",
-          "caption": "Project dashboard",
-          "alt": "SparkFlow — project dashboard with sprint progress and team workload",
-          "width": 1920,
-          "height": 1200
-        },
-        {
-          "src": "assets/sparkflow-board.png",
-          "caption": "Scrum board",
-          "alt": "SparkFlow — Scrum board",
-          "width": 1920,
-          "height": 1200
-        },
-        {
-          "src": "assets/sparkflow-backlog.png",
-          "caption": "Backlog grouped by sprint",
-          "alt": "SparkFlow — Backlog grouped by sprint",
-          "width": 1920,
-          "height": 1200
-        },
-        {
-          "src": "assets/sparkflow-sprint.png",
-          "caption": "Sprint planning and team workload",
-          "alt": "SparkFlow — Sprint planning and team workload",
-          "width": 1920,
-          "height": 1200
-        },
-        {
-          "src": "assets/sparkflow-reports.png",
-          "caption": "Reports & analytics",
-          "alt": "SparkFlow — Reports & analytics",
-          "width": 1920,
-          "height": 1200
-        }
-      ]
-    },
-    {
-      "slug": "amplifidor",
-      "number": "08",
-      "name": "Amplifidor",
-      "sector": "Creator economy · Influencer × Brand",
-      "blurb": "A two-sided influencer × brand platform — brands launch affiliate programs; creators, agents and agencies join, promote them and get paid per milestone.",
-      "problem": "Brands wanted to work with creators on measurable terms. Creators — and the agents and agencies who manage them — needed one profile that proves their reach, a way into paid programs, and payouts tied to real results.",
-      "solution": "A React and TypeScript frontend over a GraphQL API (Apollo, 126 typed operations), on a scalable architecture with a shared component layer. I built the creator profile and link-in-bio, the per-platform audience insights and the SAR wallet, set up the English / Arabic localization with full RTL, and worked across groups, programs and settings.",
-      "impact": "One bilingual codebase serving four account types — creators, agents, brands and agencies — with 1,500+ interface strings in English and Arabic.",
-      "role": "Senior Frontend Engineer — BitBang",
-      "stack": [
-        "React · TypeScript",
-        "GraphQL · Apollo",
-        "Tailwind · Radix",
-        "i18n · RTL"
-      ],
-      "live": null,
-      "images": [
-        {
-          "src": "assets/amplifidor-profile.png",
-          "caption": "Creator profile & link-in-bio",
-          "alt": "Amplifidor — creator profile with connected social accounts, featured links, posts and brand collaborations",
-          "width": 1920,
-          "height": 3011
-        },
-        {
-          "src": "assets/amplifidor-insights.png",
-          "caption": "Audience insights per platform",
-          "alt": "Amplifidor — TikTok audience insights: followers, audience demographics, growth and top content",
-          "width": 1920,
-          "height": 4608
-        },
-        {
-          "src": "assets/amplifidor-home.png",
-          "caption": "Home — brand programs and profile progress",
-          "alt": "Amplifidor — creator home with link in bio, brand programs feed and profile completion",
-          "width": 1920,
-          "height": 2774
-        },
-        {
-          "src": "assets/amplifidor-performance.png",
-          "caption": "Program performance & milestone rewards",
-          "alt": "Amplifidor — program performance: clicks by platform, milestone rewards and traffic locations",
-          "width": 1920,
-          "height": 2143
-        },
-        {
-          "src": "assets/amplifidor-wallet.png",
-          "caption": "Wallet & payouts",
-          "alt": "Amplifidor — wallet balance in SAR with earnings, withdrawals and fees",
-          "width": 1920,
-          "height": 1200
-        }
-      ]
-    },
-    {
-      "slug": "shamel360",
+      "slug": "printerbase",
       "number": "09",
-      "name": "Shamel360",
-      "sector": "Supply chain · Warehouse fulfillment",
-      "blurb": "Shamel360's warehouse fulfillment portal — inbound receiving, outbound picking and shipping, live inventory, products and merchants in one console.",
-      "problem": "Fulfillment teams holding stock for many merchants needed one console for the whole flow: receiving inbound shipments, picking and dispatching orders through last-mile carriers, and tracking every merchant's stock as it moves through the warehouse.",
-      "solution": "A React 19 and TypeScript portal over a REST API (TanStack Query, Zustand, Radix / shadcn, Tailwind): a configurable dashboard, inbound and outbound boards that follow every order's status, inventory and stock history, the product catalogue, merchants and finance. I laid the app's foundation — routing with lazy loading and guards, the layout, the shared table, filter and form components — and built the inventory stock list and the product configurations and approvals.",
-      "impact": "One console for the full fulfillment loop across multiple warehouses — 38 routes over nearly 100 API endpoints, built on the routing, layout and shared components I set up.",
-      "role": "Senior Frontend Engineer — BitBang",
+      "name": "Printerbase",
+      "sector": "E-commerce · Retail",
+      "blurb": "One of the UK’s established printer, ink & toner retailers — 200,000+ customers, rated 4.8/5 on Trustpilot.",
+      "problem": "A large-catalog retailer needed conversion-focused storefront and content pages that stayed consistent across a sprawling site.",
+      "solution": "Storefront and content surfaces built to convert — product discovery and comparison, subscription-print and managed-print journeys, and the checkout basket — all aligned to the brand system.",
+      "impact": "Part of a storefront serving 200,000+ customers, rated 4.8/5 on Trustpilot and 4.9/5 on Google.",
+      "role": "Frontend Developer — Scandiweb",
       "stack": [
-        "React 19 · TypeScript",
-        "TanStack Query · Zustand",
-        "Radix · shadcn/ui",
-        "Tailwind · Vite"
+        "JavaScript",
+        "E-commerce",
+        "Conversion",
+        "Responsive"
       ],
-      "live": null,
+      "live": {
+        "url": "https://printerbase.co.uk",
+        "label": "printerbase.co.uk"
+      },
       "images": [
         {
-          "src": "assets/shamel-dashboard.png",
-          "caption": "Operations dashboard — inbound",
-          "alt": "Shamel360 — inbound operations dashboard with order summary, top items, charts and merchant rankings",
-          "width": 1920,
-          "height": 2832
+          "src": "assets/printerbase-home.jpeg",
+          "caption": "Storefront home",
+          "alt": "Printerbase — storefront home page",
+          "width": 1788,
+          "height": 6669
         },
         {
-          "src": "assets/shamel-outbound.png",
-          "caption": "Outbound orders by status",
-          "alt": "Shamel360 — outbound orders board with columns from pre-order to picked",
-          "width": 1920,
-          "height": 1200
+          "src": "assets/printerbase-brands.jpeg",
+          "caption": "Shop by brand",
+          "alt": "Printerbase — Shop by brand",
+          "width": 1788,
+          "height": 1551
         },
         {
-          "src": "assets/shamel-inventory.png",
-          "caption": "Inventory stock list",
-          "alt": "Shamel360 — inventory stock list with on-hand, can-order and inbound quantities per product",
-          "width": 1920,
-          "height": 1200
-        },
-        {
-          "src": "assets/shamel-stock-history.png",
-          "caption": "Stock movement history",
-          "alt": "Shamel360 — stock history log of additions and removals with old and new quantities",
-          "width": 1920,
-          "height": 1200
-        },
-        {
-          "src": "assets/shamel-products.png",
-          "caption": "Product catalogue",
-          "alt": "Shamel360 — product catalogue with codes, merchants, weights, prices and status",
-          "width": 1920,
-          "height": 1200
+          "src": "assets/printerbase-subscription.jpeg",
+          "caption": "Subscription print",
+          "alt": "Printerbase — Subscription print",
+          "width": 1788,
+          "height": 2901
         }
       ]
     }
@@ -994,10 +994,28 @@
         "target": "gopay"
       },
       {
+        "label": "Amplifidor",
+        "hint": "Case study",
+        "action": "openCase",
+        "target": "amplifidor"
+      },
+      {
+        "label": "SparkFlow",
+        "hint": "Case study",
+        "action": "openCase",
+        "target": "sparkflow"
+      },
+      {
         "label": "WalaPlus",
         "hint": "Case study",
         "action": "openCase",
         "target": "walaplus"
+      },
+      {
+        "label": "Shamel360",
+        "hint": "Case study",
+        "action": "openCase",
+        "target": "shamel360"
       },
       {
         "label": "Fatura",
@@ -1012,34 +1030,16 @@
         "target": "moller-auto"
       },
       {
-        "label": "Printerbase",
-        "hint": "Case study",
-        "action": "openCase",
-        "target": "printerbase"
-      },
-      {
         "label": "21 Farmer",
         "hint": "Case study",
         "action": "openCase",
         "target": "21-farmer"
       },
       {
-        "label": "SparkFlow",
+        "label": "Printerbase",
         "hint": "Case study",
         "action": "openCase",
-        "target": "sparkflow"
-      },
-      {
-        "label": "Amplifidor",
-        "hint": "Case study",
-        "action": "openCase",
-        "target": "amplifidor"
-      },
-      {
-        "label": "Shamel360",
-        "hint": "Case study",
-        "action": "openCase",
-        "target": "shamel360"
+        "target": "printerbase"
       },
       {
         "label": "Copy email",
