@@ -37,6 +37,7 @@ export const contact = {
   location: 'Cairo, Egypt (UTC+2)',
   email: { label: 'shehabmohsen1995@gmail.com', href: 'mailto:shehabmohsen1995@gmail.com' },
   phone: { label: '+20 100 125 1407', href: 'tel:+201001251407' },
+  portfolio: { label: 'shehab20089.github.io', href: 'https://shehab20089.github.io/' },
   github: { label: 'github.com/shehab20089', href: 'https://github.com/shehab20089' },
   linkedin: {
     label: 'linkedin.com/in/shehab-mohsen-6ba984168',

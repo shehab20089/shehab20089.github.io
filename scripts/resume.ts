@@ -45,6 +45,8 @@ const css = `
     font-weight: 600; font-size: 9pt; letter-spacing: 0.12em; text-transform: uppercase; color: #8196ff;
   }
   .contact { display: flex; flex-wrap: wrap; gap: 3pt 16pt; margin-top: 7pt; font-size: 8pt; color: #d6d6d2; }
+  .contact + .contact { margin-top: 3pt; }
+  .contact .site { color: #8196ff; }
 
   h2 {
     display: flex; align-items: center; gap: 8pt; margin: 13pt 0 8pt; break-after: avoid;
@@ -129,7 +131,10 @@ function html(resume: Resume): string {
         `<div class="cell edu"><p class="edu-head">${esc(school)}<span class="mono">${esc(year)}</span></p><p>${esc(detail)}</p></div>`,
     )
     .join('');
-  const contactItems = [link(contact.email), link(contact.phone), esc(contact.location), link(contact.github), link(contact.linkedin)];
+  // How to reach me on the first line; where to see the work (portfolio first) on the second.
+  const reach = [link(contact.email), link(contact.phone), esc(contact.location)];
+  const web = [`<a class="site" href="${esc(contact.portfolio.href)}">${esc(contact.portfolio.label)}</a>`, link(contact.github), link(contact.linkedin)];
+  const contactLine = (items: string[]) => `<p class="contact mono">${items.map((item) => `<span>${item}</span>`).join('')}</p>`;
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -142,7 +147,8 @@ function html(resume: Resume): string {
 <header class="masthead">
   <h1>${esc(contact.name)}</h1>
   <p class="headline mono">${esc(resume.headline)}</p>
-  <p class="contact mono">${contactItems.map((item) => `<span>${item}</span>`).join('')}</p>
+  ${contactLine(reach)}
+  ${contactLine(web)}
 </header>
 ${section(1, 'Summary', `<p class="summary">${rich(resume.summary)}</p>`)}
 ${section(2, 'Experience', resume.experience.map(role).join(''))}
