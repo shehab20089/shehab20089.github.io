@@ -160,6 +160,12 @@ function Dialog({ index }: { index: number }) {
               <div className={styles.label}>{labels.solution}</div>
               <p className={styles.prose}>{project.solution}</p>
             </div>
+            {project.decision && (
+              <div>
+                <div className={styles.label}>{labels.decision}</div>
+                <p className={styles.prose}>{project.decision}</p>
+              </div>
+            )}
             <div>
               <div className={styles.label}>{labels.impact}</div>
               <p className={styles.impact}>{project.impact}</p>

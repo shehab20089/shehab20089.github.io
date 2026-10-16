@@ -55,11 +55,13 @@ const aiTools = 'Claude, Codex, OpenCode, Cursor, GitHub Copilot, ChatGPT, Winds
 // The current role keeps six items, strongest first: leadership, ownership, impact.
 const bitbang = {
   gopay:
-    'Owned the **GoPay** frontend, a SADAD-integrated B2B billing platform — public site and operator dashboard (payments, ZATCA invoicing, reconciliations, approvals) — and revamped its Biller dashboard for performance and workflow clarity.',
-  products:
-    "Led the **Amplifidor** frontend and two frontend engineers — creator profiles, audience insights, the wallet, English/Arabic RTL — and laid the frontend foundation for **Shamel360**'s warehouse portal (inventory, product approvals).",
-  platform:
-    'Built an internal UI kit and project templates with a CLI, and drove performance work on data-heavy products: TanStack Query caching, schema-generated TypeScript types, and virtualized lists and tables.',
+    'Owned the **GoPay** frontend, a SADAD-integrated B2B billing platform: refactored its legacy, hard-to-scale codebase into a feature-based architecture, set the standards the team builds on, and revamped the Biller dashboard.',
+  amplifidor:
+    'Led the **Amplifidor** frontend and two engineers — architecture, task split, and pixel-perfect reviews — and built its profiles, audience insights, wallet, and Arabic RTL; the team out-delivered the mobile and backend teams.',
+  shamel:
+    'Rebuilt the **Shamel360** warehouse portal from scratch, leading three developers: a feature-based architecture in a monorepo with a shared UI package, virtualized tables, collapsible column groups, and a Jira-style board.',
+  uiLibrary:
+    'Built a shadcn-inspired shared UI library with a CLI used across BitBang projects, and delivered touch-first tablet interfaces for the Kun admin portal with Persona and Moyasar integrations',
 };
 
 const walaplus: Role = {
@@ -68,9 +70,9 @@ const walaplus: Role = {
   place: 'Remote',
   dates: 'Mar 2023 – Mar 2024',
   bullets: [
-    'Led a full architectural overhaul of the legacy client portal — migrating a server-rendered Blade PHP app to a modern SPA — delivering a multi-fold improvement in navigation speed, maintainability, and UX.',
+    "Sole frontend developer: modernized every product's frontend onto a current stack — including rebuilding the legacy Blade PHP client portal as a modern SPA — and worked on almost all of the company's products.",
     'Built retailer- and partner-facing portals (offers, vouchers, WalaOne operations) and translated Figma design-system foundations into reusable React and Vue components.',
-    'Dockerized frontend projects, helped define stack choices for new products, and interviewed engineering candidates.',
+    'Dockerized frontend projects, defined the frontend stack for new products, and supported hiring through technical interviews.',
   ],
 };
 
@@ -90,7 +92,7 @@ const earlier: Role[] = [
     place: 'Remote',
     dates: 'Feb 2022 – Nov 2022',
     bullets: [
-      'Shipped features for e-commerce clients in printer and automotive retail, with targeted performance and engagement work.',
+      'Owned most of the frontend and CMS styling for Magento e-commerce clients — the Møller Auto marketplace (VW & Audi) and the Printerbase storefront.',
     ],
   },
   {
@@ -141,12 +143,12 @@ export const resumes: Resume[] = [
     experience: [
       bitbangRole({
         bullets: [
-          'Led frontend architecture across fintech and platform products and mentored a team of 7+ engineers — owning code reviews and standards, and redesigning onboarding to cut new-engineer ramp-up to 2 weeks.',
+          "Led frontend architecture across BitBang's products — feature-based structure, TanStack Query caching, schema-generated types, virtualized tables — and mentored a team of 7+ engineers, with an onboarding redesign that cut ramp-up to 2 weeks.",
           bitbang.gopay,
-          "Initiated **SparkFlow**, an internal Jira-style platform built from team bench time, and helped build it across the React frontend and NestJS/PostgreSQL backend; it **replaced BitBang's Jira subscription** and now runs every team project.",
-          bitbang.products,
-          bitbang.platform,
-          'Delivered tablet-optimized, touch-friendly interfaces for the Kun admin portal, and integrated Persona and Moyasar for secure onboarding and payments.',
+          "Initiated **SparkFlow**, an internal Jira-style platform: gathered the features, wrote the requirements, designed the database, security, and UI/UX, and built it with AI-assisted development; it **replaced BitBang's Jira subscription**.",
+          bitbang.amplifidor,
+          bitbang.shamel,
+          `${bitbang.uiLibrary}.`,
         ],
       }),
       walaplus,
@@ -182,17 +184,17 @@ export const resumes: Resume[] = [
           stack:
             'React 19 · TypeScript · TanStack Query · NestJS · Fastify · Prisma · PostgreSQL · Redis · Socket.IO · BullMQ',
           bullets: [
-            "BitBang's internal task and project-management tool: I initiated it from team bench time and helped build it across the stack. It **replaced BitBang's Jira subscription**, and every team project moved onto it.",
-            'Scope: workspaces, teams, boards, backlog, sprints, issues, and history; a rich-text editor with mentions; realtime updates over Socket.IO and Redis; BullMQ workers for issue events and notifications.',
+            "BitBang's internal task and project-management tool: I initiated it from team bench time, gathered the features, wrote the requirements, and designed the database (ERDs), security, and UI/UX. It **replaced BitBang's Jira subscription** and runs every team project with minimal issues.",
+            'Built with AI-assisted development (Claude Code, Codex, Claude Design): workspaces, boards, backlog, sprints, and issues; a rich-text editor with mentions; realtime updates over Socket.IO and Redis; BullMQ workers for notifications.',
             'Production hardening: Microsoft Entra SSO plus email/password auth, tenant and project isolation in queries and database constraints, indexed paginated reads, and virtualized boards.',
           ],
         },
         bullets: [
-          'Led frontend architecture across fintech and platform products, worked with backend teams on API contracts, and mentored a team of 7+ engineers — redesigning onboarding to cut new-engineer ramp-up to 2 weeks.',
+          "Led frontend architecture across BitBang's products, worked with backend teams on API contracts, and mentored a team of 7+ engineers, with an onboarding redesign that cut ramp-up to 2 weeks.",
           bitbang.gopay,
-          bitbang.products,
-          bitbang.platform,
-          'Delivered tablet-optimized, touch-friendly interfaces for the Kun admin portal and integrated Persona and Moyasar for secure onboarding and payments, supporting the Tasheelat and Face Children initiatives.',
+          bitbang.amplifidor,
+          bitbang.shamel,
+          `${bitbang.uiLibrary}, supporting the Tasheelat and Face Children initiatives.`,
         ],
       }),
       walaplus,

@@ -25,6 +25,8 @@ export interface Project {
   blurb: string;
   problem: string;
   solution: string;
+  /** One call that shaped the project, and what it led to. Shown between Solution and Impact. */
+  decision?: string;
   impact: string;
   role: string;
   stack: string[];
@@ -172,7 +174,7 @@ export interface Content {
     next: string;
     close: string;
     closeAria: string;
-    labels: { problem: string; solution: string; impact: string; role: string; stack: string; live: string };
+    labels: { problem: string; solution: string; decision: string; impact: string; role: string; stack: string; live: string };
     imageCounter: string;
     tallHint: string;
     fullSize: string;

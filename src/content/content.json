@@ -134,6 +134,7 @@
       "blurb": "A SADAD-integrated B2B billing and collections platform for Saudi Arabia — public site, operator dashboard and customer apps.",
       "problem": "Businesses across regulated Saudi sectors needed one place to issue invoices, collect through every local channel, stay ZATCA-compliant, and see their cash flow — without stitching tools together.",
       "solution": "The GoPay frontend, end to end: the marketing site plus the operator dashboard — one-time and recurring payments, invoicing (GoInvoice / ZATCA), reconciliations and approvals — wired to mada, Apple Pay, Visa, Mastercard and SADAD.",
+      "decision": "Rebuilt GoPay's legacy, hard-to-scale frontend on a feature-based architecture instead of patching it, and set the standards every developer on the team builds on — the most important change I made to the product.",
       "impact": "Trusted by leading Saudi organisations — including the Royal Commission for AlUla, the Gulf Health Council and Tawzea Aquapor.",
       "role": "Senior Frontend Engineer / Frontend Lead — BitBang",
       "stack": [
@@ -184,7 +185,8 @@
       "sector": "Creator economy · Influencer × Brand",
       "blurb": "A two-sided influencer × brand platform — brands launch affiliate programs; creators, agents and agencies join, promote them and get paid per milestone.",
       "problem": "Brands wanted to work with creators on measurable terms. Creators — and the agents and agencies who manage them — needed one profile that proves their reach, a way into paid programs, and payouts tied to real results.",
-      "solution": "A React and TypeScript frontend over a GraphQL API (Apollo, 126 typed operations). I led the frontend and a team of two frontend engineers, set its scalable architecture and shared component layer, and built the creator profile and link-in-bio, the per-platform audience insights and the SAR wallet, plus the English / Arabic localization with full RTL.",
+      "solution": "A React and TypeScript frontend over a GraphQL API (Apollo, 126 typed operations). I led the frontend and a team of two engineers — set its feature-based architecture and shared component layer, split the work and reviewed every change — and built the creator profile and link-in-bio, the per-platform audience insights and the SAR wallet, plus the English / Arabic localization with full RTL.",
+      "decision": "Brought the feature-based architecture from GoPay and a strict review loop aimed at pixel-perfect output, so two engineers could ship in parallel without the UI drifting. The frontend consistently delivered faster than the project's mobile and backend teams.",
       "impact": "One bilingual codebase serving four account types — creators, agents, brands and agencies — with 1,500+ interface strings in English and Arabic.",
       "role": "Frontend Lead — BitBang",
       "stack": [
@@ -239,8 +241,9 @@
       "sector": "Internal platform · Project management",
       "blurb": "BitBang's in-house, Jira-style project-management platform — boards, backlog, sprints and reporting, with test management built in.",
       "problem": "Several of us — me included — were between client projects. I pitched turning that bench time into a product BitBang could use: one place to plan, track and test delivery work, with Microsoft sign-in, strict project isolation and QA tied to the same issues.",
-      "solution": "A NestJS (Fastify) API over PostgreSQL and Prisma, Redis-backed realtime and BullMQ background jobs, and a React frontend: workspaces, teams, boards, backlog, sprints, epics and issue links, a shared rich-text editor with mentions, notifications, dashboards and reports — plus a native test-management module from test cases to bugs, retests and verification.",
-      "impact": "Bench time turned into the platform that replaced BitBang's Jira subscription — every team project now runs on it, backed by 94 data models, 57 migrations and 600+ automated test files.",
+      "solution": "I gathered the features, wrote the requirements, and designed the database (ERDs), its security and the UI/UX, then built it with AI-assisted development: a NestJS (Fastify) API over PostgreSQL and Prisma, Redis-backed realtime and BullMQ jobs, and a React frontend — workspaces, boards, backlog, sprints, a rich-text editor with mentions, dashboards, reports and native test management.",
+      "decision": "Design first, then build fast: the requirements, ERDs and a security model with tenant and project isolation enforced in the database came before any code, and AI-assisted development (Claude Code, Codex, Claude Design) kept the build fast. It went into company-wide use with minimal issues.",
+      "impact": "Replaced BitBang's Jira subscription — every team project now runs on it, with minimal issues since launch, backed by 94 data models and 600+ automated test files.",
       "role": "Initiator & Full-Stack Engineer — BitBang",
       "stack": [
         "NestJS · Fastify",
@@ -294,7 +297,8 @@
       "sector": "Loyalty · Rewards SaaS",
       "blurb": "A loyalty and employee-rewards platform for Saudi enterprises — points, offers and cashback across a network of real retail brands.",
       "problem": "Enterprises needed to run points, rewards, offers and cashback for thousands of employees and family accounts — across dozens of merchants — from one admin, in Arabic and English.",
-      "solution": "A bilingual (RTL / LTR) admin: customizable dashboards, points-pool management, reward catalogs, retailer and offer administration, employee invites by email or file, and reports on transactions, points and savings.",
+      "solution": "As the company's sole frontend developer, I modernized every product's frontend onto a current stack and built this bilingual (RTL / LTR) admin: customizable dashboards, points-pool management, reward catalogs, retailer and offer administration, employee invites by email or file, and reports on transactions, points and savings.",
+      "decision": "Rebuilt the legacy, server-rendered Blade PHP client portal as a modern SPA, then moved the company's other products onto the same modern stack — working across almost every product and supporting hiring along the way.",
       "impact": "A platform tracking 2.8B+ loyalty points across 114 retailers — including LandMark, HungerStation and Careem.",
       "role": "Senior Frontend Developer — WalaPlus",
       "stack": [
@@ -345,9 +349,10 @@
       "sector": "Supply chain · Warehouse fulfillment",
       "blurb": "Shamel360's warehouse fulfillment portal — inbound receiving, outbound picking and shipping, live inventory, products and merchants in one console.",
       "problem": "Fulfillment teams holding stock for many merchants needed one console for the whole flow: receiving inbound shipments, picking and dispatching orders through last-mile carriers, and tracking every merchant's stock as it moves through the warehouse.",
-      "solution": "A React 19 and TypeScript portal over a REST API (TanStack Query, Zustand, Radix / shadcn, Tailwind): a configurable dashboard, inbound and outbound boards that follow every order's status, inventory and stock history, the product catalogue, merchants and finance. I laid the app's foundation — routing with lazy loading and guards, the layout, the shared table, filter and form components — and built the inventory stock list and the product configurations and approvals.",
+      "solution": "A React 19 and TypeScript portal over a REST API (TanStack Query, Zustand, Radix / shadcn, Tailwind): a configurable dashboard, inbound and outbound boards that follow every order's status, inventory, products, merchants and finance. I rebuilt it from scratch with a new UI, led three developers, and built the hardest components — collapsible table column groups, virtualized tables and a Jira-style board — plus the inventory and product-approval flows.",
+      "decision": "A feature-based architecture in a monorepo, with one shared UI package for the fulfillment and merchant portals, so complex components are built once and reused; virtualization keeps very large tables fast.",
       "impact": "One console for the full fulfillment loop across multiple warehouses — 38 routes over nearly 100 API endpoints, built on the routing, layout and shared components I set up.",
-      "role": "Senior Frontend Engineer — BitBang",
+      "role": "Frontend Lead — BitBang",
       "stack": [
         "React 19 · TypeScript",
         "TanStack Query · Zustand",
@@ -455,13 +460,13 @@
       "sector": "Automotive · E-commerce",
       "blurb": "The used-car marketplace for Volkswagen and Audi’s official dealer network across the Baltics.",
       "problem": "Hundreds of live cars across a multi-country dealer network — each with deep specs, pricing, leasing and reservation flows — all needing to load fast and stay legible.",
-      "solution": "A performant listing and detail experience: faceted search over 800+ cars, spec-dense car pages, a leasing calculator, trade-in, and a dealership locator spanning Latvia, Estonia and Lithuania.",
+      "solution": "A performant listing and detail experience on Magento: faceted search over 800+ cars, spec-dense car pages, a leasing calculator, trade-in, and a dealership locator spanning Latvia, Estonia and Lithuania. I owned most of the storefront's frontend and the styling of its CMS pages.",
       "impact": "800+ live used-car listings served across the Baltic VW & Audi dealer network.",
       "role": "Frontend Developer — Scandiweb",
       "stack": [
         "React",
         "TypeScript",
-        "E-commerce",
+        "Magento",
         "Performance"
       ],
       "live": {
@@ -513,12 +518,12 @@
       "sector": "E-commerce · Retail",
       "blurb": "One of the UK’s established printer, ink & toner retailers — 200,000+ customers, rated 4.8/5 on Trustpilot.",
       "problem": "A large-catalog retailer needed conversion-focused storefront and content pages that stayed consistent across a sprawling site.",
-      "solution": "Storefront and content surfaces built to convert — product discovery and comparison, subscription-print and managed-print journeys, and the checkout basket — all aligned to the brand system.",
+      "solution": "Storefront and content surfaces built to convert on Magento — product discovery and comparison, subscription-print and managed-print journeys, and the checkout basket — all aligned to the brand system. I owned most of the frontend and the styling of the CMS-driven pages.",
       "impact": "Part of a storefront serving 200,000+ customers, rated 4.8/5 on Trustpilot and 4.9/5 on Google.",
       "role": "Frontend Developer — Scandiweb",
       "stack": [
         "JavaScript",
-        "E-commerce",
+        "Magento",
         "Conversion",
         "Responsive"
       ],
@@ -561,7 +566,7 @@
     {
       "kicker": "Internal · DevX",
       "title": "UI Library & CLI",
-      "description": "A shared UI library plus CLI scaffolding — tokens, components and project bootstrap, adopted across our team.",
+      "description": "A shadcn-inspired shared UI library with its own CLI: complex components live in one place and drop into any project with a single command — a shared design system for BitBang projects.",
       "meta": "Frontend Lead · Design systems · CLI"
     },
     {
@@ -613,7 +618,7 @@
         "role": "Senior Frontend Engineer / Frontend Lead",
         "company": "BitBang",
         "tag": null,
-        "description": "Owns the GoPay frontend — a SADAD-integrated B2B billing platform — led the Amplifidor frontend team, built core parts of Shamel360, and initiated SparkFlow, the in-house platform that replaced the company's Jira. Leads and mentors engineers and sets the standards that keep delivery fast and maintainable."
+        "description": "Owns the GoPay frontend — a SADAD-integrated B2B billing platform — led the Amplifidor and Shamel360 frontend teams, and initiated SparkFlow, the in-house platform that replaced the company's Jira. Leads and mentors engineers and sets the standards that keep delivery fast and maintainable."
       },
       {
         "when": "Mar 2023 – Mar 2024",
@@ -621,7 +626,7 @@
         "role": "Senior Frontend Developer",
         "company": "Walaplus",
         "tag": null,
-        "description": "Built the WalaPlus loyalty & rewards admin — bilingual dashboards, points pools, reward catalogs and reporting — for enterprise employee-loyalty programs across Saudi retail brands."
+        "description": "The company's sole frontend developer: modernized every product's frontend and built the WalaPlus loyalty & rewards admin — bilingual dashboards, points pools, reward catalogs and reporting — for enterprise employee-loyalty programs across Saudi retail brands."
       },
       {
         "when": "Jun 2020 – Mar 2023",
@@ -637,7 +642,7 @@
         "role": "Frontend Developer",
         "company": "Scandiweb",
         "tag": "Part-time",
-        "description": "Frontend delivery on large-scale e-commerce alongside a distributed team — the Møller Auto marketplace (VW & Audi) and the Printerbase storefront."
+        "description": "Frontend delivery on large-scale Magento e-commerce alongside a distributed team — the Møller Auto marketplace (VW & Audi) and the Printerbase storefront, owning most of their frontend and CMS styling."
       },
       {
         "when": "Feb 2020 – Jun 2020",
@@ -893,6 +898,7 @@
     "labels": {
       "problem": "Problem",
       "solution": "Solution",
+      "decision": "Key decision",
       "impact": "Impact",
       "role": "Role",
       "stack": "Stack",
