@@ -134,9 +134,9 @@ export const resumes: Resume[] = [
       bitbang([
         bullets.architecture,
         bullets.gopay,
+        "Initiated SparkFlow, an internal Jira-style platform built from team bench time, and helped build it across the React frontend and the NestJS and PostgreSQL backend; it replaced BitBang's Jira subscription, and every team project moved onto it.",
         bullets.amplifidor,
         bullets.shamel,
-        "Initiated SparkFlow, BitBang's internal Jira-style project-management platform, to turn team bench time into a product, and helped build it across the React frontend and the NestJS and PostgreSQL backend.",
         bullets.team,
         bullets.kun,
         bullets.uiLibrary,
@@ -170,7 +170,7 @@ export const resumes: Resume[] = [
       bitbang([
         bullets.architecture,
         bullets.gopay,
-        "Initiated SparkFlow, BitBang's internal Jira-style project-management platform, to turn team bench time into a product, and helped build it full-stack: a NestJS (Fastify) API over PostgreSQL and Prisma, Redis and BullMQ jobs, and a React frontend.",
+        "Initiated SparkFlow, an internal Jira-style platform built from team bench time, and helped build it full-stack (a NestJS API over PostgreSQL and Prisma, Redis and BullMQ jobs, a React frontend); it replaced BitBang's Jira subscription, and every team project moved onto it.",
         bullets.amplifidor,
         bullets.shamel,
         bullets.team,

@@ -439,7 +439,7 @@
       "blurb": "BitBang's in-house, Jira-style project-management platform — boards, backlog, sprints and reporting, with test management built in.",
       "problem": "Several of us — me included — were between client projects. I pitched turning that bench time into a product BitBang could use: one place to plan, track and test delivery work, with Microsoft sign-in, strict project isolation and QA tied to the same issues.",
       "solution": "A NestJS (Fastify) API over PostgreSQL and Prisma, Redis-backed realtime and BullMQ background jobs, and a React frontend: workspaces, teams, boards, backlog, sprints, epics and issue links, a shared rich-text editor with mentions, notifications, dashboards and reports — plus a native test-management module from test cases to bugs, retests and verification.",
-      "impact": "Bench time turned into a full-stack product, now in controlled staging — 94 data models, 57 migrations and 600+ automated test files.",
+      "impact": "Bench time turned into the platform that replaced BitBang's Jira subscription — every team project now runs on it, backed by 94 data models, 57 migrations and 600+ automated test files.",
       "role": "Initiator & Full-Stack Engineer — BitBang",
       "stack": [
         "NestJS · Fastify",
