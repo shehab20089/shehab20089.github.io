@@ -5,8 +5,6 @@
     "description": "Senior frontend engineer (full-stack capable) with 6+ years shipping fintech dashboards, design systems and data-heavy products — GoPay, WalaPlus, Fatura, Møller Auto. Cairo, remote UTC+2. Open to senior / lead roles.",
     "ogTitle": "Shehab Mohsen — Senior Frontend Engineer · Full-Stack Capable",
     "ogDescription": "6+ years of fintech dashboards, design systems and data-heavy interfaces. Open to senior / lead remote roles.",
-    "ogImage": "assets/og-image.png",
-    "ogImageNote": "og-image.png shows the OLD design — generate a new 1200×630 image in the Swiss style.",
     "twitterCard": "summary_large_image",
     "lang": "en"
   },
@@ -116,7 +114,7 @@
     "number": "01",
     "label": "Selected Work",
     "heading": "Real products. Shipped, measured, owned.",
-    "intro": "A few of the frontends I've led. Each one: the problem we started with, the approach I took, and what it actually meant for the people using it.",
+    "intro": "Products I've led or helped build. Each one: the problem we started with, the approach I took, and what it actually meant for the people using it.",
     "tableColumns": [
       "No.",
       "Project",
@@ -653,7 +651,7 @@
         "role": "Senior Frontend Engineer / Frontend Lead",
         "company": "BitBang",
         "tag": null,
-        "description": "Owns the GoPay frontend — a SADAD-integrated B2B billing platform — leads and mentors engineers, and sets the standards that keep delivery fast and maintainable."
+        "description": "Owns the GoPay frontend — a SADAD-integrated B2B billing platform — built core parts of Amplifidor and Shamel360, and initiated SparkFlow, the in-house platform that replaced the company's Jira. Leads and mentors engineers and sets the standards that keep delivery fast and maintainable."
       },
       {
         "when": "Previously",
