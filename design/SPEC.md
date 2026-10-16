@@ -76,9 +76,10 @@ No design issues are open.
 | 2026-10-16 | Case-study dialog | The counter template became `Case study {number} / {total}`, with the total counted from the projects. |
 | 2026-10-16 | Selected Work | Added Amplifidor (08) and Shamel360 (09), the BitBang influencer × brand platform and the Shamel360 warehouse fulfillment portal. Each "I built" line names only the areas your commits show: Amplifidor's profile, insights, wallet and Arabic / RTL setup; Shamel's foundation, shared components, inventory stock list and product configurations and approvals. No live links, because both apps sit behind sign-in. |
 | 2026-10-16 | Selected Work · Also shipped | Removed the "Amplifidor Platform" card, now case study 08. The grid is back to three cards, as in the reference. |
+| 2026-10-16 | Beyond the keyboard | Replaced the Unreal Engine and Pixel art cards with Godot and Mobile dev; Game dev is unchanged. Still three cards, so the layout matches the reference. |
 
-The reference page predates these, so `npm run compare` reports them as differences in the Stack
-and Work sections, and everything below those sections shifts accordingly.
+The reference page predates these, so `npm run compare` reports them as differences in the Stack,
+Work and Beyond sections, and everything below those sections shifts accordingly.
 
 SparkFlow's five screenshots (`public/assets/sparkflow-*.png`, 1920×1200) were taken from a local
 run of the SparkFlow repo against throwaway Postgres and Redis containers seeded with its demo data

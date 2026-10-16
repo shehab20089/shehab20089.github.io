@@ -841,14 +841,14 @@
         "description": "Gameplay logic, loops, and feel — a different lens on state, timing, and feedback that keeps coming back into how I build UI."
       },
       {
-        "kicker": "Unreal Engine",
-        "title": "Real-time 3D",
-        "description": "Materials, lighting, and cinematic sequencing — where performance budgets and visual polish meet at the frame level."
+        "kicker": "Godot",
+        "title": "Prototyping in an open engine",
+        "description": "Scenes, nodes, and signals — small pieces composed into a whole, the same event-driven thinking behind a good component API."
       },
       {
-        "kicker": "Pixel art",
-        "title": "Detail at the smallest scale",
-        "description": "Hand-placing pixels trains an eye for precision and restraint — the same eye I bring to spacing and hierarchy."
+        "kicker": "Mobile dev",
+        "title": "Small screens, real constraints",
+        "description": "Where I started, with Flutter — touch, gestures, and flaky connections still shape how I build interfaces that hold up on any device."
       }
     ]
   },
