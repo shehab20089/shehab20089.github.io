@@ -32,10 +32,10 @@ in `public/assets/` at the widths in `src/lib/image-widths.ts`.
 ## Résumés
 
 The two résumé PDFs in `public/assets/` (Frontend and Full-stack) are printed from
-`resume/content.ts`. Edit the text there, not the PDFs, then run:
+`resume/content.ts` in the layout of the v3 résumé. Edit the text there, not the PDFs, then run:
 
 ```bash
-npm run resume     # needs Google Chrome; fails if either résumé runs past one page
+npm run resume     # needs Chrome and a connection (Google Fonts); fails past two pages
 ```
 
 ## Check against the design
