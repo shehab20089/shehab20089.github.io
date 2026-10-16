@@ -74,6 +74,8 @@ No design issues are open.
 | 2026-10-16 | Selected Work | Added SparkFlow as case study 07: BitBang's internal Jira-style platform, framed as your initiative (bench time turned into a product) with your full-stack role. No live link, because the app sits behind company sign-in. |
 | 2026-10-16 | Selected Work · Also shipped | Added a fourth card for the BitBang and Shamel360 marketing sites. At 1440 the grid now shows four narrower cards in one row; at 960–1300 the fourth card wraps to a second row. |
 | 2026-10-16 | Case-study dialog | The counter template became `Case study {number} / {total}`, with the total counted from the projects. |
+| 2026-10-16 | Selected Work | Added Amplifidor (08) and Shamel360 (09), the BitBang influencer × brand platform and the Shamel360 warehouse fulfillment portal. Each "I built" line names only the areas your commits show: Amplifidor's profile, insights, wallet and Arabic / RTL setup; Shamel's foundation, shared components, inventory stock list and product configurations and approvals. No live links, because both apps sit behind sign-in. |
+| 2026-10-16 | Selected Work · Also shipped | Removed the "Amplifidor Platform" card, now case study 08. The grid is back to three cards, as in the reference. |
 
 The reference page predates these, so `npm run compare` reports them as differences in the Stack
 and Work sections, and everything below those sections shifts accordingly.
@@ -82,3 +84,13 @@ SparkFlow's five screenshots (`public/assets/sparkflow-*.png`, 1920×1200) were 
 run of the SparkFlow repo against throwaway Postgres and Redis containers seeded with its demo data
 (the "Acme Engineering" workspace), so no real project or client data appears. To retake them, run
 SparkFlow locally with its demo seed and sign in as the seeded owner.
+
+Amplifidor's and Shamel360's screenshots (`public/assets/amplifidor-*.png`, `shamel-*.png`) come
+from each app's frontend run locally with its backend replaced: a Playwright script answered every
+API call (GraphQL for Amplifidor, REST for Shamel) with invented data, such as the creator "Sara
+Al-Amri" and merchants like "Noor Beauty", so no real user, client or production data appears and
+no real backend was called. Neither repo was changed. A few fixes were applied only to the copy
+served to the browser: Amplifidor's Insights page, which still renders the app's own placeholder
+module, was given numbers consistent with the profile, and Shamel's staff avatars were passed in
+the widget's pre-formatted shape so they show initials instead of empty circles. The capture
+scripts stay outside this repo, because they mirror both clients' private API shapes.

@@ -485,15 +485,119 @@
           "height": 1200
         }
       ]
+    },
+    {
+      "slug": "amplifidor",
+      "number": "08",
+      "name": "Amplifidor",
+      "sector": "Creator economy · Influencer × Brand",
+      "blurb": "A two-sided influencer × brand platform — brands launch affiliate programs; creators, agents and agencies join, promote them and get paid per milestone.",
+      "problem": "Brands wanted to work with creators on measurable terms. Creators — and the agents and agencies who manage them — needed one profile that proves their reach, a way into paid programs, and payouts tied to real results.",
+      "solution": "A React and TypeScript frontend over a GraphQL API (Apollo, 126 typed operations), on a scalable architecture with a shared component layer. I built the creator profile and link-in-bio, the per-platform audience insights and the SAR wallet, set up the English / Arabic localization with full RTL, and worked across groups, programs and settings.",
+      "impact": "One bilingual codebase serving four account types — creators, agents, brands and agencies — with 1,500+ interface strings in English and Arabic.",
+      "role": "Senior Frontend Engineer — BitBang",
+      "stack": [
+        "React · TypeScript",
+        "GraphQL · Apollo",
+        "Tailwind · Radix",
+        "i18n · RTL"
+      ],
+      "live": null,
+      "images": [
+        {
+          "src": "assets/amplifidor-profile.png",
+          "caption": "Creator profile & link-in-bio",
+          "alt": "Amplifidor — creator profile with connected social accounts, featured links, posts and brand collaborations",
+          "width": 1920,
+          "height": 3011
+        },
+        {
+          "src": "assets/amplifidor-insights.png",
+          "caption": "Audience insights per platform",
+          "alt": "Amplifidor — TikTok audience insights: followers, audience demographics, growth and top content",
+          "width": 1920,
+          "height": 4608
+        },
+        {
+          "src": "assets/amplifidor-home.png",
+          "caption": "Home — brand programs and profile progress",
+          "alt": "Amplifidor — creator home with link in bio, brand programs feed and profile completion",
+          "width": 1920,
+          "height": 2774
+        },
+        {
+          "src": "assets/amplifidor-performance.png",
+          "caption": "Program performance & milestone rewards",
+          "alt": "Amplifidor — program performance: clicks by platform, milestone rewards and traffic locations",
+          "width": 1920,
+          "height": 2143
+        },
+        {
+          "src": "assets/amplifidor-wallet.png",
+          "caption": "Wallet & payouts",
+          "alt": "Amplifidor — wallet balance in SAR with earnings, withdrawals and fees",
+          "width": 1920,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "slug": "shamel360",
+      "number": "09",
+      "name": "Shamel360",
+      "sector": "Supply chain · Warehouse fulfillment",
+      "blurb": "Shamel360's warehouse fulfillment portal — inbound receiving, outbound picking and shipping, live inventory, products and merchants in one console.",
+      "problem": "Fulfillment teams holding stock for many merchants needed one console for the whole flow: receiving inbound shipments, picking and dispatching orders through last-mile carriers, and tracking every merchant's stock as it moves through the warehouse.",
+      "solution": "A React 19 and TypeScript portal over a REST API (TanStack Query, Zustand, Radix / shadcn, Tailwind): a configurable dashboard, inbound and outbound boards that follow every order's status, inventory and stock history, the product catalogue, merchants and finance. I laid the app's foundation — routing with lazy loading and guards, the layout, the shared table, filter and form components — and built the inventory stock list and the product configurations and approvals.",
+      "impact": "One console for the full fulfillment loop across multiple warehouses — 38 routes over nearly 100 API endpoints, built on the routing, layout and shared components I set up.",
+      "role": "Senior Frontend Engineer — BitBang",
+      "stack": [
+        "React 19 · TypeScript",
+        "TanStack Query · Zustand",
+        "Radix · shadcn/ui",
+        "Tailwind · Vite"
+      ],
+      "live": null,
+      "images": [
+        {
+          "src": "assets/shamel-dashboard.png",
+          "caption": "Operations dashboard — inbound",
+          "alt": "Shamel360 — inbound operations dashboard with order summary, top items, charts and merchant rankings",
+          "width": 1920,
+          "height": 2832
+        },
+        {
+          "src": "assets/shamel-outbound.png",
+          "caption": "Outbound orders by status",
+          "alt": "Shamel360 — outbound orders board with columns from pre-order to picked",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "assets/shamel-inventory.png",
+          "caption": "Inventory stock list",
+          "alt": "Shamel360 — inventory stock list with on-hand, can-order and inbound quantities per product",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "assets/shamel-stock-history.png",
+          "caption": "Stock movement history",
+          "alt": "Shamel360 — stock history log of additions and removals with old and new quantities",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "assets/shamel-products.png",
+          "caption": "Product catalogue",
+          "alt": "Shamel360 — product catalogue with codes, merchants, weights, prices and status",
+          "width": 1920,
+          "height": 1200
+        }
+      ]
     }
   ],
   "alsoShipped": [
-    {
-      "kicker": "Influencer × Brand",
-      "title": "Amplifidor Platform",
-      "description": "A two-sided platform given a scalable React architecture and a shared component layer.",
-      "meta": "Senior FE · React · TypeScript"
-    },
     {
       "kicker": "Gym Operations",
       "title": "Kun Admin Portal",
@@ -926,6 +1030,18 @@
         "hint": "Case study",
         "action": "openCase",
         "target": "sparkflow"
+      },
+      {
+        "label": "Amplifidor",
+        "hint": "Case study",
+        "action": "openCase",
+        "target": "amplifidor"
+      },
+      {
+        "label": "Shamel360",
+        "hint": "Case study",
+        "action": "openCase",
+        "target": "shamel360"
       },
       {
         "label": "Copy email",
