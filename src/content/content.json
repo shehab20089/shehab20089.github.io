@@ -430,6 +430,61 @@
           "height": 902
         }
       ]
+    },
+    {
+      "slug": "sparkflow",
+      "number": "07",
+      "name": "SparkFlow",
+      "sector": "Internal platform · Project management",
+      "blurb": "BitBang's in-house, Jira-style project-management platform — boards, backlog, sprints and reporting, with test management built in.",
+      "problem": "Several of us — me included — were between client projects. I pitched turning that bench time into a product BitBang could use: one place to plan, track and test delivery work, with Microsoft sign-in, strict project isolation and QA tied to the same issues.",
+      "solution": "A NestJS (Fastify) API over PostgreSQL and Prisma, Redis-backed realtime and BullMQ background jobs, and a React frontend: workspaces, teams, boards, backlog, sprints, epics and issue links, a shared rich-text editor with mentions, notifications, dashboards and reports — plus a native test-management module from test cases to bugs, retests and verification.",
+      "impact": "Bench time turned into a full-stack product, now in controlled staging — 94 data models, 57 migrations and 600+ automated test files.",
+      "role": "Initiator & Full-Stack Engineer — BitBang",
+      "stack": [
+        "NestJS · Fastify",
+        "PostgreSQL · Prisma",
+        "Redis · BullMQ",
+        "React · TypeScript"
+      ],
+      "live": null,
+      "images": [
+        {
+          "src": "assets/sparkflow-dashboard.png",
+          "caption": "Project dashboard",
+          "alt": "SparkFlow — project dashboard with sprint progress and team workload",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "assets/sparkflow-board.png",
+          "caption": "Scrum board",
+          "alt": "SparkFlow — Scrum board",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "assets/sparkflow-backlog.png",
+          "caption": "Backlog grouped by sprint",
+          "alt": "SparkFlow — Backlog grouped by sprint",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "assets/sparkflow-sprint.png",
+          "caption": "Sprint planning and team workload",
+          "alt": "SparkFlow — Sprint planning and team workload",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "assets/sparkflow-reports.png",
+          "caption": "Reports & analytics",
+          "alt": "SparkFlow — Reports & analytics",
+          "width": 1920,
+          "height": 1200
+        }
+      ]
     }
   ],
   "alsoShipped": [
@@ -450,6 +505,12 @@
       "title": "UI Library & CLI",
       "description": "A shared UI library plus CLI scaffolding — tokens, components and project bootstrap, adopted across our team.",
       "meta": "Frontend Lead · Design systems · CLI"
+    },
+    {
+      "kicker": "Marketing sites",
+      "title": "BitBang & Shamel360",
+      "description": "BitBang's company site and the landing page for Shamel360, a supply-chain SaaS — responsive Next.js pages, Shamel360 in English and Arabic (RTL).",
+      "meta": "Senior FE · Next.js · RTL / i18n"
     }
   ],
   "about": {
@@ -645,15 +706,20 @@
         "items": [
           "Node.js",
           "Express.js",
-          "NestJS"
+          "NestJS",
+          "SQL",
+          "Prisma",
+          "Redis"
         ]
       },
       {
         "category": "AI tooling",
         "items": [
+          "==Claude==",
+          "==Codex==",
+          "OpenCode",
           "Cursor",
           "GitHub Copilot",
-          "Claude",
           "ChatGPT",
           "Windsurf"
         ]
@@ -755,7 +821,7 @@
     }
   },
   "caseStudy": {
-    "counter": "Case study {number} / 06",
+    "counter": "Case study {number} / {total}",
     "prev": "← Prev",
     "next": "Next →",
     "close": "Close ✕",
@@ -854,6 +920,12 @@
         "hint": "Case study",
         "action": "openCase",
         "target": "21-farmer"
+      },
+      {
+        "label": "SparkFlow",
+        "hint": "Case study",
+        "action": "openCase",
+        "target": "sparkflow"
       },
       {
         "label": "Copy email",

@@ -1,6 +1,7 @@
-// content.json is the verbatim copy from the design handoff and the site's only
-// source of copy and data. These types describe it; assigning the import to
-// `Content` makes the compiler check the file's shape on every build.
+// content.json is the site's only source of copy and data. It started as the
+// design handoff's verbatim copy; later edits are listed in design/SPEC.md.
+// These types describe it; assigning the import to `Content` makes the compiler
+// check the file's shape on every build.
 import data from './content.json';
 
 export interface Link {

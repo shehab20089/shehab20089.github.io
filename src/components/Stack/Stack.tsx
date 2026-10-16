@@ -1,3 +1,4 @@
+import { RichText } from '@/components/RichText/RichText';
 import { SectionHeader } from '@/components/SectionHeader/SectionHeader';
 import { content } from '@/content';
 import styles from './Stack.module.css';
@@ -12,8 +13,11 @@ export function Stack() {
           <div key={group.category} data-reveal="" className={styles.row}>
             <div className={styles.category}>{group.category}</div>
             <div className={styles.items}>
+              {/* ==Item== in content.json highlights a tool in the accent colour. */}
               {group.items.map((item) => (
-                <span key={item}>{item}</span>
+                <span key={item}>
+                  <RichText text={item} />
+                </span>
               ))}
             </div>
           </div>

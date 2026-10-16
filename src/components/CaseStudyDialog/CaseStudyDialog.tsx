@@ -85,7 +85,9 @@ function Dialog({ index }: { index: number }) {
     >
       <div className={styles.bar}>
         <div className={styles.barRow}>
-          <span className={styles.counter}>{format(caseStudy.counter, { number: project.number })}</span>
+          <span className={styles.counter}>
+            {format(caseStudy.counter, { number: project.number, total: String(projects.length).padStart(2, '0') })}
+          </span>
           <span className={styles.spacer} />
           <button type="button" className={styles.step} onClick={() => ui.stepCase(-1)}>
             {caseStudy.prev}

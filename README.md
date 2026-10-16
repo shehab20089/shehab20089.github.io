@@ -11,7 +11,9 @@ npm install
 npm run dev        # http://localhost:3000 (generates WebP variants first)
 ```
 
-- Copy and data: `src/content/content.json` (verbatim from the handoff), typed in `src/content/index.ts`.
+- Copy and data: `src/content/content.json` (from the handoff; later edits are listed in
+  `design/SPEC.md`), typed in `src/content/index.ts`. Wrap a word in `==…==` to set it in the accent
+  colour, `**…**` for bold and `*…*` for emphasis.
 - Design tokens and themes: `src/app/tokens.css`.
 - One component per section in `src/components/`; shared hooks in `src/hooks/`.
 

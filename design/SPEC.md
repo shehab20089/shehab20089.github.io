@@ -62,3 +62,23 @@ Final results at 1440×900 and 390×844, light and dark:
 | 10 | Contact re-maps `--mute` as `color-mix(in oklab, var(--on-acc) 78%, var(--acc))` instead of 70%. It only colours the form placeholders. | At 70% the placeholders measured 4.12:1 (light) and 4.07:1 (dark), under WCAG AA's 4.5:1; 78% gives 4.71:1 and 4.65:1, the smallest step with a safe margin. Every text run on the page now passes AA in both themes. | Approved by you, built |
 
 No design issues are open.
+
+## Content changes since the handoff
+
+`content.json` started as the handoff's verbatim copy. Edits you asked for afterwards:
+
+| Date | Section | Change |
+|---|---|---|
+| 2026-10-16 | Stack · Backend exposure | Added SQL, Prisma and Redis. |
+| 2026-10-16 | Stack · AI tooling | Added Codex and OpenCode. Claude and Codex lead the row and are highlighted in the accent colour with the content's `==…==` marker. |
+| 2026-10-16 | Selected Work | Added SparkFlow as case study 07: BitBang's internal Jira-style platform, framed as your initiative (bench time turned into a product) with your full-stack role. No live link, because the app sits behind company sign-in. |
+| 2026-10-16 | Selected Work · Also shipped | Added a fourth card for the BitBang and Shamel360 marketing sites. At 1440 the grid now shows four narrower cards in one row; at 960–1300 the fourth card wraps to a second row. |
+| 2026-10-16 | Case-study dialog | The counter template became `Case study {number} / {total}`, with the total counted from the projects. |
+
+The reference page predates these, so `npm run compare` reports them as differences in the Stack
+and Work sections, and everything below those sections shifts accordingly.
+
+SparkFlow's five screenshots (`public/assets/sparkflow-*.png`, 1920×1200) were taken from a local
+run of the SparkFlow repo against throwaway Postgres and Redis containers seeded with its demo data
+(the "Acme Engineering" workspace), so no real project or client data appears. To retake them, run
+SparkFlow locally with its demo seed and sign in as the seeded owner.
