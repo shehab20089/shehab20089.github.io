@@ -400,8 +400,8 @@
       "sector": "Fintech · B2B Distribution",
       "blurb": "A B2B wholesale-ordering and credit platform for FMCG distribution — including the operation that runs Coca-Cola’s distribution in Egypt.",
       "problem": "Distributors, operations, auditors, collectors and retail clients each needed their own workflow over one shared catalog, order flow and credit ledger.",
-      "solution": "Role-specific portals on a shared React / TypeScript / Vue frontend: an orders & transactions console, a catalog and ad-campaign builder, and BelAgel — a credit-collections system with retailer wallets, settlements and collector routing. Backed by Node / Express endpoints.",
-      "impact": "One platform serving multiple distributor teams, with a live credit ledger tracking retailer settlements at scale.",
+      "solution": "A shared React / TypeScript / Vue frontend with role-specific portals — orders & transactions, a catalog and ad-campaign builder, and BelAgel credit collections. My part: I delivered the React credit-service portal, built the internal Audit Portal in React and TypeScript, implemented the Vue Collector Portal, and contributed Node / Express endpoints and database migrations.",
+      "impact": "Diagnosed and fixed a major performance issue in the Operations Portal's transaction filters, cutting wait times by ~80% for a portal serving thousands of clients.",
       "role": "Frontend Developer — Fatura",
       "stack": [
         "React",
@@ -507,52 +507,8 @@
       ]
     },
     {
-      "slug": "21-farmer",
-      "number": "08",
-      "name": "21 Farmer",
-      "sector": "AgriTech · IoT",
-      "blurb": "A real-time dashboard that turns field IoT sensors into decisions for farmers.",
-      "problem": "Raw sensor streams — soil moisture, salinity, EC/TDS, air temperature, humidity and lux — mean nothing to a farmer without a clear, map-based view of each field.",
-      "solution": "A map-first dashboard: draw fields on satellite maps, bind them to sensor gateways, and read multi-metric time-series per field across day / week / month / year, with recommendations.",
-      "impact": "A data-heavy interface that makes eight live sensor metrics legible per field, at a glance.",
-      "role": "Frontend Engineer",
-      "stack": [
-        "React",
-        "Data-viz",
-        "Maps",
-        "IoT"
-      ],
-      "live": {
-        "url": "https://dashboard.21farmer.com",
-        "label": "dashboard.21farmer.com"
-      },
-      "images": [
-        {
-          "src": "assets/farmer-dashboard.jpeg",
-          "caption": "Live field-sensor dashboard",
-          "alt": "21 Farmer — live field-sensor dashboard",
-          "width": 1788,
-          "height": 1350
-        },
-        {
-          "src": "assets/farmer-farms.jpeg",
-          "caption": "Farms",
-          "alt": "21 Farmer — Farms",
-          "width": 1788,
-          "height": 1016
-        },
-        {
-          "src": "assets/farmer-map.jpeg",
-          "caption": "Drawing a field on the satellite map",
-          "alt": "21 Farmer — Drawing a field on the satellite map",
-          "width": 1788,
-          "height": 902
-        }
-      ]
-    },
-    {
       "slug": "printerbase",
-      "number": "09",
+      "number": "08",
       "name": "Printerbase",
       "sector": "E-commerce · Retail",
       "blurb": "One of the UK’s established printer, ink & toner retailers — 200,000+ customers, rated 4.8/5 on Trustpilot.",
@@ -613,6 +569,12 @@
       "title": "BitBang & Shamel360",
       "description": "BitBang's company site and the landing page for Shamel360, a supply-chain SaaS — responsive Next.js pages, Shamel360 in English and Arabic (RTL).",
       "meta": "Senior FE · Next.js · RTL / i18n"
+    },
+    {
+      "kicker": "AgriTech · IoT",
+      "title": "21 Farmer",
+      "description": "A map-first farm dashboard: draw fields on satellite maps, bind them to sensor gateways, and read eight sensor metrics per field over time, with recommendations.",
+      "meta": "Frontend Engineer · Maps · IoT"
     }
   ],
   "about": {
@@ -910,7 +872,7 @@
           "placeholder": "A few lines about the role or project…"
         }
       ],
-      "submit": "Send message →",
+      "submit": "Open email draft →",
       "note": "Opens in your mail client — no data stored.",
       "mailto": {
         "subject": "'Portfolio inquiry' + (name ? ' — ' + name : '')",
@@ -938,11 +900,14 @@
     },
     "imageCounter": "{i} / {n} — {caption}",
     "tallHint": " · scroll inside the frame for the full page",
+    "fullSize": "Open full size ↗",
     "nextProject": "Next project"
   },
   "palette": {
     "placeholder": "Jump to a section, open a project, copy email…",
     "escHint": "esc",
+    "close": "Close ✕",
+    "closeAria": "Close menu",
     "empty": "No matches.",
     "commands": [
       {
@@ -1028,12 +993,6 @@
         "hint": "Case study",
         "action": "openCase",
         "target": "moller-auto"
-      },
-      {
-        "label": "21 Farmer",
-        "hint": "Case study",
-        "action": "openCase",
-        "target": "21-farmer"
       },
       {
         "label": "Printerbase",

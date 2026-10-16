@@ -6,6 +6,7 @@ export const a11y = {
   openCase: (name: string) => `Open case study: ${name}`,
   caseDialog: (name: string) => `${name} case study`,
   showScreenshot: (caption: string) => `Show screenshot: ${caption}`,
+  fullSize: (caption: string) => `Open full size: ${caption} (new tab)`,
   palette: 'Command menu',
   paletteInput: 'Search commands',
 };

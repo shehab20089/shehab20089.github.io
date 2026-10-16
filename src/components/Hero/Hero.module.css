@@ -198,3 +198,17 @@
     animation: none;
   }
 }
+
+/* Shorter desktop screens (1536×864, 1366×768, 1280×720): the name also scales with the window
+   height and the gaps around it tighten, so the lead and all three CTAs fit above the fold.
+   At 1440×900 and taller, and on phones, nothing changes. */
+@media (min-width: 960px) and (max-height: 880px) {
+  .name {
+    margin-top: clamp(24px, 4vh, 40px);
+    font-size: min(15vw, 23vh);
+  }
+
+  .leadRow {
+    margin-top: clamp(24px, 4vh, 40px);
+  }
+}

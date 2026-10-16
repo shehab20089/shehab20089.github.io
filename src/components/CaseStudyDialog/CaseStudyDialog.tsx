@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import { Picture } from '@/components/Picture/Picture';
 import { a11y } from '@/content/a11y';
 import { content, format } from '@/content';
+import { asset } from '@/lib/asset';
 import { trapFocus } from '@/lib/focus-trap';
 import { EASE_IN, EASE_OUT, prefersReducedMotion } from '@/lib/motion';
 import { ui, useUi } from '@/lib/ui-store';
@@ -135,6 +136,16 @@ function Dialog({ index }: { index: number }) {
             <div className={styles.caption}>
               {format(caseStudy.imageCounter, { i: image + 1, n: project.images.length, caption: screenshot.caption })}
               {tall && caseStudy.tallHint}
+              {' · '}
+              <a
+                className={styles.fullSize}
+                href={asset(screenshot.src)}
+                target="_blank"
+                rel="noopener"
+                aria-label={a11y.fullSize(screenshot.caption)}
+              >
+                {caseStudy.fullSize}
+              </a>
             </div>
           </div>
         </div>

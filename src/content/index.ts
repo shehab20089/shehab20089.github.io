@@ -175,11 +175,14 @@ export interface Content {
     labels: { problem: string; solution: string; impact: string; role: string; stack: string; live: string };
     imageCounter: string;
     tallHint: string;
+    fullSize: string;
     nextProject: string;
   };
   palette: {
     placeholder: string;
     escHint: string;
+    close: string;
+    closeAria: string;
     empty: string;
     commands: PaletteCommand[];
   };

@@ -56,6 +56,29 @@
   color: var(--mute);
 }
 
+/* Touch screens can't press Esc, so they get a Close button in its place. */
+.close {
+  display: none;
+  flex: none;
+  height: 32px;
+  padding: 0 12px;
+  border: 0;
+  background: var(--ink);
+  color: var(--bg);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+@media (hover: none), (max-width: 959px) {
+  .esc {
+    display: none;
+  }
+
+  .close {
+    display: block;
+  }
+}
+
 .list {
   position: relative;
   max-height: min(52vh, 430px);

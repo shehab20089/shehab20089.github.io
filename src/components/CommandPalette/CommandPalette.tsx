@@ -123,6 +123,9 @@ function Palette() {
             className={styles.input}
           />
           <span className={styles.esc}>{palette.escHint}</span>
+          <button type="button" className={styles.close} onClick={ui.closePalette} aria-label={palette.closeAria}>
+            {palette.close}
+          </button>
         </div>
         <div ref={listRef} className={styles.list}>
           {matches.map((command, k) => (
