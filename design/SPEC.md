@@ -77,9 +77,11 @@ No design issues are open.
 | 2026-10-16 | Selected Work | Added Amplifidor (08) and Shamel360 (09), the BitBang influencer × brand platform and the Shamel360 warehouse fulfillment portal. Each "I built" line names only the areas your commits show: Amplifidor's profile, insights, wallet and Arabic / RTL setup; Shamel's foundation, shared components, inventory stock list and product configurations and approvals. No live links, because both apps sit behind sign-in. |
 | 2026-10-16 | Selected Work · Also shipped | Removed the "Amplifidor Platform" card, now case study 08. The grid is back to three cards, as in the reference. |
 | 2026-10-16 | Beyond the keyboard | Replaced the Unreal Engine and Pixel art cards with Godot and Mobile dev; Game dev is unchanged. Still three cards, so the layout matches the reference. |
+| 2026-10-16 | Brand | Repositioned from "Senior Full-Stack Engineer · Frontend-Focused" to "Senior Frontend Engineer · Full-Stack Capable": page and share titles, meta description, hero line, About's first sentence ("a frontend engineer who's comfortable across the stack"), portrait caption and footer. The hero lead's "full-stack range, a frontend-first bias" already fits and is unchanged. |
+| 2026-10-16 | Résumés | Both PDFs are now printed from `resume/content.ts` with `npm run resume`, in the layout of the original Word files. Changes: the official frontend job titles in both versions; SparkFlow and Shamel360 added; the Amplifidor bullet narrowed to the areas you built; "Moyasar" and "GoPay" spelled correctly; PostgreSQL, Prisma and Redis named in the skills; the AI tools match the site; headlines match the new brand (the Full-stack version reads "Senior Full-Stack Engineer · Frontend-Focused"). |
 
-The reference page predates these, so `npm run compare` reports them as differences in the Stack,
-Work and Beyond sections, and everything below those sections shifts accordingly.
+The reference page predates these, so `npm run compare` reports them as differences wherever they
+appear (the hero, About, Stack, Work, Beyond and the footer), and later sections shift accordingly.
 
 SparkFlow's five screenshots (`public/assets/sparkflow-*.png`, 1920×1200) were taken from a local
 run of the SparkFlow repo against throwaway Postgres and Redis containers seeded with its demo data

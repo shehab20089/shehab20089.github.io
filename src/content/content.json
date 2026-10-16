@@ -1,9 +1,9 @@
 {
   "_notes": "Verbatim copy — do not rewrite. Inline markers: **bold**, *italic*, ==accent== (span coloured --acc-ink). Paths are relative to the site root (/assets/...).",
   "meta": {
-    "title": "Shehab Mohsen — Senior Full-Stack Engineer · Frontend-Focused",
-    "description": "Senior full-stack engineer (frontend-focused) with 6+ years shipping fintech dashboards, design systems and data-heavy products — GoPay, WalaPlus, Fatura, Møller Auto. Cairo, remote UTC+2. Open to senior / lead roles.",
-    "ogTitle": "Shehab Mohsen — Senior Full-Stack Engineer · Frontend-Focused",
+    "title": "Shehab Mohsen — Senior Frontend Engineer · Full-Stack Capable",
+    "description": "Senior frontend engineer (full-stack capable) with 6+ years shipping fintech dashboards, design systems and data-heavy products — GoPay, WalaPlus, Fatura, Møller Auto. Cairo, remote UTC+2. Open to senior / lead roles.",
+    "ogTitle": "Shehab Mohsen — Senior Frontend Engineer · Full-Stack Capable",
     "ogDescription": "6+ years of fintech dashboards, design systems and data-heavy interfaces. Open to senior / lead remote roles.",
     "ogImage": "assets/og-image.png",
     "ogImageNote": "og-image.png shows the OLD design — generate a new 1200×630 image in the Swiss style.",
@@ -56,7 +56,7 @@
     "menuButton": "Menu"
   },
   "hero": {
-    "eyebrow": "Senior Full-Stack Engineer · Frontend-Focused · 6+ Years",
+    "eyebrow": "Senior Frontend Engineer · Full-Stack Capable · 6+ Years",
     "status": "Open to senior / lead remote roles",
     "nameLines": [
       "Shehab",
@@ -622,7 +622,7 @@
     "label": "About",
     "heading": "A senior engineer who cares about the parts users ==don't== see.",
     "paragraphs": [
-      "I'm a full-stack engineer with a frontend heart, drawn to the unglamorous half of the job — the architecture, the tokens, the component contracts, the performance budgets. The work that decides whether a product feels solid six months after launch, or starts to rot.",
+      "I'm a frontend engineer who's comfortable across the stack, drawn to the unglamorous half of the job — the architecture, the tokens, the component contracts, the performance budgets. The work that decides whether a product feels solid six months after launch, or starts to rot.",
       "For **six-plus years** I've shipped fintech dashboards, admin portals, and design-system-driven apps. I translate ambiguous designs into clean interfaces, raise the floor through reviews and standards, and use *AI tooling daily* as a multiplier — while owning every decision that ships."
     ],
     "portrait": {
@@ -630,7 +630,7 @@
       "alt": "Portrait of Shehab Mohsen",
       "badge": "Open to remote",
       "captionLeft": "Shehab Mohsen",
-      "captionRight": "Full-Stack Engineer · Cairo",
+      "captionRight": "Frontend Engineer · Cairo",
       "width": 1122,
       "height": 1402
     },
@@ -920,7 +920,7 @@
       }
     },
     "footer": {
-      "copyright": "© 2026 Shehab Mohsen — Full-Stack Engineer · Frontend Lead",
+      "copyright": "© 2026 Shehab Mohsen — Senior Frontend Engineer · Frontend Lead",
       "backToTop": "Back to top ↑"
     }
   },

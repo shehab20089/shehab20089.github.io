@@ -15,7 +15,8 @@
     "start": "serve out",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "compare": "node scripts/compare.ts"
+    "compare": "node scripts/compare.ts",
+    "resume": "node scripts/resume.ts"
   },
   "dependencies": {
     "next": "^16.4.2",

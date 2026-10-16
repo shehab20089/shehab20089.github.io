@@ -29,6 +29,15 @@ npm run typecheck
 `npm run images` (run automatically before `dev` and `build`) writes WebP variants of every image
 in `public/assets/` at the widths in `src/lib/image-widths.ts`.
 
+## Résumés
+
+The two résumé PDFs in `public/assets/` (Frontend and Full-stack) are printed from
+`resume/content.ts`. Edit the text there, not the PDFs, then run:
+
+```bash
+npm run resume     # needs Google Chrome; fails if either résumé runs past one page
+```
+
 ## Check against the design
 
 ```bash
