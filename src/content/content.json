@@ -186,7 +186,7 @@
       "blurb": "A two-sided influencer × brand platform — brands launch affiliate programs; creators, agents and agencies join, promote them and get paid per milestone.",
       "problem": "Brands wanted to work with creators on measurable terms. Creators — and the agents and agencies who manage them — needed one profile that proves their reach, a way into paid programs, and payouts tied to real results.",
       "solution": "A React and TypeScript frontend over a GraphQL API (Apollo, 126 typed operations). I led the frontend and a team of two engineers — set its feature-based architecture and shared component layer, split the work and reviewed every change — and built the creator profile and link-in-bio, the per-platform audience insights and the SAR wallet, plus the English / Arabic localization with full RTL.",
-      "decision": "Brought the feature-based architecture from GoPay and a strict review loop aimed at pixel-perfect output, so two engineers could ship in parallel without the UI drifting. The frontend consistently delivered faster than the project's mobile and backend teams.",
+      "decision": "Set up a feature-based architecture and a strict review loop aimed at pixel-perfect output, so two engineers could ship in parallel without the UI drifting. The frontend consistently delivered faster than the project's mobile and backend teams.",
       "impact": "One bilingual codebase serving four account types — creators, agents, brands and agencies — with 1,500+ interface strings in English and Arabic.",
       "role": "Frontend Lead — BitBang",
       "stack": [
