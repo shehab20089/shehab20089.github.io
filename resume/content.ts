@@ -51,18 +51,14 @@ export const education: [school: string, detail: string, year: string][] = [
 
 const aiTools = 'Claude, Codex, OpenCode, Cursor, GitHub Copilot, ChatGPT, Windsurf';
 
+// The current role keeps six items, strongest first: leadership, ownership, impact.
 const bitbang = {
-  team: 'Led and mentored a team of 7+ frontend engineers — owning code reviews and engineering standards — and redesigned onboarding, cutting new-engineer ramp-up to 2 weeks.',
   gopay:
     'Owned the **GoPay** frontend, a SADAD-integrated B2B billing platform — public site and operator dashboard (payments, ZATCA invoicing, reconciliations, approvals) — and revamped its Biller dashboard for performance and workflow clarity.',
-  amplifidor:
-    'Built core areas of **Amplifidor**, an influencer-and-brand platform (React, TypeScript, GraphQL): creator profiles, audience insights, and the wallet, plus English/Arabic localization with full RTL.',
-  shamel:
-    'Laid the frontend foundation for the **Shamel360** warehouse fulfillment portal (React 19, TanStack Query) and built its inventory stock list and product configuration and approval flows.',
-  uiKit:
-    'Built an internal UI kit and project-template system with pre-configured tooling and a CLI, cutting new-project setup time and standardizing best practices from day one.',
-  performance:
-    'Drove performance work across data-heavy products: intelligent caching with TanStack Query, end-to-end TypeScript types generated from backend schemas, and virtualization for large lists and tables.',
+  products:
+    "Built core areas of **Amplifidor** — creator profiles, audience insights, the wallet, and English/Arabic RTL localization — and laid the frontend foundation for **Shamel360**'s warehouse portal, including its inventory and product-approval flows.",
+  platform:
+    'Built an internal UI kit and project templates with a CLI, and drove performance work on data-heavy products: TanStack Query caching, schema-generated TypeScript types, and virtualized lists and tables.',
 };
 
 const walaplus: Role = {
@@ -130,7 +126,7 @@ export const resumes: Resume[] = [
     file: 'assets/Shehab_Mohsen_Resume_Frontend_2026.pdf',
     headline: 'Senior Frontend Engineer · Full-Stack Capable',
     summary:
-      'Senior Frontend Engineer with 6+ years building scalable, high-performance web applications across fintech, e-commerce, and healthcare. **Leads teams of 7+ engineers**, owns architecture and design systems, and has rebuilt legacy apps into modern SPA architectures with measurable production performance wins. Ships data-heavy dashboards and touch-first, kiosk-scale interfaces in **React, Next.js, TypeScript, and Vue/Nuxt**, and works across the stack with Node.js, NestJS, and SQL when a feature needs it.',
+      'Senior Frontend Engineer with 6+ years shipping fintech, e-commerce, and healthcare products in **React, Next.js, TypeScript, and Vue/Nuxt**. **Leads a team of 7+ engineers**, owns architecture and design systems, and rebuilds legacy apps into fast, maintainable SPAs, with full-stack range in Node.js, NestJS, and SQL.',
     skills: [
       ['Core stack', 'React.js, Next.js, TypeScript, JavaScript, Vue.js, Nuxt.js'],
       ['State & data', 'TanStack Query, Redux, Zustand, Pinia, GraphQL, Apollo Client, REST APIs'],
@@ -144,14 +140,11 @@ export const resumes: Resume[] = [
     experience: [
       bitbangRole({
         bullets: [
-          'Led frontend architecture across multiple fintech and platform products, lifting component reuse, consistency, and maintainability on data-heavy dashboards.',
-          bitbang.team,
+          'Led frontend architecture across fintech and platform products and mentored a team of 7+ engineers — owning code reviews and standards, and redesigning onboarding to cut new-engineer ramp-up to 2 weeks.',
           bitbang.gopay,
           "Initiated **SparkFlow**, an internal Jira-style platform built from team bench time, and helped build it across the React frontend and NestJS/PostgreSQL backend; it **replaced BitBang's Jira subscription** and now runs every team project.",
-          bitbang.amplifidor,
-          bitbang.shamel,
-          bitbang.uiKit,
-          bitbang.performance,
+          bitbang.products,
+          bitbang.platform,
           'Delivered tablet-optimized, touch-friendly interfaces for the Kun admin portal, and integrated Persona and Moyasar for secure onboarding and payments.',
         ],
       }),
@@ -169,7 +162,7 @@ export const resumes: Resume[] = [
     file: 'assets/Shehab_Mohsen_Resume_FullStack_2026.pdf',
     headline: 'Senior Full-Stack Engineer · Frontend-Focused',
     summary:
-      'Senior full-stack engineer with a frontend focus and 6+ years building scalable, high-performance web applications across fintech, e-commerce, and healthcare. Owns architecture and design systems, **leads teams of 7+ engineers**, and ships across the stack — **React, Next.js, TypeScript, and Vue/Nuxt** on the front, **Node.js, NestJS, Prisma, and PostgreSQL** behind it — from data-heavy dashboards and realtime systems to touch-first, kiosk-scale interfaces.',
+      'Senior full-stack engineer with a frontend focus and 6+ years across fintech, e-commerce, and healthcare: **React, Next.js, TypeScript, and Vue/Nuxt** on the front, **Node.js, NestJS, Prisma, and PostgreSQL** behind it. **Leads a team of 7+ engineers** and owns architecture, from data-heavy dashboards to realtime systems.',
     skills: [
       ['Core stack', 'React.js, Next.js, TypeScript, JavaScript, Vue.js, Nuxt.js'],
       ['Backend', 'Node.js, NestJS, Express.js, Fastify, REST, GraphQL, Socket.IO, BullMQ'],
@@ -194,12 +187,10 @@ export const resumes: Resume[] = [
           ],
         },
         bullets: [
-          'Led frontend architecture across fintech and platform products — component reuse, consistency, and maintainability on data-heavy dashboards — and worked with backend teams on API contracts.',
-          bitbang.team,
+          'Led frontend architecture across fintech and platform products, worked with backend teams on API contracts, and mentored a team of 7+ engineers — redesigning onboarding to cut new-engineer ramp-up to 2 weeks.',
           bitbang.gopay,
-          bitbang.amplifidor,
-          bitbang.shamel,
-          'Built an internal UI kit and project templates with a CLI, and drove performance work on data-heavy products: TanStack Query caching, schema-generated TypeScript types, and virtualized lists and tables.',
+          bitbang.products,
+          bitbang.platform,
           'Delivered tablet-optimized, touch-friendly interfaces for the Kun admin portal and integrated Persona and Moyasar for secure onboarding and payments, supporting the Tasheelat and Face Children initiatives.',
         ],
       }),

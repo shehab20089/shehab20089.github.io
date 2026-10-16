@@ -38,13 +38,13 @@ const css = `
   .nw { white-space: nowrap; }
   .mono { font-family: 'IBM Plex Mono', ui-monospace, monospace; }
 
-  .masthead { background: #111112; color: #f1f1ee; padding: 18pt 22pt 13pt; }
-  h1 { font-family: 'Archivo Black', Arial, sans-serif; font-weight: 400; font-size: 32pt; line-height: 1; text-transform: uppercase; }
+  .masthead { background: #111112; color: #f1f1ee; padding: 15pt 20pt 11pt; }
+  h1 { font-family: 'Archivo Black', Arial, sans-serif; font-weight: 400; font-size: 28pt; line-height: 1; text-transform: uppercase; }
   .headline {
-    margin-top: 9pt; padding-bottom: 11pt; border-bottom: 0.75pt solid rgba(241, 241, 238, .28);
+    margin-top: 7pt; padding-bottom: 9pt; border-bottom: 0.75pt solid rgba(241, 241, 238, .28);
     font-weight: 600; font-size: 9pt; letter-spacing: 0.12em; text-transform: uppercase; color: #8196ff;
   }
-  .contact { display: flex; flex-wrap: wrap; gap: 3pt 16pt; margin-top: 9pt; font-size: 8pt; color: #d6d6d2; }
+  .contact { display: flex; flex-wrap: wrap; gap: 3pt 16pt; margin-top: 7pt; font-size: 8pt; color: #d6d6d2; }
 
   h2 {
     display: flex; align-items: center; gap: 8pt; margin: 13pt 0 8pt; break-after: avoid;
@@ -72,8 +72,11 @@ const css = `
   .company { margin: 1pt 0 5pt; color: #67676d; break-after: avoid; }
   .company b { font-weight: 600; color: #2443f5; }
   ul { list-style: none; }
-  li { position: relative; margin-top: 2.5pt; padding-left: 14pt; break-inside: avoid; }
-  li::before { content: ''; position: absolute; left: 2pt; top: 4.75pt; width: 4pt; height: 4pt; background: #2443f5; }
+  /* The square is an inline box, not a positioned one: Chrome paints positioned boxes, and writes
+     their text into the PDF, after everything else, which put every bullet after all the role
+     headings and scrambled the reading order for ATS parsers. */
+  li { margin-top: 2.5pt; padding-left: 14pt; text-indent: -12pt; break-inside: avoid; }
+  li::before { content: ''; display: inline-block; width: 4pt; height: 4pt; margin-right: 8pt; vertical-align: middle; background: #2443f5; }
 
   .feature { margin: 4pt 0 6pt; padding: 9pt 13pt 10pt; background: #111112; color: #f1f1ee; break-inside: avoid; }
   .feature-head { display: flex; justify-content: space-between; align-items: baseline; }
@@ -142,8 +145,8 @@ function html(resume: Resume): string {
   <p class="contact mono">${contactItems.map((item) => `<span>${item}</span>`).join('')}</p>
 </header>
 ${section(1, 'Summary', `<p class="summary">${rich(resume.summary)}</p>`)}
-${section(2, 'Core skills', `<div class="grid">${skills}</div>`)}
-${section(3, 'Experience', resume.experience.map(role).join(''))}
+${section(2, 'Experience', resume.experience.map(role).join(''))}
+${section(3, 'Core skills', `<div class="grid">${skills}</div>`)}
 ${section(4, 'Education', `<div class="grid">${schools}</div>`)}
 <footer class="mono"><span>${esc(contact.name)} — ${esc(resume.headline)}</span><span>CV / 2026<i></i></span></footer>
 </body>

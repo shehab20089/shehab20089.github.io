@@ -646,7 +646,7 @@
     "heading": "Six years, across fintech, platforms & operations.",
     "roles": [
       {
-        "when": "Now — Present",
+        "when": "Mar 2024 – Present",
         "current": true,
         "role": "Senior Frontend Engineer / Frontend Lead",
         "company": "BitBang",
@@ -654,7 +654,7 @@
         "description": "Owns the GoPay frontend — a SADAD-integrated B2B billing platform — built core parts of Amplifidor and Shamel360, and initiated SparkFlow, the in-house platform that replaced the company's Jira. Leads and mentors engineers and sets the standards that keep delivery fast and maintainable."
       },
       {
-        "when": "Previously",
+        "when": "Mar 2023 – Mar 2024",
         "current": false,
         "role": "Senior Frontend Developer",
         "company": "Walaplus",
@@ -662,7 +662,7 @@
         "description": "Built the WalaPlus loyalty & rewards admin — bilingual dashboards, points pools, reward catalogs and reporting — for enterprise employee-loyalty programs across Saudi retail brands."
       },
       {
-        "when": "Previously",
+        "when": "Jun 2020 – Mar 2023",
         "current": false,
         "role": "Frontend Developer",
         "company": "Fatura LLC",
@@ -670,7 +670,7 @@
         "description": "Built ordering, operations, audit and collector portals — plus the BelAgel credit-collections system — on a shared React, TypeScript and Vue frontend, with Node/Express endpoints. The platform also powered Coca-Cola’s distribution operations in Egypt."
       },
       {
-        "when": "Previously",
+        "when": "Feb 2022 – Nov 2022",
         "current": false,
         "role": "Frontend Developer",
         "company": "Scandiweb",
@@ -678,7 +678,7 @@
         "description": "Frontend delivery on large-scale e-commerce alongside a distributed team — the Møller Auto marketplace (VW & Audi) and the Printerbase storefront."
       },
       {
-        "when": "Previously",
+        "when": "Feb 2020 – Jun 2020",
         "current": false,
         "role": "Frontend Developer",
         "company": "Andalusia Group",
@@ -686,7 +686,7 @@
         "description": "Built the Andalusia Care site in Nuxt to improve patient access to healthcare services and information."
       },
       {
-        "when": "Early career",
+        "when": "Sep 2019 – Jan 2020",
         "current": false,
         "role": "Flutter Developer",
         "company": "Creator X",
