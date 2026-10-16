@@ -56,7 +56,7 @@ const bitbang = {
   gopay:
     'Owned the **GoPay** frontend, a SADAD-integrated B2B billing platform — public site and operator dashboard (payments, ZATCA invoicing, reconciliations, approvals) — and revamped its Biller dashboard for performance and workflow clarity.',
   products:
-    "Built core areas of **Amplifidor** — creator profiles, audience insights, the wallet, and English/Arabic RTL localization — and laid the frontend foundation for **Shamel360**'s warehouse portal, including its inventory and product-approval flows.",
+    "Led the **Amplifidor** frontend and two frontend engineers — creator profiles, audience insights, the wallet, English/Arabic RTL — and laid the frontend foundation for **Shamel360**'s warehouse portal (inventory, product approvals).",
   platform:
     'Built an internal UI kit and project templates with a CLI, and drove performance work on data-heavy products: TanStack Query caching, schema-generated TypeScript types, and virtualized lists and tables.',
 };

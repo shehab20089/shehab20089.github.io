@@ -184,9 +184,9 @@
       "sector": "Creator economy · Influencer × Brand",
       "blurb": "A two-sided influencer × brand platform — brands launch affiliate programs; creators, agents and agencies join, promote them and get paid per milestone.",
       "problem": "Brands wanted to work with creators on measurable terms. Creators — and the agents and agencies who manage them — needed one profile that proves their reach, a way into paid programs, and payouts tied to real results.",
-      "solution": "A React and TypeScript frontend over a GraphQL API (Apollo, 126 typed operations), on a scalable architecture with a shared component layer. I built the creator profile and link-in-bio, the per-platform audience insights and the SAR wallet, set up the English / Arabic localization with full RTL, and worked across groups, programs and settings.",
+      "solution": "A React and TypeScript frontend over a GraphQL API (Apollo, 126 typed operations). I led the frontend and a team of two frontend engineers, set its scalable architecture and shared component layer, and built the creator profile and link-in-bio, the per-platform audience insights and the SAR wallet, plus the English / Arabic localization with full RTL.",
       "impact": "One bilingual codebase serving four account types — creators, agents, brands and agencies — with 1,500+ interface strings in English and Arabic.",
-      "role": "Senior Frontend Engineer — BitBang",
+      "role": "Frontend Lead — BitBang",
       "stack": [
         "React · TypeScript",
         "GraphQL · Apollo",
@@ -651,7 +651,7 @@
         "role": "Senior Frontend Engineer / Frontend Lead",
         "company": "BitBang",
         "tag": null,
-        "description": "Owns the GoPay frontend — a SADAD-integrated B2B billing platform — built core parts of Amplifidor and Shamel360, and initiated SparkFlow, the in-house platform that replaced the company's Jira. Leads and mentors engineers and sets the standards that keep delivery fast and maintainable."
+        "description": "Owns the GoPay frontend — a SADAD-integrated B2B billing platform — led the Amplifidor frontend team, built core parts of Shamel360, and initiated SparkFlow, the in-house platform that replaced the company's Jira. Leads and mentors engineers and sets the standards that keep delivery fast and maintainable."
       },
       {
         "when": "Mar 2023 – Mar 2024",
