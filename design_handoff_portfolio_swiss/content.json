@@ -1,0 +1,897 @@
+{
+  "_notes": "Verbatim copy — do not rewrite. Inline markers: **bold**, *italic*, ==accent== (span coloured --acc-ink). Paths are relative to the site root (/assets/...).",
+  "meta": {
+    "title": "Shehab Mohsen — Senior Full-Stack Engineer · Frontend-Focused",
+    "description": "Senior full-stack engineer (frontend-focused) with 6+ years shipping fintech dashboards, design systems and data-heavy products — GoPay, WalaPlus, Fatura, Møller Auto. Cairo, remote UTC+2. Open to senior / lead roles.",
+    "ogTitle": "Shehab Mohsen — Senior Full-Stack Engineer · Frontend-Focused",
+    "ogDescription": "6+ years of fintech dashboards, design systems and data-heavy interfaces. Open to senior / lead remote roles.",
+    "ogImage": "assets/og-image.png",
+    "ogImageNote": "og-image.png shows the OLD design — generate a new 1200×630 image in the Swiss style.",
+    "twitterCard": "summary_large_image",
+    "lang": "en"
+  },
+  "person": {
+    "name": "Shehab Mohsen",
+    "email": "shehabmohsen1995@gmail.com",
+    "location": "Cairo, Egypt — remote, UTC+2",
+    "timezone": "Africa/Cairo",
+    "links": {
+      "github": "https://github.com/shehab20089",
+      "linkedin": "https://linkedin.com/in/shehab-mohsen-6ba984168"
+    },
+    "resumes": {
+      "frontend": "assets/Shehab_Mohsen_Resume_Frontend_2026.pdf",
+      "fullstack": "assets/Shehab_Mohsen_Resume_FullStack_2026.pdf"
+    }
+  },
+  "header": {
+    "logo": "Shehab Mohsen",
+    "nav": [
+      {
+        "label": "Work",
+        "href": "#work"
+      },
+      {
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "label": "Experience",
+        "href": "#experience"
+      },
+      {
+        "label": "Stack",
+        "href": "#stack"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ],
+    "clockLabel": "Cairo",
+    "themeToggleLabel": {
+      "whenLight": "Dark",
+      "whenDark": "Light"
+    },
+    "menuButton": "Menu"
+  },
+  "hero": {
+    "eyebrow": "Senior Full-Stack Engineer · Frontend-Focused · 6+ Years",
+    "status": "Open to senior / lead remote roles",
+    "nameLines": [
+      "Shehab",
+      "Mohsen"
+    ],
+    "lead": "I build the ==systems behind the pixels== — full-stack range, a frontend-first bias, and code that stays fast long after launch.",
+    "ctas": [
+      {
+        "label": "View work",
+        "icon": "→",
+        "href": "#work",
+        "variant": "primary"
+      },
+      {
+        "label": "Download résumé",
+        "icon": "↓",
+        "href": "assets/Shehab_Mohsen_Resume_Frontend_2026.pdf",
+        "download": true,
+        "variant": "outline"
+      },
+      {
+        "label": "Contact",
+        "icon": "↘",
+        "href": "#contact",
+        "variant": "text"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Based in",
+        "value": "Cairo, Egypt — remote, UTC+2"
+      },
+      {
+        "label": "Focus",
+        "value": "Fintech dashboards, data-heavy interfaces, design systems"
+      },
+      {
+        "label": "Core stack",
+        "value": "React · Next.js · TypeScript · Node.js · Design Systems"
+      },
+      {
+        "label": "Elsewhere",
+        "links": [
+          {
+            "label": "GitHub",
+            "href": "https://github.com/shehab20089"
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://linkedin.com/in/shehab-mohsen-6ba984168"
+          }
+        ]
+      }
+    ]
+  },
+  "work": {
+    "number": "01",
+    "label": "Selected Work",
+    "heading": "Real products. Shipped, measured, owned.",
+    "intro": "A few of the frontends I've led. Each one: the problem we started with, the approach I took, and what it actually meant for the people using it.",
+    "tableColumns": [
+      "No.",
+      "Project",
+      "Sector",
+      "Role",
+      "Case study"
+    ],
+    "rowCta": "Open ↗",
+    "alsoShippedLabel": "Also shipped"
+  },
+  "projects": [
+    {
+      "slug": "gopay",
+      "number": "01",
+      "name": "GoPay",
+      "sector": "Fintech · Billing & Collections",
+      "blurb": "A SADAD-integrated B2B billing and collections platform for Saudi Arabia — public site, operator dashboard and customer apps.",
+      "problem": "Businesses across regulated Saudi sectors needed one place to issue invoices, collect through every local channel, stay ZATCA-compliant, and see their cash flow — without stitching tools together.",
+      "solution": "The GoPay frontend, end to end: the marketing site plus the operator dashboard — one-time and recurring payments, invoicing (GoInvoice / ZATCA), reconciliations and approvals — wired to mada, Apple Pay, Visa, Mastercard and SADAD.",
+      "impact": "Trusted by leading Saudi organisations — including the Royal Commission for AlUla, the Gulf Health Council and Tawzea Aquapor.",
+      "role": "Senior Frontend Engineer / Frontend Lead — BitBang",
+      "stack": [
+        "React",
+        "TypeScript",
+        "Next.js",
+        "SADAD / ZATCA"
+      ],
+      "live": {
+        "url": "https://gopay.sa",
+        "label": "gopay.sa"
+      },
+      "images": [
+        {
+          "src": "assets/gopay-home.png",
+          "caption": "Public site — home",
+          "alt": "GoPay — public site home page",
+          "width": 1901,
+          "height": 915
+        },
+        {
+          "src": "assets/gopay-dashboard.png",
+          "caption": "Operator dashboard",
+          "alt": "GoPay — Operator dashboard",
+          "width": 1915,
+          "height": 823
+        },
+        {
+          "src": "assets/gopay-pricing.png",
+          "caption": "Packages & pricing",
+          "alt": "GoPay — Packages & pricing",
+          "width": 1919,
+          "height": 918
+        },
+        {
+          "src": "assets/gopay-payments.png",
+          "caption": "Payments",
+          "alt": "GoPay — Payments",
+          "width": 1913,
+          "height": 917
+        }
+      ]
+    },
+    {
+      "slug": "walaplus",
+      "number": "02",
+      "name": "WalaPlus",
+      "sector": "Loyalty · Rewards SaaS",
+      "blurb": "A loyalty and employee-rewards platform for Saudi enterprises — points, offers and cashback across a network of real retail brands.",
+      "problem": "Enterprises needed to run points, rewards, offers and cashback for thousands of employees and family accounts — across dozens of merchants — from one admin, in Arabic and English.",
+      "solution": "A bilingual (RTL / LTR) admin: customizable dashboards, points-pool management, reward catalogs, retailer and offer administration, employee invites by email or file, and reports on transactions, points and savings.",
+      "impact": "A platform tracking 2.8B+ loyalty points across 114 retailers — including LandMark, HungerStation and Careem.",
+      "role": "Senior Frontend Developer — WalaPlus",
+      "stack": [
+        "React",
+        "TypeScript",
+        "RTL / i18n",
+        "Data-viz"
+      ],
+      "live": {
+        "url": "https://walaplus.com",
+        "label": "walaplus.com"
+      },
+      "images": [
+        {
+          "src": "assets/walaplus-rewards.jpg",
+          "caption": "Points and rewards report",
+          "alt": "WalaPlus admin — rewards and points dashboard",
+          "width": 1788,
+          "height": 1768
+        },
+        {
+          "src": "assets/walaplus-transactions.jpg",
+          "caption": "Transactions report",
+          "alt": "WalaPlus — Transactions report",
+          "width": 1788,
+          "height": 3886
+        },
+        {
+          "src": "assets/walaplus-home.jpg",
+          "caption": "Admin home",
+          "alt": "WalaPlus — Admin home",
+          "width": 1905,
+          "height": 2017
+        },
+        {
+          "src": "assets/walaplus-employees.jpg",
+          "caption": "Employees",
+          "alt": "WalaPlus — Employees",
+          "width": 1788,
+          "height": 893
+        }
+      ]
+    },
+    {
+      "slug": "fatura",
+      "number": "03",
+      "name": "Fatura",
+      "sector": "Fintech · B2B Distribution",
+      "blurb": "A B2B wholesale-ordering and credit platform for FMCG distribution — including the operation that runs Coca-Cola’s distribution in Egypt.",
+      "problem": "Distributors, operations, auditors, collectors and retail clients each needed their own workflow over one shared catalog, order flow and credit ledger.",
+      "solution": "Role-specific portals on a shared React / TypeScript / Vue frontend: an orders & transactions console, a catalog and ad-campaign builder, and BelAgel — a credit-collections system with retailer wallets, settlements and collector routing. Backed by Node / Express endpoints.",
+      "impact": "One platform serving multiple distributor teams, with a live credit ledger tracking retailer settlements at scale.",
+      "role": "Frontend Developer — Fatura",
+      "stack": [
+        "React",
+        "TypeScript",
+        "Vue",
+        "Node · Express"
+      ],
+      "live": null,
+      "images": [
+        {
+          "src": "assets/fatura-transactions.jpeg",
+          "caption": "Orders & transactions console",
+          "alt": "Fatura — orders and transactions console",
+          "width": 1741,
+          "height": 900
+        },
+        {
+          "src": "assets/fatura-order.jpeg",
+          "caption": "Order details",
+          "alt": "Fatura — Order details",
+          "width": 1741,
+          "height": 900
+        },
+        {
+          "src": "assets/fatura-ad-builder.jpeg",
+          "caption": "Ad-campaign builder",
+          "alt": "Fatura — Ad-campaign builder",
+          "width": 1741,
+          "height": 900
+        },
+        {
+          "src": "assets/fatura-entities.jpeg",
+          "caption": "BelAgel — entities",
+          "alt": "Fatura — BelAgel — entities",
+          "width": 1788,
+          "height": 1058
+        },
+        {
+          "src": "assets/fatura-collections.jpeg",
+          "caption": "BelAgel — collections",
+          "alt": "Fatura — BelAgel — collections",
+          "width": 1788,
+          "height": 902
+        }
+      ]
+    },
+    {
+      "slug": "moller-auto",
+      "number": "04",
+      "name": "Møller Auto",
+      "sector": "Automotive · E-commerce",
+      "blurb": "The used-car marketplace for Volkswagen and Audi’s official dealer network across the Baltics.",
+      "problem": "Hundreds of live cars across a multi-country dealer network — each with deep specs, pricing, leasing and reservation flows — all needing to load fast and stay legible.",
+      "solution": "A performant listing and detail experience: faceted search over 800+ cars, spec-dense car pages, a leasing calculator, trade-in, and a dealership locator spanning Latvia, Estonia and Lithuania.",
+      "impact": "800+ live used-car listings served across the Baltic VW & Audi dealer network.",
+      "role": "Frontend Developer — Scandiweb",
+      "stack": [
+        "React",
+        "TypeScript",
+        "E-commerce",
+        "Performance"
+      ],
+      "live": {
+        "url": "https://mollerauto.lv/lv_en/used-cars.html",
+        "label": "mollerauto.lv"
+      },
+      "images": [
+        {
+          "src": "assets/moller-home.jpeg",
+          "caption": "Marketplace home",
+          "alt": "Møller Auto — used-car marketplace home",
+          "width": 1788,
+          "height": 3448
+        },
+        {
+          "src": "assets/moller-listing.jpeg",
+          "caption": "Used-car listing",
+          "alt": "Møller Auto — Used-car listing",
+          "width": 1788,
+          "height": 6020
+        },
+        {
+          "src": "assets/moller-detail.jpeg",
+          "caption": "Car detail page",
+          "alt": "Møller Auto — Car detail page",
+          "width": 1788,
+          "height": 3701
+        },
+        {
+          "src": "assets/moller-modal.jpeg",
+          "caption": "Car detail — modal view",
+          "alt": "Møller Auto — Car detail — modal view",
+          "width": 1788,
+          "height": 902
+        },
+        {
+          "src": "assets/moller-contacts.jpeg",
+          "caption": "Contacts & dealership locator",
+          "alt": "Møller Auto — Contacts & dealership locator",
+          "width": 1788,
+          "height": 2318
+        }
+      ]
+    },
+    {
+      "slug": "printerbase",
+      "number": "05",
+      "name": "Printerbase",
+      "sector": "E-commerce · Retail",
+      "blurb": "One of the UK’s established printer, ink & toner retailers — 200,000+ customers, rated 4.8/5 on Trustpilot.",
+      "problem": "A large-catalog retailer needed conversion-focused storefront and content pages that stayed consistent across a sprawling site.",
+      "solution": "Storefront and content surfaces built to convert — product discovery and comparison, subscription-print and managed-print journeys, and the checkout basket — all aligned to the brand system.",
+      "impact": "Part of a storefront serving 200,000+ customers, rated 4.8/5 on Trustpilot and 4.9/5 on Google.",
+      "role": "Frontend Developer — Scandiweb",
+      "stack": [
+        "JavaScript",
+        "E-commerce",
+        "Conversion",
+        "Responsive"
+      ],
+      "live": {
+        "url": "https://printerbase.co.uk",
+        "label": "printerbase.co.uk"
+      },
+      "images": [
+        {
+          "src": "assets/printerbase-home.jpeg",
+          "caption": "Storefront home",
+          "alt": "Printerbase — storefront home page",
+          "width": 1788,
+          "height": 6669
+        },
+        {
+          "src": "assets/printerbase-brands.jpeg",
+          "caption": "Shop by brand",
+          "alt": "Printerbase — Shop by brand",
+          "width": 1788,
+          "height": 1551
+        },
+        {
+          "src": "assets/printerbase-subscription.jpeg",
+          "caption": "Subscription print",
+          "alt": "Printerbase — Subscription print",
+          "width": 1788,
+          "height": 2901
+        }
+      ]
+    },
+    {
+      "slug": "21-farmer",
+      "number": "06",
+      "name": "21 Farmer",
+      "sector": "AgriTech · IoT",
+      "blurb": "A real-time dashboard that turns field IoT sensors into decisions for farmers.",
+      "problem": "Raw sensor streams — soil moisture, salinity, EC/TDS, air temperature, humidity and lux — mean nothing to a farmer without a clear, map-based view of each field.",
+      "solution": "A map-first dashboard: draw fields on satellite maps, bind them to sensor gateways, and read multi-metric time-series per field across day / week / month / year, with recommendations.",
+      "impact": "A data-heavy interface that makes eight live sensor metrics legible per field, at a glance.",
+      "role": "Frontend Engineer",
+      "stack": [
+        "React",
+        "Data-viz",
+        "Maps",
+        "IoT"
+      ],
+      "live": {
+        "url": "https://dashboard.21farmer.com",
+        "label": "dashboard.21farmer.com"
+      },
+      "images": [
+        {
+          "src": "assets/farmer-dashboard.jpeg",
+          "caption": "Live field-sensor dashboard",
+          "alt": "21 Farmer — live field-sensor dashboard",
+          "width": 1788,
+          "height": 1350
+        },
+        {
+          "src": "assets/farmer-farms.jpeg",
+          "caption": "Farms",
+          "alt": "21 Farmer — Farms",
+          "width": 1788,
+          "height": 1016
+        },
+        {
+          "src": "assets/farmer-map.jpeg",
+          "caption": "Drawing a field on the satellite map",
+          "alt": "21 Farmer — Drawing a field on the satellite map",
+          "width": 1788,
+          "height": 902
+        }
+      ]
+    }
+  ],
+  "alsoShipped": [
+    {
+      "kicker": "Influencer × Brand",
+      "title": "Amplifidor Platform",
+      "description": "A two-sided platform given a scalable React architecture and a shared component layer.",
+      "meta": "Senior FE · React · TypeScript"
+    },
+    {
+      "kicker": "Gym Operations",
+      "title": "Kun Admin Portal",
+      "description": "A touch-first tablet admin for front-desk staff — large targets, one-handed, built to be used standing up.",
+      "meta": "Senior FE · React · Responsive"
+    },
+    {
+      "kicker": "Internal · DevX",
+      "title": "UI Library & CLI",
+      "description": "A shared UI library plus CLI scaffolding — tokens, components and project bootstrap, adopted across our team.",
+      "meta": "Frontend Lead · Design systems · CLI"
+    }
+  ],
+  "about": {
+    "number": "02",
+    "label": "About",
+    "heading": "A senior engineer who cares about the parts users ==don't== see.",
+    "paragraphs": [
+      "I'm a full-stack engineer with a frontend heart, drawn to the unglamorous half of the job — the architecture, the tokens, the component contracts, the performance budgets. The work that decides whether a product feels solid six months after launch, or starts to rot.",
+      "For **six-plus years** I've shipped fintech dashboards, admin portals, and design-system-driven apps. I translate ambiguous designs into clean interfaces, raise the floor through reviews and standards, and use *AI tooling daily* as a multiplier — while owning every decision that ships."
+    ],
+    "portrait": {
+      "src": "assets/portrait.png",
+      "alt": "Portrait of Shehab Mohsen",
+      "badge": "Open to remote",
+      "captionLeft": "Shehab Mohsen",
+      "captionRight": "Full-Stack Engineer · Cairo",
+      "width": 1122,
+      "height": 1402
+    },
+    "chips": [
+      "6+ years",
+      "Senior / Lead",
+      "React · Next · TS",
+      "Design Systems",
+      "Remote · UTC+2"
+    ]
+  },
+  "experience": {
+    "number": "03",
+    "label": "Experience",
+    "heading": "Six years, across fintech, platforms & operations.",
+    "roles": [
+      {
+        "when": "Now — Present",
+        "current": true,
+        "role": "Senior Frontend Engineer / Frontend Lead",
+        "company": "BitBang",
+        "tag": null,
+        "description": "Owns the GoPay frontend — a SADAD-integrated B2B billing platform — leads and mentors engineers, and sets the standards that keep delivery fast and maintainable."
+      },
+      {
+        "when": "Previously",
+        "current": false,
+        "role": "Senior Frontend Developer",
+        "company": "Walaplus",
+        "tag": null,
+        "description": "Built the WalaPlus loyalty & rewards admin — bilingual dashboards, points pools, reward catalogs and reporting — for enterprise employee-loyalty programs across Saudi retail brands."
+      },
+      {
+        "when": "Previously",
+        "current": false,
+        "role": "Frontend Developer",
+        "company": "Fatura LLC",
+        "tag": null,
+        "description": "Built ordering, operations, audit and collector portals — plus the BelAgel credit-collections system — on a shared React, TypeScript and Vue frontend, with Node/Express endpoints. The platform also powered Coca-Cola’s distribution operations in Egypt."
+      },
+      {
+        "when": "Previously",
+        "current": false,
+        "role": "Frontend Developer",
+        "company": "Scandiweb",
+        "tag": "Part-time",
+        "description": "Frontend delivery on large-scale e-commerce alongside a distributed team — the Møller Auto marketplace (VW & Audi) and the Printerbase storefront."
+      },
+      {
+        "when": "Previously",
+        "current": false,
+        "role": "Frontend Developer",
+        "company": "Andalusia Group",
+        "tag": null,
+        "description": "Built the Andalusia Care site in Nuxt to improve patient access to healthcare services and information."
+      },
+      {
+        "when": "Early career",
+        "current": false,
+        "role": "Flutter Developer",
+        "company": "Creator X",
+        "tag": null,
+        "description": "Started in mobile with Flutter — a reservation app that passed 1,000+ downloads, and a foundation in cross-platform UI that still informs how I design for multiple surfaces."
+      }
+    ],
+    "educationLabel": "Education",
+    "education": [
+      {
+        "title": "Diploma in Systems Development",
+        "where": "ITI, 2019"
+      },
+      {
+        "title": "B.S. Communication & Electronics Eng.",
+        "where": "Pyramids Higher Institute, 2018"
+      }
+    ]
+  },
+  "principles": {
+    "number": "04",
+    "label": "How I think",
+    "heading": "A frontend that ==lasts==.",
+    "intro": "Everything below is in service of one idea: code that the next engineer — or future me — can pick up and move forward without flinching.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Component architecture",
+        "description": "Composable components with clear boundaries and predictable APIs. The shape of the code should make the wrong thing awkward to write."
+      },
+      {
+        "number": "02",
+        "title": "Reusable patterns",
+        "description": "Extract once, reuse everywhere. One source of truth beats five near-copies that drift apart over a year."
+      },
+      {
+        "number": "03",
+        "title": "Design systems & tokens",
+        "description": "Tokens, themes, and docs that keep the UI consistent and themable — so change is a variable, not a refactor."
+      },
+      {
+        "number": "04",
+        "title": "Reviews & standards",
+        "description": "Reviews that raise the floor, not the ego. Readable, tested, maintainable code as the default."
+      },
+      {
+        "number": "05",
+        "title": "Performance",
+        "description": "Real budgets and measured metrics. Rendering that stays smooth under the load that actually ships."
+      },
+      {
+        "number": "06",
+        "title": "Developer experience",
+        "description": "Tooling and docs that make the whole team faster. DX is a feature the users never see but always feel."
+      }
+    ],
+    "codeSample": [
+      "// how I want a feature to read on day one",
+      "type Feature = {",
+      "  contract: \"clear\", states: \"handled\",",
+      "  perf: \"budgeted\", tested: \"yes\",",
+      "}",
+      "// if a teammate can ship on top of it tomorrow, it shipped."
+    ]
+  },
+  "stack": {
+    "number": "05",
+    "label": "Stack",
+    "heading": "The tools, by role.",
+    "groups": [
+      {
+        "category": "Frontend",
+        "items": [
+          "React.js",
+          "Next.js",
+          "Vue.js",
+          "Nuxt.js",
+          "TypeScript",
+          "JavaScript"
+        ]
+      },
+      {
+        "category": "State & Data",
+        "items": [
+          "Redux",
+          "Zustand",
+          "Pinia",
+          "GraphQL",
+          "Apollo Client",
+          "REST"
+        ]
+      },
+      {
+        "category": "Styling & UI",
+        "items": [
+          "Tailwind CSS",
+          "SCSS",
+          "shadcn/ui",
+          "MUI",
+          "Storybook",
+          "Framer Motion"
+        ]
+      },
+      {
+        "category": "Testing & Tooling",
+        "items": [
+          "Jest",
+          "React Testing Library",
+          "Docker",
+          "Vite",
+          "Webpack",
+          "GitHub",
+          "Bitbucket",
+          "Jira"
+        ]
+      },
+      {
+        "category": "Backend exposure",
+        "items": [
+          "Node.js",
+          "Express.js",
+          "NestJS"
+        ]
+      },
+      {
+        "category": "AI tooling",
+        "items": [
+          "Cursor",
+          "GitHub Copilot",
+          "Claude",
+          "ChatGPT",
+          "Windsurf"
+        ]
+      }
+    ]
+  },
+  "beyond": {
+    "number": "06",
+    "label": "Beyond the keyboard",
+    "heading": "Side interests that ==sharpen== the craft.",
+    "items": [
+      {
+        "kicker": "Game dev",
+        "title": "Building interactive systems",
+        "description": "Gameplay logic, loops, and feel — a different lens on state, timing, and feedback that keeps coming back into how I build UI."
+      },
+      {
+        "kicker": "Unreal Engine",
+        "title": "Real-time 3D",
+        "description": "Materials, lighting, and cinematic sequencing — where performance budgets and visual polish meet at the frame level."
+      },
+      {
+        "kicker": "Pixel art",
+        "title": "Detail at the smallest scale",
+        "description": "Hand-placing pixels trains an eye for precision and restraint — the same eye I bring to spacing and hierarchy."
+      }
+    ]
+  },
+  "contact": {
+    "number": "07",
+    "label": "Let's talk",
+    "heading": "Let's build something that lasts.",
+    "emailLabel": "Email",
+    "copyButton": "Copy",
+    "details": [
+      {
+        "label": "LinkedIn",
+        "text": "/in/shehab-mohsen ↗",
+        "href": "https://linkedin.com/in/shehab-mohsen-6ba984168"
+      },
+      {
+        "label": "GitHub",
+        "text": "github.com/shehab20089 ↗",
+        "href": "https://github.com/shehab20089"
+      },
+      {
+        "label": "Based in",
+        "text": "Cairo, Egypt — remote, UTC+2"
+      }
+    ],
+    "resumeLabel": "Résumé",
+    "resumeLinks": [
+      {
+        "text": "Frontend ↓",
+        "href": "assets/Shehab_Mohsen_Resume_Frontend_2026.pdf"
+      },
+      {
+        "text": "Full-stack ↓",
+        "href": "assets/Shehab_Mohsen_Resume_FullStack_2026.pdf"
+      }
+    ],
+    "form": {
+      "fields": [
+        {
+          "name": "name",
+          "label": "Name *",
+          "type": "text",
+          "required": true,
+          "autocomplete": "name",
+          "placeholder": "Your name"
+        },
+        {
+          "name": "email",
+          "label": "Email *",
+          "type": "email",
+          "required": true,
+          "autocomplete": "email",
+          "placeholder": "you@company.com"
+        },
+        {
+          "name": "message",
+          "label": "Message *",
+          "type": "textarea",
+          "rows": 4,
+          "required": true,
+          "placeholder": "A few lines about the role or project…"
+        }
+      ],
+      "submit": "Send message →",
+      "note": "Opens in your mail client — no data stored.",
+      "mailto": {
+        "subject": "'Portfolio inquiry' + (name ? ' — ' + name : '')",
+        "body": "message + '\\n\\n— ' + name + (email ? ' · ' + email : '')"
+      }
+    },
+    "footer": {
+      "copyright": "© 2026 Shehab Mohsen — Full-Stack Engineer · Frontend Lead",
+      "backToTop": "Back to top ↑"
+    }
+  },
+  "caseStudy": {
+    "counter": "Case study {number} / 06",
+    "prev": "← Prev",
+    "next": "Next →",
+    "close": "Close ✕",
+    "closeAria": "Close case study",
+    "labels": {
+      "problem": "Problem",
+      "solution": "Solution",
+      "impact": "Impact",
+      "role": "Role",
+      "stack": "Stack",
+      "live": "Live"
+    },
+    "imageCounter": "{i} / {n} — {caption}",
+    "tallHint": " · scroll inside the frame for the full page",
+    "nextProject": "Next project"
+  },
+  "palette": {
+    "placeholder": "Jump to a section, open a project, copy email…",
+    "escHint": "esc",
+    "empty": "No matches.",
+    "commands": [
+      {
+        "label": "Selected work",
+        "hint": "Section",
+        "action": "scrollTo",
+        "target": "#work"
+      },
+      {
+        "label": "About",
+        "hint": "Section",
+        "action": "scrollTo",
+        "target": "#about"
+      },
+      {
+        "label": "Experience",
+        "hint": "Section",
+        "action": "scrollTo",
+        "target": "#experience"
+      },
+      {
+        "label": "How I think",
+        "hint": "Section",
+        "action": "scrollTo",
+        "target": "#principles"
+      },
+      {
+        "label": "Stack",
+        "hint": "Section",
+        "action": "scrollTo",
+        "target": "#stack"
+      },
+      {
+        "label": "Beyond the keyboard",
+        "hint": "Section",
+        "action": "scrollTo",
+        "target": "#beyond"
+      },
+      {
+        "label": "Contact",
+        "hint": "Section",
+        "action": "scrollTo",
+        "target": "#contact"
+      },
+      {
+        "label": "GoPay",
+        "hint": "Case study",
+        "action": "openCase",
+        "target": "gopay"
+      },
+      {
+        "label": "WalaPlus",
+        "hint": "Case study",
+        "action": "openCase",
+        "target": "walaplus"
+      },
+      {
+        "label": "Fatura",
+        "hint": "Case study",
+        "action": "openCase",
+        "target": "fatura"
+      },
+      {
+        "label": "Møller Auto",
+        "hint": "Case study",
+        "action": "openCase",
+        "target": "moller-auto"
+      },
+      {
+        "label": "Printerbase",
+        "hint": "Case study",
+        "action": "openCase",
+        "target": "printerbase"
+      },
+      {
+        "label": "21 Farmer",
+        "hint": "Case study",
+        "action": "openCase",
+        "target": "21-farmer"
+      },
+      {
+        "label": "Copy email",
+        "hint": "shehabmohsen1995@gmail.com",
+        "action": "copyEmail"
+      },
+      {
+        "label": "Download résumé — Frontend",
+        "hint": "PDF",
+        "action": "download",
+        "target": "assets/Shehab_Mohsen_Resume_Frontend_2026.pdf"
+      },
+      {
+        "label": "Download résumé — Full-stack",
+        "hint": "PDF",
+        "action": "download",
+        "target": "assets/Shehab_Mohsen_Resume_FullStack_2026.pdf"
+      },
+      {
+        "label": "GitHub",
+        "hint": "github.com/shehab20089",
+        "action": "openUrl",
+        "target": "https://github.com/shehab20089"
+      },
+      {
+        "label": "LinkedIn",
+        "hint": "/in/shehab-mohsen",
+        "action": "openUrl",
+        "target": "https://linkedin.com/in/shehab-mohsen-6ba984168"
+      },
+      {
+        "label": "Toggle light / dark",
+        "hint": "Theme",
+        "action": "toggleTheme"
+      }
+    ]
+  },
+  "toast": {
+    "emailCopied": "Email copied to clipboard"
+  }
+}

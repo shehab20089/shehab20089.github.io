@@ -1,0 +1,12 @@
+.strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.em {
+  color: var(--ink);
+}
+
+.accent {
+  color: var(--acc-ink);
+}

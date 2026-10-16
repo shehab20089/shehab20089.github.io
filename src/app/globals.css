@@ -1,0 +1,66 @@
+/* Base rules, ported from the reference's <style> block. */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
+::selection {
+  background: var(--acc);
+  color: var(--on-acc);
+}
+
+:focus-visible {
+  outline: 2px solid var(--acc);
+  outline-offset: 3px;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+  color: inherit;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--mute);
+  opacity: 1;
+}
+
+/* Theme switch: the new theme grows as a circle (lib/theme.ts), so drop the default crossfade. */
+html[data-vt='theme']::view-transition-old(root),
+html[data-vt='theme']::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+/* Scroll reveals start hidden only once the boot script has armed them (hooks/useReveal.ts). */
+html[data-reveal-state] [data-reveal]:not([data-played]) {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

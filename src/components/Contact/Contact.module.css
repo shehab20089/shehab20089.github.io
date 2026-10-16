@@ -1,0 +1,204 @@
+/* The accent section: tokens are re-mapped so everything inside reads on --acc. */
+.contact {
+  scroll-margin-top: var(--scroll-offset);
+  background: var(--acc);
+  color: var(--on-acc);
+  --ink: var(--on-acc);
+  --ink2: var(--on-acc);
+  /* The design mixes 70%; 78% brings the form placeholders (the only --mute text here)
+     up to WCAG AA: 4.71:1 light, 4.65:1 dark. See design/SPEC.md. */
+  --mute: color-mix(in oklab, var(--on-acc) 78%, var(--acc));
+  --line: color-mix(in oklab, var(--on-acc) 35%, transparent);
+}
+
+.contact :focus-visible {
+  outline-color: var(--on-acc);
+}
+
+.inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: var(--section-pad) var(--gutter) 28px;
+}
+
+.label {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  margin-bottom: clamp(24px, 4vw, 40px);
+}
+
+.heading {
+  margin: 0;
+  max-width: 12ch;
+  font-size: clamp(48px, 8.4vw, 132px);
+  line-height: .92;
+  letter-spacing: -0.06em;
+  font-weight: 620;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px clamp(32px, 6vw, 96px);
+  margin-top: clamp(40px, 6vw, 80px);
+}
+
+.info {
+  flex: 1 1 360px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.emailLabel {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.emailRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+
+.email {
+  font-size: clamp(20px, 2.4vw, 32px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
+  overflow-wrap: anywhere;
+}
+
+.copy {
+  height: 34px;
+  padding: 0 14px;
+  border: 1px solid var(--on-acc);
+  background: transparent;
+  color: var(--on-acc);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.copy:hover {
+  background: var(--on-acc);
+  color: var(--acc);
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px 28px;
+  font-size: 15px;
+}
+
+.detailLabel {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.detailText {
+  line-height: 1.45;
+}
+
+.resumes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  font-size: 14px;
+}
+
+.form {
+  flex: 1 1 380px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fieldRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rowField {
+  flex: 1 1 160px;
+}
+
+.fieldLabel {
+  font-size: 12px;
+}
+
+/* Underline-only fields; the thicker rule is the focus indicator. */
+.input {
+  height: 46px;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid var(--on-acc);
+  border-radius: 0;
+  background: transparent;
+  color: var(--on-acc);
+  font-size: 16px;
+  outline: none;
+}
+
+.input:focus {
+  border-bottom-width: 2px;
+}
+
+.input:focus-visible {
+  outline: none;
+}
+
+.textarea {
+  height: auto;
+  padding: 10px 0;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.submit {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  height: 52px;
+  padding: 0 24px;
+  border: 0;
+  background: var(--on-acc);
+  color: var(--acc);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.note {
+  margin: 0;
+  font-size: 12px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px 24px;
+  margin-top: clamp(56px, 9vh, 110px);
+  padding-top: 20px;
+  border-top: 1px solid var(--on-acc);
+  font-size: 12px;
+}
+
+.backToTop {
+  text-decoration: none;
+}

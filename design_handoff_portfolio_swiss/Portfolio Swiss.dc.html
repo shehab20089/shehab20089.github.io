@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@300..800&display=swap" rel="stylesheet">
+<title>Shehab Mohsen — Senior Full-Stack Engineer · Frontend-Focused</title>
+<meta name="description" content="Senior full-stack engineer (frontend-focused) with 6+ years shipping fintech dashboards, design systems and data-heavy products — GoPay, WalaPlus, Fatura, Møller Auto. Cairo, remote UTC+2. Open to senior / lead roles.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Shehab Mohsen — Senior Full-Stack Engineer · Frontend-Focused">
+<meta property="og:description" content="6+ years of fintech dashboards, design systems and data-heavy interfaces. Open to senior / lead remote roles.">
+<meta property="og:image" content="assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23111112'/%3E%3Crect x='36' y='36' width='16' height='16' fill='%232443F5'/%3E%3C/svg%3E">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+a{color:inherit;text-underline-offset:3px}
+a:hover{color:var(--acc-ink)}
+::selection{background:var(--acc);color:var(--on-acc)}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+input,textarea,button{font:inherit;color:inherit}
+input::placeholder,textarea::placeholder{color:var(--mute);opacity:1}
+html[data-vt=theme]::view-transition-old(root),html[data-vt=theme]::view-transition-new(root){animation:none;mix-blend-mode:normal}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</helmet>
+<div ref="{{ rootRef }}" style="--bg:#F3F3F1;--bg2:#E8E8E5;--ink:#111112;--ink2:#3B3B3F;--mute:#67676D;--line:rgba(17,17,18,.14);--acc:#2443F5;--acc-ink:#2443F5;--on-acc:#FFFFFF;--syn-kw:#2443F5;--syn-str:#14794A;--syn-com:#67676D;--fd:'Onest',system-ui,sans-serif;--fb:'Onest',system-ui,sans-serif;--fm:'Onest',system-ui,sans-serif;--fc:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;--fdw:600;--fdt:none;--fdv:normal;--fdl:-0.045em;--flt:none;--fls:0;--r:0px;--ft:'Onest',system-ui,sans-serif;--fts:14px;position:relative;min-height:100vh;background:var(--bg);color:var(--ink);font-family:var(--fb)">
+
+<div data-screen-label="Swiss" style="position:relative">
+<header style="position:sticky;top:0;z-index:40;background:var(--bg);border-bottom:1px solid var(--line)">
+  <div style="max-width:1320px;margin:0 auto;padding:0 clamp(18px,4vw,40px);height:60px;display:flex;align-items:center;gap:clamp(14px,2.4vw,30px)">
+    <a href="#top" style="display:flex;align-items:center;gap:10px;flex:none;color:var(--ink);text-decoration:none;font-size:15px;font-weight:600;letter-spacing:-0.01em"><span style="width:11px;height:11px;background:var(--acc);flex:none"></span>Shehab Mohsen</a>
+    <span style="flex:1 1 auto"></span>
+    <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+      <nav aria-label="Sections" style="display:flex;align-items:center;gap:26px"><sc-for list="{{ nav }}" as="n" hint-placeholder-count="5"><a href="{{ n.href }}" style="font-size:14px;color:{{ n.color }};text-decoration:none;transition:color .2s" style-hover="color:var(--ink)">{{ n.label }}</a></sc-for></nav>
+      <span style="font-size:13px;color:var(--mute);font-variant-numeric:tabular-nums;white-space:nowrap">Cairo <span data-clock="">--:--</span></span>
+    </sc-if>
+    <button type="button" onClick="{{ toggleTheme }}" aria-label="Toggle colour theme" style="display:inline-flex;align-items:center;gap:8px;height:34px;padding:0 12px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;font-size:13px;flex:none" style-hover="border-color:var(--ink)"><span style="width:12px;height:12px;border-radius:50%;border:1.5px solid currentColor;background:linear-gradient(90deg,currentColor 50%,transparent 50%)"></span>{{ modeLabel }}</button>
+    <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}"><button type="button" onClick="{{ openPal }}" style="height:34px;padding:0 14px;border:0;background:var(--ink);color:var(--bg);cursor:pointer;font-size:13px;flex:none">Menu</button></sc-if>
+  </div>
+  <div style="height:2px;margin-bottom:-1px;overflow:hidden"><div data-prog-bar="" style="height:100%;background:var(--acc);transform:scaleX(0);transform-origin:0 50%"></div></div>
+</header>
+
+<section id="top" data-section="top" style="max-width:1320px;margin:0 auto;padding:clamp(40px,8vh,96px) clamp(18px,4vw,40px) clamp(56px,9vh,110px)">
+  <div data-reveal="" style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-bottom:16px;border-bottom:1px solid var(--line);font-size:13px;color:var(--ink2)">
+    <span>Senior Full-Stack Engineer · Frontend-Focused · 6+ Years</span>
+    <span style="display:inline-flex;align-items:center;gap:9px"><span data-loop="pulse" style="width:8px;height:8px;border-radius:50%;background:#1FA463;flex:none"></span>Open to senior / lead remote roles</span>
+  </div>
+  <h1 style="margin:clamp(28px,5vw,64px) 0 0;font-weight:640;font-size:clamp(66px,15vw,230px);line-height:.88;letter-spacing:-0.055em">
+    <span data-rise="0" style="display:block">Shehab</span>
+    <span style="display:block;padding-left:22%"><span data-rise="1" style="display:inline-flex;align-items:flex-end;gap:.08em">Mohsen<span style="width:.15em;height:.15em;margin-bottom:.14em;background:var(--acc);flex:none"></span></span></span>
+  </h1>
+  <div style="display:flex;flex-wrap:wrap;align-items:flex-end;gap:32px clamp(32px,6vw,96px);margin-top:clamp(36px,6vw,72px)">
+    <p data-reveal="" style="flex:2 1 420px;margin:0;max-width:26ch;font-size:clamp(24px,2.8vw,42px);line-height:1.14;letter-spacing:-0.03em;font-weight:450;text-wrap:balance">I build the <span style="color:var(--acc-ink)">systems behind the pixels</span> — full-stack range, a frontend-first bias, and code that stays fast long after launch.</p>
+    <div data-reveal="" style="flex:1 1 260px;max-width:380px;display:flex;flex-direction:column;gap:10px">
+      <a href="#work" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:17px 20px;background:var(--acc);color:var(--on-acc);text-decoration:none;font-size:15px;font-weight:500;transition:background .25s,color .25s" style-hover="background:var(--ink);color:var(--bg)">View work<span>→</span></a>
+      <a href="assets/Shehab_Mohsen_Resume_Frontend_2026.pdf" download="Shehab_Mohsen_Resume_Frontend_2026.pdf" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px;border:1px solid var(--ink);color:var(--ink);text-decoration:none;font-size:15px;font-weight:500;transition:background .25s,color .25s" style-hover="background:var(--ink);color:var(--bg)">Download résumé<span>↓</span></a>
+      <a href="#contact" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px;color:var(--ink2);text-decoration:none;font-size:15px" style-hover="color:var(--acc-ink)">Contact<span>↘</span></a>
+    </div>
+  </div>
+  <div data-reveal="" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:20px 32px;margin-top:clamp(48px,7vw,88px);padding-top:18px;border-top:1px solid var(--ink)">
+    <div><div style="font-size:12px;color:var(--mute);margin-bottom:6px">Based in</div><div style="font-size:15px;line-height:1.45">Cairo, Egypt — remote, UTC+2</div></div>
+    <div><div style="font-size:12px;color:var(--mute);margin-bottom:6px">Focus</div><div style="font-size:15px;line-height:1.45">Fintech dashboards, data-heavy interfaces, design systems</div></div>
+    <div><div style="font-size:12px;color:var(--mute);margin-bottom:6px">Core stack</div><div style="font-size:15px;line-height:1.45">React · Next.js · TypeScript · Node.js · Design Systems</div></div>
+    <div><div style="font-size:12px;color:var(--mute);margin-bottom:6px">Elsewhere</div><div style="display:flex;gap:16px;font-size:15px"><a href="https://github.com/shehab20089" target="_blank" rel="noopener noreferrer" style="color:var(--ink)">GitHub</a><a href="https://linkedin.com/in/shehab-mohsen-6ba984168" target="_blank" rel="noopener noreferrer" style="color:var(--ink)">LinkedIn</a></div></div>
+  </div>
+</section>
+
+<section id="work" data-section="work" style="scroll-margin-top:62px;max-width:1320px;margin:0 auto;padding:clamp(48px,8vh,100px) clamp(18px,4vw,40px) clamp(64px,10vh,120px)">
+  <div style="display:flex;flex-wrap:wrap;gap:16px clamp(24px,4vw,60px);margin-bottom:clamp(32px,5vw,56px)">
+    <div data-reveal="" style="flex:1 1 220px;display:flex;gap:10px;font-size:13px;color:var(--mute)"><span style="color:var(--acc-ink);font-variant-numeric:tabular-nums">01</span>Selected Work</div>
+    <div style="flex:3 1 520px">
+      <h2 data-reveal="" style="margin:0;font-size:clamp(34px,4.6vw,68px);line-height:1;letter-spacing:-0.045em;font-weight:600;text-wrap:balance">Real products. Shipped, measured, owned.</h2>
+      <p data-reveal="" style="margin:18px 0 0;max-width:56ch;font-size:16px;line-height:1.55;color:var(--ink2)">A few of the frontends I've led. Each one: the problem we started with, the approach I took, and what it actually meant for the people using it.</p>
+    </div>
+  </div>
+  <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}"><div style="display:flex;gap:16px;padding-bottom:10px;border-bottom:1px solid var(--ink);font-size:12px;color:var(--mute)"><span style="flex:0 0 52px">No.</span><span style="flex:1.3 1 200px">Project</span><span style="flex:1 1 200px">Sector</span><span style="flex:1.4 1 240px">Role</span><span style="flex:0 0 96px;text-align:right">Case study</span></div></sc-if>
+  <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}"><div style="border-bottom:1px solid var(--ink)"></div></sc-if>
+  <div onMouseLeave="{{ clearHover }}">
+    <sc-for list="{{ projects }}" as="p" hint-placeholder-count="6">
+      <div data-reveal="">
+        <button type="button" onMouseEnter="{{ p.enter }}" onClick="{{ p.open }}" aria-label="{{ p.aria }}" style="position:relative;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;width:100%;padding:24px 0;border:0;border-bottom:1px solid var(--line);background:none;color:var(--ink);text-align:left;cursor:pointer;opacity:{{ p.rowOp }};transition:opacity .35s ease">
+          <span style="position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--acc);transform-origin:0 50%;transform:{{ p.aBar }};transition:transform .55s cubic-bezier(.2,.75,.1,1)"></span>
+          <span style="flex:0 0 52px;font-size:13px;color:var(--mute);font-variant-numeric:tabular-nums">{{ p.n }}</span>
+          <span style="flex:1.3 1 200px;font-size:clamp(28px,3.2vw,46px);font-weight:560;letter-spacing:-0.045em;line-height:1;transform:{{ p.aShift }};transition:transform .55s cubic-bezier(.2,.75,.1,1)">{{ p.name }}</span>
+          <span style="flex:1 1 200px;font-size:14px;line-height:1.4;color:var(--ink2)">{{ p.cat }}</span>
+          <span style="flex:1.4 1 240px;font-size:14px;line-height:1.4;color:var(--ink2)">{{ p.role }}</span>
+          <span style="flex:0 0 96px;text-align:right;font-size:14px;color:var(--acc-ink)">Open ↗</span>
+          <sc-if value="{{ showThumbs }}" hint-placeholder-val="{{ false }}"><span style="display:block;flex:1 1 100%;margin-top:14px;aspect-ratio:16/10;overflow:hidden;background:var(--bg2)"><img ref="{{ p.coverRef }}" alt="{{ p.coverAlt }}" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover;object-position:top center"></span></sc-if>
+        </button>
+      </div>
+    </sc-for>
+  </div>
+  <div style="margin-top:clamp(48px,7vw,88px)">
+    <div data-reveal="" style="font-size:13px;color:var(--mute);margin-bottom:16px">Also shipped</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:0 clamp(20px,3vw,40px)">
+      <sc-for list="{{ shipped }}" as="s" hint-placeholder-count="3">
+        <div data-reveal="" style="border-top:1px solid var(--ink);padding:18px 0 10px">
+          <div style="font-size:12px;color:var(--acc-ink);margin-bottom:12px">{{ s.k }}</div>
+          <h3 style="margin:0 0 8px;font-size:22px;font-weight:600;letter-spacing:-0.03em">{{ s.t }}</h3>
+          <p style="margin:0 0 12px;font-size:15px;line-height:1.5;color:var(--ink2)">{{ s.d }}</p>
+          <div style="font-size:12px;color:var(--mute)">{{ s.m }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="about" data-section="about" style="scroll-margin-top:62px;background:var(--bg2)">
+  <div style="max-width:1320px;margin:0 auto;padding:clamp(64px,10vh,120px) clamp(18px,4vw,40px);display:flex;flex-wrap:wrap;gap:24px clamp(24px,4vw,60px)">
+    <div style="flex:1 1 220px;min-width:0;display:flex;flex-direction:column;gap:28px">
+      <div data-reveal="" style="display:flex;gap:10px;font-size:13px;color:var(--mute)"><span style="color:var(--acc-ink)">02</span>About</div>
+      <figure data-reveal="" style="width:100%;max-width:340px;margin:0">
+        <div style="position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--bg)">
+          <img src="assets/portrait.png" alt="Portrait of Shehab Mohsen" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.04);transition:filter .7s ease" style-hover="filter:grayscale(0) contrast(1)">
+          <span style="position:absolute;left:10px;top:10px;display:inline-flex;align-items:center;gap:7px;padding:5px 10px;background:var(--bg);color:var(--ink);font-size:11.5px"><span style="width:6px;height:6px;border-radius:50%;background:#1FA463"></span>Open to remote</span>
+        </div>
+        <figcaption style="display:flex;justify-content:space-between;gap:12px;margin-top:10px;font-size:12px;color:var(--mute)"><span style="color:var(--ink)">Shehab Mohsen</span><span>Full-Stack Engineer · Cairo</span></figcaption>
+      </figure>
+    </div>
+    <div style="flex:3 1 520px;min-width:0">
+      <h2 data-reveal="" style="margin:0 0 clamp(28px,4vw,48px);max-width:18ch;font-size:clamp(34px,4.6vw,68px);line-height:1;letter-spacing:-0.045em;font-weight:600;text-wrap:balance">A senior engineer who cares about the parts users <span style="color:var(--acc-ink)">don't</span> see.</h2>
+      <div style="max-width:62ch">
+          <p data-reveal="" style="margin:0 0 18px;font-size:clamp(16px,1.25vw,18px);line-height:1.62;color:var(--ink2)">I'm a full-stack engineer with a frontend heart, drawn to the unglamorous half of the job — the architecture, the tokens, the component contracts, the performance budgets. The work that decides whether a product feels solid six months after launch, or starts to rot.</p>
+          <p data-reveal="" style="margin:0;font-size:clamp(16px,1.25vw,18px);line-height:1.62;color:var(--ink2)">For <strong style="font-weight:600;color:var(--ink)">six-plus years</strong> I've shipped fintech dashboards, admin portals, and design-system-driven apps. I translate ambiguous designs into clean interfaces, raise the floor through reviews and standards, and use <em style="color:var(--ink)">AI tooling daily</em> as a multiplier — while owning every decision that ships.</p>
+          <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:26px">
+            <span style="padding:7px 12px;border:1px solid var(--line);background:var(--bg);font-size:13px">6+ years</span>
+            <span style="padding:7px 12px;border:1px solid var(--line);background:var(--bg);font-size:13px">Senior / Lead</span>
+            <span style="padding:7px 12px;border:1px solid var(--line);background:var(--bg);font-size:13px">React · Next · TS</span>
+            <span style="padding:7px 12px;border:1px solid var(--line);background:var(--bg);font-size:13px">Design Systems</span>
+            <span style="padding:7px 12px;border:1px solid var(--line);background:var(--bg);font-size:13px">Remote · UTC+2</span>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" data-section="experience" style="scroll-margin-top:62px;max-width:1320px;margin:0 auto;padding:clamp(64px,10vh,120px) clamp(18px,4vw,40px)">
+  <div style="display:flex;flex-wrap:wrap;gap:16px clamp(24px,4vw,60px);margin-bottom:clamp(32px,5vw,56px)">
+    <div data-reveal="" style="flex:1 1 220px;display:flex;gap:10px;font-size:13px;color:var(--mute)"><span style="color:var(--acc-ink)">03</span>Experience</div>
+    <h2 data-reveal="" style="flex:3 1 520px;margin:0;max-width:20ch;font-size:clamp(34px,4.6vw,68px);line-height:1;letter-spacing:-0.045em;font-weight:600;text-wrap:balance">Six years, across fintech, platforms &amp; operations.</h2>
+  </div>
+  <div style="border-top:1px solid var(--ink)">
+    <sc-for list="{{ experience }}" as="e" hint-placeholder-count="6">
+      <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:8px clamp(16px,3vw,40px);padding:24px 0;border-bottom:1px solid var(--line)">
+        <div style="flex:0 0 160px;display:flex;align-items:center;gap:8px;align-self:flex-start;padding-top:3px;font-size:13px;color:{{ e.whenColor }}"><sc-if value="{{ e.now }}"><span style="width:7px;height:7px;background:var(--acc);flex:none"></span></sc-if>{{ e.when }}</div>
+        <div style="flex:1 1 280px;min-width:0"><h3 style="margin:0;font-size:19px;font-weight:600;letter-spacing:-0.02em;line-height:1.3">{{ e.role }}</h3><div style="margin-top:4px;font-size:15px;color:var(--ink2)">{{ e.co }}<sc-if value="{{ e.tag }}"> · <span style="color:var(--acc-ink)">{{ e.tag }}</span></sc-if></div></div>
+        <p style="flex:2 1 380px;margin:0;font-size:15px;line-height:1.58;color:var(--ink2)">{{ e.desc }}</p>
+      </div>
+    </sc-for>
+    <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:10px clamp(16px,3vw,40px);padding:24px 0">
+      <div style="flex:0 0 160px;font-size:13px;color:var(--mute)">Education</div>
+      <sc-for list="{{ education }}" as="ed" hint-placeholder-count="2"><div style="flex:1 1 280px;font-size:15px;line-height:1.5;color:var(--ink2)"><strong style="font-weight:600;color:var(--ink)">{{ ed.t }}</strong> — {{ ed.w }}</div></sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="principles" data-section="principles" style="scroll-margin-top:62px;background:var(--bg2)">
+  <div style="max-width:1320px;margin:0 auto;padding:clamp(64px,10vh,120px) clamp(18px,4vw,40px)">
+    <div style="display:flex;flex-wrap:wrap;gap:16px clamp(24px,4vw,60px);margin-bottom:clamp(32px,5vw,56px)">
+      <div data-reveal="" style="flex:1 1 220px;display:flex;gap:10px;font-size:13px;color:var(--mute)"><span style="color:var(--acc-ink)">04</span>How I think</div>
+      <div style="flex:3 1 520px">
+        <h2 data-reveal="" style="margin:0;font-size:clamp(34px,4.6vw,68px);line-height:1;letter-spacing:-0.045em;font-weight:600">A frontend that <span style="color:var(--acc-ink)">lasts</span>.</h2>
+        <p data-reveal="" style="margin:18px 0 0;max-width:56ch;font-size:16px;line-height:1.55;color:var(--ink2)">Everything below is in service of one idea: code that the next engineer — or future me — can pick up and move forward without flinching.</p>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:0 clamp(20px,3vw,40px)">
+      <sc-for list="{{ principles }}" as="pr" hint-placeholder-count="6">
+        <div data-reveal="" style="padding:20px 0 32px;border-top:1px solid var(--ink)">
+          <div style="font-size:13px;color:var(--acc-ink);font-variant-numeric:tabular-nums">{{ pr.n }}</div>
+          <h3 style="margin:16px 0 8px;font-size:21px;font-weight:600;letter-spacing:-0.025em">{{ pr.t }}</h3>
+          <p style="margin:0;font-size:15px;line-height:1.55;color:var(--ink2)">{{ pr.d }}</p>
+        </div>
+      </sc-for>
+    </div>
+    <div data-reveal="" style="margin-top:clamp(20px,3vw,32px);padding:clamp(18px,2.6vw,28px);border:1px solid var(--line);background:var(--bg);font-family:var(--fc);font-size:clamp(12.5px,1.1vw,14.5px);line-height:1.85;overflow-x:auto">
+      <div style="color:var(--syn-com);white-space:pre">// how I want a feature to read on day one</div>
+      <div style="white-space:pre"><span style="color:var(--syn-kw)">type</span> Feature = {</div>
+      <div style="white-space:pre;padding-left:2ch">contract: <span style="color:var(--syn-str)">"clear"</span>, states: <span style="color:var(--syn-str)">"handled"</span>,</div>
+      <div style="white-space:pre;padding-left:2ch">perf: <span style="color:var(--syn-str)">"budgeted"</span>, tested: <span style="color:var(--syn-str)">"yes"</span>,</div>
+      <div>}</div>
+      <div style="color:var(--syn-com);white-space:pre">// if a teammate can ship on top of it tomorrow, it shipped.</div>
+    </div>
+  </div>
+</section>
+
+<section id="stack" data-section="stack" style="scroll-margin-top:62px;max-width:1320px;margin:0 auto;padding:clamp(64px,10vh,120px) clamp(18px,4vw,40px)">
+  <div style="display:flex;flex-wrap:wrap;gap:16px clamp(24px,4vw,60px);margin-bottom:clamp(32px,5vw,56px)">
+    <div data-reveal="" style="flex:1 1 220px;display:flex;gap:10px;font-size:13px;color:var(--mute)"><span style="color:var(--acc-ink)">05</span>Stack</div>
+    <h2 data-reveal="" style="flex:3 1 520px;margin:0;font-size:clamp(34px,4.6vw,68px);line-height:1;letter-spacing:-0.045em;font-weight:600">The tools, by role.</h2>
+  </div>
+  <div style="border-top:1px solid var(--ink)">
+    <sc-for list="{{ stack }}" as="st" hint-placeholder-count="6">
+      <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:8px clamp(16px,3vw,40px);padding:20px 0;border-bottom:1px solid var(--line)">
+        <div style="flex:0 0 220px;font-size:13px;color:var(--mute);padding-top:4px">{{ st.k }}</div>
+        <div style="flex:1 1 360px;display:flex;flex-wrap:wrap;gap:4px 24px;font-size:clamp(17px,1.5vw,21px);letter-spacing:-0.015em;line-height:1.4"><sc-for list="{{ st.items }}" as="it"><span>{{ it.t }}</span></sc-for></div>
+      </div>
+    </sc-for>
+  </div>
+</section>
+
+<section id="beyond" data-section="beyond" style="scroll-margin-top:62px;background:var(--bg2)">
+  <div style="max-width:1320px;margin:0 auto;padding:clamp(64px,10vh,120px) clamp(18px,4vw,40px)">
+    <div style="display:flex;flex-wrap:wrap;gap:16px clamp(24px,4vw,60px);margin-bottom:clamp(32px,5vw,56px)">
+      <div data-reveal="" style="flex:1 1 220px;display:flex;gap:10px;font-size:13px;color:var(--mute)"><span style="color:var(--acc-ink)">06</span>Beyond the keyboard</div>
+      <h2 data-reveal="" style="flex:3 1 520px;margin:0;max-width:18ch;font-size:clamp(34px,4.6vw,68px);line-height:1;letter-spacing:-0.045em;font-weight:600;text-wrap:balance">Side interests that <span style="color:var(--acc-ink)">sharpen</span> the craft.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:0 clamp(20px,3vw,40px)">
+      <sc-for list="{{ beyond }}" as="bd" hint-placeholder-count="3">
+        <div data-reveal="" style="padding:20px 0 28px;border-top:1px solid var(--ink)">
+          <div style="font-size:12px;color:var(--acc-ink)">{{ bd.k }}</div>
+          <h3 style="margin:16px 0 8px;font-size:22px;font-weight:600;letter-spacing:-0.03em">{{ bd.t }}</h3>
+          <p style="margin:0;font-size:15px;line-height:1.55;color:var(--ink2)">{{ bd.d }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="contact" data-section="contact" style="scroll-margin-top:62px;background:var(--acc);color:var(--on-acc);--ink:var(--on-acc);--ink2:var(--on-acc);--mute:color-mix(in oklab, var(--on-acc) 70%, var(--acc));--line:color-mix(in oklab, var(--on-acc) 35%, transparent)">
+  <div style="max-width:1320px;margin:0 auto;padding:clamp(64px,10vh,120px) clamp(18px,4vw,40px) 28px">
+    <div data-reveal="" style="display:flex;gap:10px;font-size:13px;margin-bottom:clamp(24px,4vw,40px)"><span>07</span>Let's talk</div>
+    <h2 data-reveal="" style="margin:0;max-width:12ch;font-size:clamp(48px,8.4vw,132px);line-height:.92;letter-spacing:-0.06em;font-weight:620">Let's build something that lasts.</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:48px clamp(32px,6vw,96px);margin-top:clamp(40px,6vw,80px)">
+      <div data-reveal="" style="flex:1 1 360px;min-width:0;display:flex;flex-direction:column;gap:30px">
+        <div>
+          <div style="font-size:12px;margin-bottom:10px">Email</div>
+          <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px">
+            <a href="mailto:shehabmohsen1995@gmail.com" style="font-size:clamp(20px,2.4vw,32px);font-weight:500;letter-spacing:-0.02em;color:var(--on-acc);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px;overflow-wrap:anywhere" style-focus="outline:2px solid var(--on-acc)">shehabmohsen1995@gmail.com</a>
+            <button type="button" onClick="{{ copyEmail }}" style="height:34px;padding:0 14px;border:1px solid var(--on-acc);background:transparent;color:var(--on-acc);cursor:pointer;font-size:13px" style-hover="background:var(--on-acc);color:var(--acc)" style-focus="outline:2px solid var(--on-acc)">Copy</button>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px 28px;font-size:15px">
+          <div><div style="font-size:12px;margin-bottom:8px">LinkedIn</div><a href="https://linkedin.com/in/shehab-mohsen-6ba984168" target="_blank" rel="noopener noreferrer" style="color:var(--on-acc)">/in/shehab-mohsen ↗</a></div>
+          <div><div style="font-size:12px;margin-bottom:8px">GitHub</div><a href="https://github.com/shehab20089" target="_blank" rel="noopener noreferrer" style="color:var(--on-acc)">github.com/shehab20089 ↗</a></div>
+          <div><div style="font-size:12px;margin-bottom:8px">Based in</div><div style="line-height:1.45">Cairo, Egypt — remote, UTC+2</div></div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px 22px;font-size:14px"><span>Résumé</span><a href="assets/Shehab_Mohsen_Resume_Frontend_2026.pdf" download="Shehab_Mohsen_Resume_Frontend_2026.pdf" style="color:var(--on-acc)">Frontend ↓</a><a href="assets/Shehab_Mohsen_Resume_FullStack_2026.pdf" download="Shehab_Mohsen_Resume_FullStack_2026.pdf" style="color:var(--on-acc)">Full-stack ↓</a></div>
+      </div>
+      <form onSubmit="{{ sendMail }}" data-reveal="" style="flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:20px">
+        <div style="display:flex;flex-wrap:wrap;gap:20px">
+          <label style="flex:1 1 160px;display:flex;flex-direction:column;gap:6px"><span style="font-size:12px">Name *</span><input name="name" type="text" required="true" autoComplete="name" placeholder="Your name" style="height:46px;padding:0;border:0;border-bottom:1px solid var(--on-acc);border-radius:0;background:transparent;color:var(--on-acc);font-size:16px;outline:none" style-focus="border-bottom-width:2px"></label>
+          <label style="flex:1 1 160px;display:flex;flex-direction:column;gap:6px"><span style="font-size:12px">Email *</span><input name="email" type="email" required="true" autoComplete="email" placeholder="you@company.com" style="height:46px;padding:0;border:0;border-bottom:1px solid var(--on-acc);border-radius:0;background:transparent;color:var(--on-acc);font-size:16px;outline:none" style-focus="border-bottom-width:2px"></label>
+        </div>
+        <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px">Message *</span><textarea name="message" rows="4" required="true" placeholder="A few lines about the role or project…" style="padding:10px 0;border:0;border-bottom:1px solid var(--on-acc);border-radius:0;background:transparent;color:var(--on-acc);font-size:16px;line-height:1.5;outline:none;resize:vertical" style-focus="border-bottom-width:2px"></textarea></label>
+        <button type="submit" style="align-self:flex-start;display:inline-flex;align-items:center;gap:14px;height:52px;padding:0 24px;border:0;background:var(--on-acc);color:var(--acc);cursor:pointer;font-size:15px;font-weight:500" style-focus="outline:2px solid var(--on-acc)">Send message <span>→</span></button>
+        <p style="margin:0;font-size:12px">Opens in your mail client — no data stored.</p>
+      </form>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;margin-top:clamp(56px,9vh,110px);padding-top:20px;border-top:1px solid var(--on-acc);font-size:12px">
+      <span>© 2026 Shehab Mohsen — Full-Stack Engineer · Frontend Lead</span>
+      <a href="#top" style="color:var(--on-acc);text-decoration:none">Back to top ↑</a>
+    </div>
+  </div>
+</section>
+</div>
+<sc-if value="{{ canHover }}" hint-placeholder-val="{{ false }}">
+  <div ref="{{ pvRef }}" aria-hidden="true" style="position:fixed;left:0;top:0;z-index:60;width:clamp(260px,24vw,400px);pointer-events:none;opacity:{{ pvVis }};transition:opacity .25s ease;will-change:transform">
+    <div style="overflow:hidden;border:1px solid var(--line);border-radius:var(--r);background:var(--bg2);box-shadow:0 30px 70px -24px rgba(0,0,0,.45);transform:{{ pvT }};transition:transform .45s cubic-bezier(.2,.75,.1,1)">
+      
+      <div style="position:relative;aspect-ratio:16/10">
+        <sc-for list="{{ projects }}" as="p" hint-placeholder-count="0"><img ref="{{ p.coverRef }}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;opacity:{{ p.pvOp }};transform:{{ p.pvT }};transition:opacity .35s ease,transform .7s cubic-bezier(.2,.75,.1,1)"></sc-for>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+<sc-if value="{{ isOpen }}" hint-placeholder-val="{{ false }}">
+<div ref="{{ ovRef }}" role="dialog" aria-modal="true" aria-label="{{ ov.aria }}" style="position:fixed;inset:0;z-index:80;overflow-y:auto;overscroll-behavior:contain;background:var(--bg);color:var(--ink);font-family:var(--fb)">
+  <div style="position:sticky;top:0;z-index:2;background:var(--bg);border-bottom:1px solid var(--line)">
+    <div style="max-width:1320px;margin:0 auto;min-height:60px;padding:10px clamp(16px,3vw,40px);display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px">
+      <span style="font-family:var(--fm);font-size:13px;color:var(--mute);font-variant-numeric:tabular-nums;text-transform:var(--flt);letter-spacing:var(--fls)">Case study {{ ov.n }} / 06</span>
+      <span style="flex:1 1 auto"></span>
+      <button type="button" onClick="{{ prevCase }}" style="height:36px;padding:0 14px;border:1px solid var(--line);border-radius:var(--r);background:transparent;color:var(--ink);cursor:pointer;font-family:var(--fm);font-size:13px" style-hover="border-color:var(--ink)">← Prev</button>
+      <button type="button" onClick="{{ nextCase }}" style="height:36px;padding:0 14px;border:1px solid var(--line);border-radius:var(--r);background:transparent;color:var(--ink);cursor:pointer;font-family:var(--fm);font-size:13px" style-hover="border-color:var(--ink)">Next →</button>
+      <button ref="{{ closeRef }}" type="button" onClick="{{ closeCase }}" aria-label="Close case study" style="height:36px;padding:0 14px;border:0;border-radius:var(--r);background:var(--ink);color:var(--bg);cursor:pointer;font-family:var(--fm);font-size:13px">Close ✕</button>
+    </div>
+  </div>
+  <div style="max-width:1320px;margin:0 auto;padding:clamp(28px,5vw,64px) clamp(16px,3vw,40px) clamp(56px,8vw,100px)">
+    <div style="font-family:var(--fm);font-size:13px;color:var(--acc-ink);text-transform:var(--flt);letter-spacing:var(--fls)">{{ ov.cat }}</div>
+    <h2 style="margin:14px 0 18px;font-family:var(--fd);font-weight:var(--fdw);text-transform:var(--fdt);font-variation-settings:var(--fdv);letter-spacing:var(--fdl);font-size:clamp(52px,9vw,140px);line-height:.88">{{ ov.name }}</h2>
+    <p style="margin:0;max-width:44ch;font-size:clamp(19px,1.8vw,25px);line-height:1.4;color:var(--ink2);text-wrap:pretty">{{ ov.blurb }}</p>
+    <div style="margin-top:clamp(28px,4vw,48px)">
+      <div ref="{{ frameRef }}" style="max-height:min(76vh,860px);overflow-y:auto;overscroll-behavior:contain;border:1px solid var(--line);border-radius:var(--r);background:var(--bg2)">
+        <img ref="{{ mainImgRef }}" alt="{{ ov.main.alt }}" style="display:block;width:100%;height:auto">
+      </div>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;margin-top:12px">
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <sc-for list="{{ ov.imgs }}" as="im" hint-placeholder-count="3"><button type="button" onClick="{{ im.pick }}" aria-label="{{ im.alt }}" style="width:92px;height:58px;padding:0;overflow:hidden;border:2px solid {{ im.border }};border-radius:var(--r);background:var(--bg2);cursor:pointer;opacity:{{ im.op }};transition:opacity .2s,border-color .2s"><img ref="{{ im.ref }}" alt="" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover;object-position:top center"></button></sc-for>
+        </div>
+        <div style="font-family:var(--fm);font-size:12px;color:var(--mute);line-height:1.5">{{ ov.counter }} — {{ ov.main.cap }}<sc-if value="{{ ov.tall }}"> · scroll inside the frame for the full page</sc-if></div>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:40px clamp(32px,6vw,96px);margin-top:clamp(44px,6vw,80px)">
+      <div style="flex:2 1 460px;min-width:0;display:flex;flex-direction:column;gap:30px">
+        <div><div style="margin-bottom:10px;font-family:var(--fm);font-size:12px;color:var(--mute);text-transform:var(--flt);letter-spacing:var(--fls)">Problem</div><p style="margin:0;font-size:clamp(16px,1.3vw,19px);line-height:1.6;color:var(--ink2)">{{ ov.problem }}</p></div>
+        <div><div style="margin-bottom:10px;font-family:var(--fm);font-size:12px;color:var(--mute);text-transform:var(--flt);letter-spacing:var(--fls)">Solution</div><p style="margin:0;font-size:clamp(16px,1.3vw,19px);line-height:1.6;color:var(--ink2)">{{ ov.solution }}</p></div>
+        <div><div style="margin-bottom:10px;font-family:var(--fm);font-size:12px;color:var(--mute);text-transform:var(--flt);letter-spacing:var(--fls)">Impact</div><p style="margin:0;font-size:clamp(19px,1.8vw,25px);line-height:1.4;color:var(--ink)">{{ ov.impact }}</p></div>
+      </div>
+      <div style="flex:1 1 260px;min-width:0;display:flex;flex-direction:column;gap:30px">
+        <div><div style="margin-bottom:10px;font-family:var(--fm);font-size:12px;color:var(--mute);text-transform:var(--flt);letter-spacing:var(--fls)">Role</div><p style="margin:0;font-size:17px;line-height:1.45;font-weight:600;color:var(--ink)">{{ ov.role }}</p></div>
+        <div><div style="margin-bottom:10px;font-family:var(--fm);font-size:12px;color:var(--mute);text-transform:var(--flt);letter-spacing:var(--fls)">Stack</div><div style="display:flex;flex-wrap:wrap;gap:8px"><sc-for list="{{ ov.stack }}" as="t" hint-placeholder-count="4"><span style="padding:6px 11px;border:1px solid var(--line);border-radius:var(--r);font-family:var(--fm);font-size:12.5px">{{ t }}</span></sc-for></div></div>
+        <sc-if value="{{ ov.hasLink }}"><div><div style="margin-bottom:10px;font-family:var(--fm);font-size:12px;color:var(--mute);text-transform:var(--flt);letter-spacing:var(--fls)">Live</div><a href="{{ ov.href }}" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:10px;height:46px;padding:0 18px;border-radius:var(--r);background:var(--acc);color:var(--on-acc);text-decoration:none;font-family:var(--fm);font-size:14px">{{ ov.host }} ↗</a></div></sc-if>
+      </div>
+    </div>
+    <button type="button" onClick="{{ nextCase }}" style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px 20px;width:100%;margin-top:clamp(56px,8vw,100px);padding:28px 0 0;border:0;border-top:1px solid var(--ink);background:none;color:var(--ink);cursor:pointer;text-align:left" style-hover="color:var(--acc-ink)"><span style="font-family:var(--fm);font-size:13px;color:var(--mute);text-transform:var(--flt);letter-spacing:var(--fls)">Next project</span><span style="font-family:var(--fd);font-weight:var(--fdw);text-transform:var(--fdt);font-variation-settings:var(--fdv);letter-spacing:var(--fdl);font-size:clamp(36px,5vw,72px);line-height:1">{{ ov.nextName }} →</span></button>
+  </div>
+</div>
+</sc-if>
+
+<sc-if value="{{ pal }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closePal }}" style="position:fixed;inset:0;z-index:95;display:flex;justify-content:center;align-items:flex-start;padding:12vh 16px 16px;background:rgba(0,0,0,.4);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)">
+    <div role="dialog" aria-label="Command menu" onClick="{{ stop }}" style="width:100%;max-width:580px;overflow:hidden;border:1px solid var(--line);border-radius:var(--r);background:var(--bg);color:var(--ink);box-shadow:0 30px 80px -20px rgba(0,0,0,.5);font-family:var(--fb)">
+      <div style="display:flex;align-items:center;gap:10px;padding:0 16px;border-bottom:1px solid var(--line)">
+        <span style="font-family:var(--fm);color:var(--acc-ink)">›</span>
+        <input ref="{{ palInputRef }}" value="{{ pq }}" onChange="{{ onPalInput }}" onKeyDown="{{ onPalKey }}" placeholder="Jump to a section, open a project, copy email…" aria-label="Search commands" style="flex:1;min-width:0;height:56px;border:0;background:transparent;color:var(--ink);outline:none;font-size:16px">
+        <span style="padding:2px 7px;border:1px solid var(--line);border-radius:var(--r);font-family:var(--fm);font-size:11px;color:var(--mute)">esc</span>
+      </div>
+      <div ref="{{ palListRef }}" style="position:relative;max-height:min(52vh,430px);overflow-y:auto;padding:6px">
+        <sc-for list="{{ palItems }}" as="c" hint-placeholder-count="0"><button type="button" onClick="{{ c.run }}" onMouseEnter="{{ c.hover }}" style="display:flex;align-items:center;justify-content:space-between;gap:16px;width:100%;padding:11px 12px;border:0;border-radius:var(--r);background:{{ c.bg }};color:{{ c.fg }};text-align:left;cursor:pointer;font-size:15px"><span>{{ c.label }}</span><span style="font-family:var(--fm);font-size:12px;color:{{ c.fg2 }};white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ c.hint }}</span></button></sc-for>
+        <sc-if value="{{ palEmpty }}"><div style="padding:18px 12px;font-size:14px;color:var(--mute)">No matches.</div></sc-if>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+<div aria-live="polite" style="position:fixed;left:50%;top:18px;z-index:100;max-width:calc(100vw - 32px);padding:10px 16px;border-radius:var(--r);background:var(--ink);color:var(--bg);font-family:var(--ft);font-size:var(--fts);pointer-events:none;opacity:{{ toastOp }};transform:translate(-50%,{{ toastY }});transition:opacity .3s ease,transform .45s cubic-bezier(.2,.75,.1,1)">{{ toast }}</div>
+
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;motion&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;rich&quot;,&quot;options&quot;:[&quot;rich&quot;,&quot;calm&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Motion&quot;}}">
+class Component extends DCLogic {
+  state = { dir: 'a', dark: false, hover: -1, open: -1, img: 0, pal: false, pq: '', psel: 0, toast: '', toastOn: false, vw: 1280, canHover: true, active: 'top' };
+  rootRef = React.createRef(); pvRef = React.createRef(); ovRef = React.createRef(); closeRef = React.createRef();
+  palInputRef = React.createRef(); palListRef = React.createRef(); frameRef = React.createRef(); mainImgRef = React.createRef();
+  email = 'shehabmohsen1995@gmail.com';
+  cvFe = 'assets/Shehab_Mohsen_Resume_Frontend_2026.pdf';
+  cvFs = 'assets/Shehab_Mohsen_Resume_FullStack_2026.pdf';
+  modes = { a: false };
+
+  P = [
+    { name: 'GoPay', cat: 'Fintech · Billing & Collections',
+      blurb: 'A SADAD-integrated B2B billing and collections platform for Saudi Arabia — public site, operator dashboard and customer apps.',
+      problem: 'Businesses across regulated Saudi sectors needed one place to issue invoices, collect through every local channel, stay ZATCA-compliant, and see their cash flow — without stitching tools together.',
+      role: 'Senior Frontend Engineer / Frontend Lead — BitBang',
+      solution: 'The GoPay frontend, end to end: the marketing site plus the operator dashboard — one-time and recurring payments, invoicing (GoInvoice / ZATCA), reconciliations and approvals — wired to mada, Apple Pay, Visa, Mastercard and SADAD.',
+      impact: 'Trusted by leading Saudi organisations — including the Royal Commission for AlUla, the Gulf Health Council and Tawzea Aquapor.',
+      stack: ['React', 'TypeScript', 'Next.js', 'SADAD / ZATCA'], href: 'https://gopay.sa', host: 'gopay.sa', mainAlt: 'GoPay — public site home page',
+      img: [['gopay-home.png', 'Public site — home', 2.08], ['gopay-dashboard.png', 'Operator dashboard', 2.33], ['gopay-pricing.png', 'Packages & pricing', 2.09], ['gopay-payments.png', 'Payments', 2.09]] },
+    { name: 'WalaPlus', cat: 'Loyalty · Rewards SaaS',
+      blurb: 'A loyalty and employee-rewards platform for Saudi enterprises — points, offers and cashback across a network of real retail brands.',
+      problem: 'Enterprises needed to run points, rewards, offers and cashback for thousands of employees and family accounts — across dozens of merchants — from one admin, in Arabic and English.',
+      role: 'Senior Frontend Developer — WalaPlus',
+      solution: 'A bilingual (RTL / LTR) admin: customizable dashboards, points-pool management, reward catalogs, retailer and offer administration, employee invites by email or file, and reports on transactions, points and savings.',
+      impact: 'A platform tracking 2.8B+ loyalty points across 114 retailers — including LandMark, HungerStation and Careem.',
+      stack: ['React', 'TypeScript', 'RTL / i18n', 'Data-viz'], href: 'https://walaplus.com', host: 'walaplus.com', mainAlt: 'WalaPlus admin — rewards and points dashboard',
+      img: [['walaplus-rewards.jpg', 'Points and rewards report', 1.01], ['walaplus-transactions.jpg', 'Transactions report', 0.46], ['walaplus-home.jpg', 'Admin home', 0.94], ['walaplus-employees.jpg', 'Employees', 2.0]] },
+    { name: 'Fatura', cat: 'Fintech · B2B Distribution',
+      blurb: 'A B2B wholesale-ordering and credit platform for FMCG distribution — including the operation that runs Coca-Cola’s distribution in Egypt.',
+      problem: 'Distributors, operations, auditors, collectors and retail clients each needed their own workflow over one shared catalog, order flow and credit ledger.',
+      role: 'Frontend Developer — Fatura',
+      solution: 'Role-specific portals on a shared React / TypeScript / Vue frontend: an orders & transactions console, a catalog and ad-campaign builder, and BelAgel — a credit-collections system with retailer wallets, settlements and collector routing. Backed by Node / Express endpoints.',
+      impact: 'One platform serving multiple distributor teams, with a live credit ledger tracking retailer settlements at scale.',
+      stack: ['React', 'TypeScript', 'Vue', 'Node · Express'], href: '', host: '', mainAlt: 'Fatura — orders and transactions console',
+      img: [['fatura-transactions.jpeg', 'Orders & transactions console', 1.93], ['fatura-order.jpeg', 'Order details', 1.93], ['fatura-ad-builder.jpeg', 'Ad-campaign builder', 1.93], ['fatura-entities.jpeg', 'BelAgel — entities', 1.69], ['fatura-collections.jpeg', 'BelAgel — collections', 1.98]] },
+    { name: 'Møller Auto', cat: 'Automotive · E-commerce',
+      blurb: 'The used-car marketplace for Volkswagen and Audi’s official dealer network across the Baltics.',
+      problem: 'Hundreds of live cars across a multi-country dealer network — each with deep specs, pricing, leasing and reservation flows — all needing to load fast and stay legible.',
+      role: 'Frontend Developer — Scandiweb',
+      solution: 'A performant listing and detail experience: faceted search over 800+ cars, spec-dense car pages, a leasing calculator, trade-in, and a dealership locator spanning Latvia, Estonia and Lithuania.',
+      impact: '800+ live used-car listings served across the Baltic VW & Audi dealer network.',
+      stack: ['React', 'TypeScript', 'E-commerce', 'Performance'], href: 'https://mollerauto.lv/lv_en/used-cars.html', host: 'mollerauto.lv', mainAlt: 'Møller Auto — used-car marketplace home',
+      img: [['moller-home.jpeg', 'Marketplace home', 0.52], ['moller-listing.jpeg', 'Used-car listing', 0.30], ['moller-detail.jpeg', 'Car detail page', 0.48], ['moller-modal.jpeg', 'Car detail — modal view', 1.98], ['moller-contacts.jpeg', 'Contacts & dealership locator', 0.77]] },
+    { name: 'Printerbase', cat: 'E-commerce · Retail',
+      blurb: 'One of the UK’s established printer, ink & toner retailers — 200,000+ customers, rated 4.8/5 on Trustpilot.',
+      problem: 'A large-catalog retailer needed conversion-focused storefront and content pages that stayed consistent across a sprawling site.',
+      role: 'Frontend Developer — Scandiweb',
+      solution: 'Storefront and content surfaces built to convert — product discovery and comparison, subscription-print and managed-print journeys, and the checkout basket — all aligned to the brand system.',
+      impact: 'Part of a storefront serving 200,000+ customers, rated 4.8/5 on Trustpilot and 4.9/5 on Google.',
+      stack: ['JavaScript', 'E-commerce', 'Conversion', 'Responsive'], href: 'https://printerbase.co.uk', host: 'printerbase.co.uk', mainAlt: 'Printerbase — storefront home page',
+      img: [['printerbase-home.jpeg', 'Storefront home', 0.27], ['printerbase-brands.jpeg', 'Shop by brand', 1.15], ['printerbase-subscription.jpeg', 'Subscription print', 0.62]] },
+    { name: '21 Farmer', cat: 'AgriTech · IoT',
+      blurb: 'A real-time dashboard that turns field IoT sensors into decisions for farmers.',
+      problem: 'Raw sensor streams — soil moisture, salinity, EC/TDS, air temperature, humidity and lux — mean nothing to a farmer without a clear, map-based view of each field.',
+      role: 'Frontend Engineer',
+      solution: 'A map-first dashboard: draw fields on satellite maps, bind them to sensor gateways, and read multi-metric time-series per field across day / week / month / year, with recommendations.',
+      impact: 'A data-heavy interface that makes eight live sensor metrics legible per field, at a glance.',
+      stack: ['React', 'Data-viz', 'Maps', 'IoT'], href: 'https://dashboard.21farmer.com', host: 'dashboard.21farmer.com', mainAlt: '21 Farmer — live field-sensor dashboard',
+      img: [['farmer-dashboard.jpeg', 'Live field-sensor dashboard', 1.32], ['farmer-farms.jpeg', 'Farms', 1.76], ['farmer-map.jpeg', 'Drawing a field on the satellite map', 1.98]] }
+  ].map((p, i) => Object.assign(p, { i, n: '0' + (i + 1), images: p.img.map((x, k) => ({ src: 'assets/' + x[0], cap: x[1], r: x[2], alt: k === 0 ? p.mainAlt : p.name + ' — ' + x[1] })) }));
+
+  SHIPPED = [
+    { k: 'Influencer × Brand', t: 'Amplifidor Platform', d: 'A two-sided platform given a scalable React architecture and a shared component layer.', m: 'Senior FE · React · TypeScript' },
+    { k: 'Gym Operations', t: 'Kun Admin Portal', d: 'A touch-first tablet admin for front-desk staff — large targets, one-handed, built to be used standing up.', m: 'Senior FE · React · Responsive' },
+    { k: 'Internal · DevX', t: 'UI Library & CLI', d: 'A shared UI library plus CLI scaffolding — tokens, components and project bootstrap, adopted across our team.', m: 'Frontend Lead · Design systems · CLI' }
+  ];
+  EXP = [
+    { when: 'Now — Present', now: true, role: 'Senior Frontend Engineer / Frontend Lead', co: 'BitBang', desc: 'Owns the GoPay frontend — a SADAD-integrated B2B billing platform — leads and mentors engineers, and sets the standards that keep delivery fast and maintainable.' },
+    { when: 'Previously', role: 'Senior Frontend Developer', co: 'Walaplus', desc: 'Built the WalaPlus loyalty & rewards admin — bilingual dashboards, points pools, reward catalogs and reporting — for enterprise employee-loyalty programs across Saudi retail brands.' },
+    { when: 'Previously', role: 'Frontend Developer', co: 'Fatura LLC', desc: 'Built ordering, operations, audit and collector portals — plus the BelAgel credit-collections system — on a shared React, TypeScript and Vue frontend, with Node/Express endpoints. The platform also powered Coca-Cola’s distribution operations in Egypt.' },
+    { when: 'Previously', role: 'Frontend Developer', co: 'Scandiweb', tag: 'Part-time', desc: 'Frontend delivery on large-scale e-commerce alongside a distributed team — the Møller Auto marketplace (VW & Audi) and the Printerbase storefront.' },
+    { when: 'Previously', role: 'Frontend Developer', co: 'Andalusia Group', desc: 'Built the Andalusia Care site in Nuxt to improve patient access to healthcare services and information.' },
+    { when: 'Early career', role: 'Flutter Developer', co: 'Creator X', desc: 'Started in mobile with Flutter — a reservation app that passed 1,000+ downloads, and a foundation in cross-platform UI that still informs how I design for multiple surfaces.' }
+  ].map(e => Object.assign({ tag: '', now: false }, e, { whenColor: e.now ? 'var(--acc-ink)' : 'var(--mute)' }));
+  EDU = [{ t: 'Diploma in Systems Development', w: 'ITI, 2019' }, { t: 'B.S. Communication & Electronics Eng.', w: 'Pyramids Higher Institute, 2018' }];
+  PRIN = [
+    { n: '01', t: 'Component architecture', d: 'Composable components with clear boundaries and predictable APIs. The shape of the code should make the wrong thing awkward to write.' },
+    { n: '02', t: 'Reusable patterns', d: 'Extract once, reuse everywhere. One source of truth beats five near-copies that drift apart over a year.' },
+    { n: '03', t: 'Design systems & tokens', d: 'Tokens, themes, and docs that keep the UI consistent and themable — so change is a variable, not a refactor.' },
+    { n: '04', t: 'Reviews & standards', d: 'Reviews that raise the floor, not the ego. Readable, tested, maintainable code as the default.' },
+    { n: '05', t: 'Performance', d: 'Real budgets and measured metrics. Rendering that stays smooth under the load that actually ships.' },
+    { n: '06', t: 'Developer experience', d: 'Tooling and docs that make the whole team faster. DX is a feature the users never see but always feel.' }
+  ];
+  STACK = [
+    { k: 'Frontend', items: ['React.js', 'Next.js', 'Vue.js', 'Nuxt.js', 'TypeScript', 'JavaScript'] },
+    { k: 'State & Data', items: ['Redux', 'Zustand', 'Pinia', 'GraphQL', 'Apollo Client', 'REST'] },
+    { k: 'Styling & UI', items: ['Tailwind CSS', 'SCSS', 'shadcn/ui', 'MUI', 'Storybook', 'Framer Motion'] },
+    { k: 'Testing & Tooling', items: ['Jest', 'React Testing Library', 'Docker', 'Vite', 'Webpack', 'GitHub', 'Bitbucket', 'Jira'] },
+    { k: 'Backend exposure', items: ['Node.js', 'Express.js', 'NestJS'] },
+    { k: 'AI tooling', items: ['Cursor', 'GitHub Copilot', 'Claude', 'ChatGPT', 'Windsurf'] }
+  ].map(g => Object.assign({}, g, { items: g.items.map(t => ({ t })) }));
+  BEYOND = [
+    { n: '01', k: 'Game dev', t: 'Building interactive systems', d: 'Gameplay logic, loops, and feel — a different lens on state, timing, and feedback that keeps coming back into how I build UI.' },
+    { n: '02', k: 'Unreal Engine', t: 'Real-time 3D', d: 'Materials, lighting, and cinematic sequencing — where performance budgets and visual polish meet at the frame level.' },
+    { n: '03', k: 'Pixel art', t: 'Detail at the smallest scale', d: 'Hand-placing pixels trains an eye for precision and restraint — the same eye I bring to spacing and hierarchy.' }
+  ];
+  NAV = [['work', 'Work'], ['about', 'About'], ['experience', 'Experience'], ['stack', 'Stack'], ['contact', 'Contact']].map(x => ({ id: x[0], label: x[1], href: '#' + x[0] }));
+  enterFns = this.P.map((p, i) => () => this.setHover(i));
+  openFns = this.P.map((p, i) => (e) => { if (e && e.preventDefault) e.preventDefault(); this.openCase(i); });
+  coverRef = this.P.map(p => (el) => { const u = p.images[0].src; if (el && el.getAttribute('src') !== u) el.setAttribute('src', u); });
+  thumbRef = this.P.map(p => p.images.map(im => (el) => { if (el && el.getAttribute('src') !== im.src) el.setAttribute('src', im.src); }));
+  CMDS = [['work', 'Selected work'], ['about', 'About'], ['experience', 'Experience'], ['principles', 'How I think'], ['stack', 'Stack'], ['beyond', 'Beyond the keyboard'], ['contact', 'Contact']]
+    .map(x => ({ label: x[1], hint: 'Section', run: () => this.goTo(x[0]) }))
+    .concat(this.P.map((p, i) => ({ label: p.name, hint: 'Case study', run: () => this.openCase(i) })), [
+      { label: 'Copy email', hint: 'shehabmohsen1995@gmail.com', run: () => this.copyEmail() },
+      { label: 'Download résumé — Frontend', hint: 'PDF', run: () => this.download(this.cvFe) },
+      { label: 'Download résumé — Full-stack', hint: 'PDF', run: () => this.download(this.cvFs) },
+      { label: 'GitHub', hint: 'github.com/shehab20089', run: () => window.open('https://github.com/shehab20089', '_blank', 'noopener') },
+      { label: 'LinkedIn', hint: '/in/shehab-mohsen', run: () => window.open('https://linkedin.com/in/shehab-mohsen-6ba984168', '_blank', 'noopener') },
+      { label: 'Toggle light / dark', hint: 'Theme', run: () => this.toggleTheme() }
+    ]);
+
+  themes = {
+    a: { base: { '--fd': "'Onest',system-ui,sans-serif", '--fb': "'Onest',system-ui,sans-serif", '--fm': "'Onest',system-ui,sans-serif", '--fc': 'ui-monospace,SFMono-Regular,Menlo,Consolas,monospace', '--fdw': '600', '--fdt': 'none', '--fdv': 'normal', '--fdl': '-0.045em', '--flt': 'none', '--fls': '0', '--r': '0px', '--ft': "'Onest',system-ui,sans-serif", '--fts': '14px' },
+      light: { '--bg': '#F3F3F1', '--bg2': '#E8E8E5', '--ink': '#111112', '--ink2': '#3B3B3F', '--mute': '#67676D', '--line': 'rgba(17,17,18,.14)', '--acc': '#2443F5', '--acc-ink': '#2443F5', '--on-acc': '#FFFFFF', '--syn-kw': '#2443F5', '--syn-str': '#14794A', '--syn-com': '#67676D' },
+      dark: { '--bg': '#0E0E10', '--bg2': '#18181B', '--ink': '#F1F1EE', '--ink2': '#C2C2C5', '--mute': '#8D8D93', '--line': 'rgba(241,241,238,.14)', '--acc': '#7086FF', '--acc-ink': '#8196FF', '--on-acc': '#0E0E10', '--syn-kw': '#8196FF', '--syn-str': '#6FD39C', '--syn-com': '#8D8D93' } }
+  };
+
+  get calm() { try { return this.props.motion === 'calm' || window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) { return false; } }
+
+  componentDidMount() {
+    this._cl = [];
+    let saved = {};
+    try { saved = JSON.parse(localStorage.getItem('smp-v2') || '{}') || {}; } catch (e) {}
+    if (saved.modes) Object.assign(this.modes, saved.modes);
+    const dir = 'a';
+    let canHover = true;
+    try { canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches; } catch (e) {}
+    this._on(window, 'resize', this.onResize);
+    this._on(window, 'mousemove', this.onPointer, { passive: true });
+    this._on(window, 'keydown', this.onKey);
+    this._on(window, 'scroll', this.onScroll, { passive: true });
+    this._clock = setInterval(this.tickClock, 15000);
+    this._ps = Object.assign({}, this.state, { dir: null }); this._pp = Object.assign({}, this.props);
+    this.setState({ dir, dark: !!this.modes[dir], vw: window.innerWidth, canHover });
+  }
+  _on(t, ev, fn, o) { t.addEventListener(ev, fn, o); this._cl.push(() => t.removeEventListener(ev, fn, o)); }
+  componentWillUnmount() {
+    (this._cl || []).forEach(f => { try { f(); } catch (e) {} });
+    clearInterval(this._clock); clearTimeout(this._tt); clearTimeout(this._toT);
+    if (this._io) this._io.disconnect();
+    if (this._so) this._so.disconnect();
+    try { document.body.style.overflow = ''; } catch (e) {}
+  }
+  componentDidUpdate() {
+    const s = this.state, ps = this._ps || {}, pp = this._pp || {};
+    this._ps = Object.assign({}, s); this._pp = Object.assign({}, this.props);
+    if (ps.dir !== s.dir) this.afterDir();
+    const lock = s.open >= 0 || s.pal, was = ps.open >= 0 || ps.pal;
+    if (lock !== was) { try { document.body.style.overflow = lock ? 'hidden' : ''; } catch (e) {} }
+    if (s.open >= 0 && ps.open !== s.open) {
+      const ov = this.ovRef.current;
+      if (ov && ps.open < 0) {
+        if (!this.calm) ov.animate([{ opacity: 0, transform: 'translateY(56px)' }, { opacity: 1, transform: 'none' }], { duration: 560, easing: 'cubic-bezier(.2,.75,.1,1)' });
+        const c = this.closeRef.current;
+        if (c) { try { c.focus({ preventScroll: true }); } catch (e) {} }
+      } else if (ov) ov.scrollTop = 0;
+    }
+    if (s.open >= 0 && (ps.img !== s.img || ps.open !== s.open)) {
+      const f = this.frameRef.current; if (f) f.scrollTop = 0;
+      const im = this.mainImgRef.current, cp = this.P[s.open], cm = cp && (cp.images[s.img] || cp.images[0]);
+      if (im && cm && im.getAttribute('src') !== cm.src) im.setAttribute('src', cm.src);
+      if (im && !this.calm && ps.open >= 0) im.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 320, easing: 'ease-out' });
+    }
+    if (s.pal && !ps.pal) setTimeout(() => { const i = this.palInputRef.current; if (i) { try { i.focus(); } catch (e) {} } }, 20);
+    if (s.pal && ps.psel !== s.psel) {
+      const l = this.palListRef.current, el = l && l.children[s.psel];
+      if (el) {
+        if (el.offsetTop < l.scrollTop) l.scrollTop = el.offsetTop - 6;
+        else if (el.offsetTop + el.offsetHeight > l.scrollTop + l.clientHeight) l.scrollTop = el.offsetTop + el.offsetHeight - l.clientHeight + 6;
+      }
+    }
+  }
+
+  afterDir() { this.applyTheme(); this.setupReveal(); this.setupLoops(); this.setupSections(); this.updateProgress(); this.tickClock(); }
+
+  applyTheme() {
+    const r = this.rootRef.current; if (!r) return;
+    const T = this.themes[this.state.dir] || this.themes.a, dark = !!this.modes[this.state.dir];
+    const v = Object.assign({}, T.base, dark ? T.dark : T.light);
+    Object.keys(v).forEach(k => r.style.setProperty(k, v[k]));
+    try { document.body.style.background = v['--bg']; document.documentElement.style.colorScheme = dark ? 'dark' : 'light'; } catch (e) {}
+  }
+  save() { try { localStorage.setItem('smp-v2', JSON.stringify({ dir: this.state.dir, modes: this.modes })); } catch (e) {} }
+  toggleTheme = (e) => {
+    const d = this.state.dir, next = !this.modes[d], de = document.documentElement;
+    const apply = () => { this.modes[d] = next; this.applyTheme(); this.save(); };
+    if (!document.startViewTransition || this.calm) { apply(); this.setState({ dark: next }); return; }
+    const x = e && e.clientX ? e.clientX : window.innerWidth - 60, y = e && e.clientY ? e.clientY : 30;
+    de.setAttribute('data-vt', 'theme');
+    let t;
+    try {
+      t = document.startViewTransition(() => new Promise(res => {
+        apply();
+        let done = false; const fin = () => { if (!done) { done = true; res(); } };
+        this.setState({ dark: next }, fin); setTimeout(fin, 120);
+      }));
+    } catch (err) { de.removeAttribute('data-vt'); apply(); this.setState({ dark: next }); return; }
+    t.ready.then(() => {
+      const rr = Math.hypot(Math.max(x, window.innerWidth - x), Math.max(y, window.innerHeight - y));
+      de.animate({ clipPath: ['circle(0px at ' + x + 'px ' + y + 'px)', 'circle(' + rr + 'px at ' + x + 'px ' + y + 'px)'] }, { duration: 700, easing: 'cubic-bezier(.65,0,.25,1)', pseudoElement: '::view-transition-new(root)' });
+    }).catch(() => {});
+    t.finished.then(() => de.removeAttribute('data-vt'), () => de.removeAttribute('data-vt'));
+  };
+
+  setupReveal() {
+    if (this._io) { this._io.disconnect(); this._io = null; }
+    const root = this.rootRef.current; if (!root) return;
+    const els = Array.from(root.querySelectorAll('[data-reveal],[data-rise]')).filter(el => !el.__played);
+    if (this.calm || !('IntersectionObserver' in window)) {
+      els.forEach(el => { el.__rv = true; el.__played = true; el.style.opacity = ''; });
+      return;
+    }
+    const io = new IntersectionObserver((ents) => {
+      let k = 0;
+      ents.forEach(en => { if (!en.isIntersecting) return; io.unobserve(en.target); this.play(en.target, Math.min(k++ * 80, 480)); });
+    }, { threshold: 0.08, rootMargin: '0px 0px -4% 0px' });
+    els.forEach(el => { if (!el.__rv) { el.__rv = true; if (el.hasAttribute('data-reveal') || el.hasAttribute('data-rise')) el.style.opacity = '0'; } io.observe(el); });
+    this._io = io;
+  }
+  play(el, delay) {
+    if (el.__played) return;
+    el.__played = true;
+    const ease = 'cubic-bezier(.2,.75,.1,1)';
+    if (el.hasAttribute('data-rise')) {
+      el.style.opacity = '';
+      el.animate([{ opacity: 0, transform: 'translateY(34%) skewY(2.5deg)' }, { opacity: 1, transform: 'none' }], { duration: 1150, delay: delay + (+el.getAttribute('data-rise') || 0) * 130, easing: ease, fill: 'backwards' });
+    } else if (el.hasAttribute('data-reveal')) {
+      el.style.opacity = '';
+      el.animate([{ opacity: 0, transform: 'translateY(24px)' }, { opacity: 1, transform: 'none' }], { duration: 900, delay, easing: ease, fill: 'backwards' });
+    }
+  }
+  setupLoops() {
+    const root = this.rootRef.current; if (!root) return;
+    root.querySelectorAll('[data-loop]').forEach(el => {
+      if (el.__lp) return; el.__lp = true;
+      if (this.calm) return;
+      const t = el.getAttribute('data-loop');
+      if (t === 'pulse') el.animate([{ boxShadow: '0 0 0 0 rgba(31,164,99,.55)' }, { boxShadow: '0 0 0 9px rgba(31,164,99,0)' }], { duration: 1800, iterations: Infinity, easing: 'ease-out' });
+    });
+  }
+  setupSections() {
+    if (this._so) { this._so.disconnect(); this._so = null; }
+    const root = this.rootRef.current; if (!root || !('IntersectionObserver' in window)) return;
+    const so = new IntersectionObserver((ents) => {
+      ents.forEach(en => { if (en.isIntersecting) { const id = en.target.getAttribute('data-section'); if (id && id !== this.state.active) this.setState({ active: id }); } });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    root.querySelectorAll('[data-section]').forEach(sec => so.observe(sec));
+    this._so = so;
+  }
+
+  setHover(i) {
+    if (!this.state.canHover || this.state.open >= 0) return;
+    if (this.state.hover === -1) this._snap = true;
+    if (this.state.hover !== i) this.setState({ hover: i });
+    if (!this._pvRaf) this._pvRaf = requestAnimationFrame(this.pvTick);
+  }
+  clearHover = () => { if (this.state.hover !== -1) this.setState({ hover: -1 }); };
+  onPointer = (e) => { this._tx = e.clientX; this._ty = e.clientY; if (this.state.hover !== -1 && !this._pvRaf) this._pvRaf = requestAnimationFrame(this.pvTick); };
+  pvTick = () => {
+    this._pvRaf = 0;
+    const el = this.pvRef.current; if (!el || this._tx == null) return;
+    const w = el.offsetWidth, h = el.offsetHeight, vw = window.innerWidth, vh = window.innerHeight;
+    let tx = this._tx + 32; if (tx + w > vw - 12) tx = this._tx - w - 32; tx = Math.max(12, tx);
+    const ty = Math.max(12, Math.min(vh - h - 12, this._ty - h * 0.5));
+    if (this._px == null || this._snap) { this._px = tx; this._py = ty; this._snap = false; }
+    const k = this.calm ? 1 : 0.16, dx = tx - this._px;
+    this._px += dx * k; this._py += (ty - this._py) * k;
+    el.style.transform = 'translate3d(' + this._px.toFixed(1) + 'px,' + this._py.toFixed(1) + 'px,0)';
+    if (Math.abs(dx) > 0.4 || Math.abs(ty - this._py) > 0.4) this._pvRaf = requestAnimationFrame(this.pvTick);
+  };
+
+  openCase(i) { this._lastFocus = document.activeElement; this.setState({ open: i, img: 0, hover: -1, pal: false }); }
+  closeCase = () => {
+    if (this.state.open < 0 || this._closing) return;
+    const done = () => {
+      this._closing = false; this.setState({ open: -1 });
+      const lf = this._lastFocus; if (lf && lf.focus) { try { lf.focus({ preventScroll: true }); } catch (e) {} }
+    };
+    const el = this.ovRef.current;
+    if (el && !this.calm) { this._closing = true; const a = el.animate([{ opacity: 1, transform: 'none' }, { opacity: 0, transform: 'translateY(32px)' }], { duration: 260, easing: 'cubic-bezier(.4,0,1,1)', fill: 'forwards' }); a.onfinish = done; }
+    else done();
+  };
+  prevCase = () => this.setState(s => ({ open: (s.open + this.P.length - 1) % this.P.length, img: 0 }));
+  nextCase = () => this.setState(s => ({ open: (s.open + 1) % this.P.length, img: 0 }));
+  stepImg(dl) { const p = this.P[this.state.open]; if (!p) return; const n = p.images.length; this.setState(s => ({ img: (s.img + dl + n) % n })); }
+
+  openPal = () => { if (!this.state.pal) this.setState({ pal: true, pq: '', psel: 0, hover: -1 }); };
+  closePal = () => { if (this.state.pal) this.setState({ pal: false }); };
+  stop = (e) => { e.stopPropagation(); };
+  onPalInput = (e) => this.setState({ pq: e.target.value, psel: 0 });
+  palFiltered() { const q = this.state.pq.trim().toLowerCase(); return q ? this.CMDS.filter(c => (c.label + ' ' + c.hint).toLowerCase().indexOf(q) > -1) : this.CMDS; }
+  onPalKey = (e) => {
+    const list = this.palFiltered();
+    if (e.key === 'ArrowDown') { e.preventDefault(); this.setState(s => ({ psel: Math.min(list.length - 1, s.psel + 1) })); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); this.setState(s => ({ psel: Math.max(0, s.psel - 1) })); }
+    else if (e.key === 'Enter') { e.preventDefault(); const c = list[this.state.psel]; if (c) this.runCmd(c); }
+  };
+  runCmd(c) { this.setState({ pal: false, pq: '', psel: 0 }, () => setTimeout(() => c.run(), 30)); }
+
+  onKey = (e) => {
+    const s = this.state, t = e.target || {}, typing = /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName || '') || t.isContentEditable;
+    if ((e.metaKey || e.ctrlKey) && (e.key === 'k' || e.key === 'K')) { e.preventDefault(); if (s.pal) this.closePal(); else this.openPal(); return; }
+    if (e.key === 'Escape') { if (s.pal) { this.closePal(); return; } if (s.open >= 0) { this.closeCase(); return; } }
+    if (typing || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (s.open >= 0) { if (e.key === 'ArrowRight') { e.preventDefault(); this.stepImg(1); } else if (e.key === 'ArrowLeft') { e.preventDefault(); this.stepImg(-1); } return; }
+    if (e.key === '/' && !s.pal) { e.preventDefault(); this.openPal(); }
+  };
+
+  goTo(id) {
+    const el = document.getElementById(id); if (!el) return;
+    const y = id === 'top' ? 0 : el.getBoundingClientRect().top + window.scrollY - 56;
+    window.scrollTo({ top: Math.max(0, y), behavior: this.calm ? 'auto' : 'smooth' });
+  }
+  download(href) { const a = document.createElement('a'); a.href = href; a.setAttribute('download', href.split('/').pop()); document.body.appendChild(a); a.click(); a.remove(); }
+  copyEmail = async () => {
+    let ok = false;
+    try { await navigator.clipboard.writeText(this.email); ok = true; } catch (e) {
+      try { const ta = document.createElement('textarea'); ta.value = this.email; ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select(); ok = document.execCommand('copy'); ta.remove(); } catch (e2) {}
+    }
+    this.showToast(ok ? 'Email copied to clipboard' : this.email);
+  };
+  showToast(m) { clearTimeout(this._toT); this.setState({ toast: m, toastOn: true }); this._toT = setTimeout(() => this.setState({ toastOn: false }), 2300); }
+  sendMail = (e) => {
+    e.preventDefault();
+    const f = e.currentTarget; if (f.reportValidity && !f.reportValidity()) return;
+    const g = n => ((f.elements[n] && f.elements[n].value) || '').trim();
+    const subject = encodeURIComponent('Portfolio inquiry' + (g('name') ? ' — ' + g('name') : ''));
+    const body = encodeURIComponent(g('message') + '\n\n— ' + g('name') + (g('email') ? ' · ' + g('email') : ''));
+    window.location.href = 'mailto:' + this.email + '?subject=' + subject + '&body=' + body;
+  };
+  tickClock = () => {
+    let t = '';
+    try { t = new Intl.DateTimeFormat('en-GB', { timeZone: 'Africa/Cairo', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date()); } catch (e) {}
+    const root = this.rootRef.current; if (root && t) root.querySelectorAll('[data-clock]').forEach(el => { el.textContent = t; });
+  };
+  onResize = () => { if (this._rz) return; this._rz = requestAnimationFrame(() => { this._rz = 0; const vw = window.innerWidth; if (vw !== this.state.vw) this.setState({ vw }); this.updateProgress(); }); };
+  onScroll = () => { if (this._sc) return; this._sc = requestAnimationFrame(() => { this._sc = 0; this.updateProgress(); }); };
+  updateProgress() {
+    const root = this.rootRef.current; if (!root) return;
+    const h = document.documentElement, max = (h.scrollHeight - h.clientHeight) || 1;
+    const p = Math.min(1, Math.max(0, (window.scrollY || h.scrollTop || 0) / max));
+    root.querySelectorAll('[data-prog-bar]').forEach(el => { el.style.transform = 'scaleX(' + p.toFixed(4) + ')'; });
+    root.querySelectorAll('[data-prog-text]').forEach(el => { el.textContent = Math.round(p * 100) + '%'; });
+  }
+
+  renderVals() {
+    const s = this.state, hov = s.hover, any = hov !== -1, vw = s.vw;
+    const projects = this.P.map((p, i) => {
+      const on = hov === i;
+      return {
+        n: p.n, name: p.name, cat: p.cat, role: p.role, cover: p.images[0].src, coverAlt: p.images[0].alt, aria: 'Open case study: ' + p.name,
+        enter: this.enterFns[i], open: this.openFns[i], coverRef: this.coverRef[i],
+        rowOp: !any || on ? 1 : 0.3, aBar: on ? 'scaleX(1)' : 'scaleX(0)', aShift: on ? 'translateX(14px)' : 'translateX(0px)',
+        pvOp: on ? 1 : 0, pvT: on ? 'scale(1)' : 'scale(1.08)'
+      };
+    });
+    const nav = this.NAV.map(n => ({ href: n.href, label: n.label, color: s.active === n.id ? 'var(--ink)' : 'var(--mute)' }));
+    const isOpen = s.open >= 0;
+    let ov = {};
+    if (isOpen) {
+      const p = this.P[s.open], m = p.images[s.img] || p.images[0], nx = this.P[(s.open + 1) % this.P.length];
+      ov = {
+        n: p.n, name: p.name, cat: p.cat, blurb: p.blurb, problem: p.problem, role: p.role, solution: p.solution, impact: p.impact, stack: p.stack,
+        hasLink: !!p.href, href: p.href, host: p.host, aria: p.name + ' case study', main: m, tall: m.r < 1.25,
+        counter: (s.img + 1) + ' / ' + p.images.length, nextName: nx.name,
+        imgs: p.images.map((im, k) => ({ src: im.src, ref: this.thumbRef[s.open][k], alt: 'Show screenshot: ' + im.cap, pick: () => this.setState({ img: k }), border: k === s.img ? 'var(--acc)' : 'var(--line)', op: k === s.img ? 1 : 0.6 }))
+      };
+    }
+    const palItems = this.palFiltered().map((c, k) => {
+      const on = k === s.psel;
+      return { label: c.label, hint: c.hint, run: () => this.runCmd(c), hover: () => { if (this.state.psel !== k) this.setState({ psel: k }); }, bg: on ? 'var(--acc)' : 'transparent', fg: on ? 'var(--on-acc)' : 'var(--ink)', fg2: on ? 'var(--on-acc)' : 'var(--mute)' };
+    });
+    return {
+      rootRef: this.rootRef, pvRef: this.pvRef, ovRef: this.ovRef, closeRef: this.closeRef, palInputRef: this.palInputRef, palListRef: this.palListRef, frameRef: this.frameRef, mainImgRef: this.mainImgRef,
+      wide: vw >= 960, narrow: vw < 960,
+      nav,
+      modeLabel: s.dark ? 'Light' : 'Dark', toggleTheme: this.toggleTheme, openPal: this.openPal,
+      projects, clearHover: this.clearHover, showThumbs: !s.canHover,
+      shipped: this.SHIPPED, experience: this.EXP, education: this.EDU, principles: this.PRIN, stack: this.STACK, beyond: this.BEYOND,
+      copyEmail: this.copyEmail, sendMail: this.sendMail,
+      canHover: s.canHover, pvVis: any && !isOpen ? 1 : 0, pvT: any ? 'scale(1)' : 'scale(.94)',
+      isOpen, ov, prevCase: this.prevCase, nextCase: this.nextCase, closeCase: this.closeCase,
+      pal: s.pal, pq: s.pq, onPalInput: this.onPalInput, onPalKey: this.onPalKey, palItems, palEmpty: palItems.length === 0, closePal: this.closePal, stop: this.stop,
+      toast: s.toast, toastOp: s.toastOn ? 1 : 0, toastY: s.toastOn ? '0px' : '-14px'
+    };
+  }
+}
+</script>
+</body>
+</html>

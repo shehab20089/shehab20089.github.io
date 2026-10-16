@@ -1,0 +1,36 @@
+{
+  "name": "shehab-mohsen-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "images": "node scripts/images.ts",
+    "predev": "npm run images",
+    "dev": "next dev",
+    "prebuild": "npm run images",
+    "build": "next build",
+    "start": "serve out",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "compare": "node scripts/compare.ts"
+  },
+  "dependencies": {
+    "next": "^16.4.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.2",
+    "playwright-core": "^1.64.1",
+    "serve": "^14.2.6",
+    "sharp": "^0.35.5",
+    "typescript": "^5.9.3"
+  }
+}

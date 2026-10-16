@@ -1,0 +1,44 @@
+.beyond {
+  scroll-margin-top: var(--scroll-offset);
+  background: var(--bg2);
+}
+
+.inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: var(--section-pad) var(--gutter);
+}
+
+.heading {
+  max-width: 18ch;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 0 clamp(20px, 3vw, 40px);
+}
+
+.item {
+  padding: 20px 0 28px;
+  border-top: 1px solid var(--ink);
+}
+
+.kicker {
+  font-size: 12px;
+  color: var(--acc-ink);
+}
+
+.title {
+  margin: 16px 0 8px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.description {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--ink2);
+}

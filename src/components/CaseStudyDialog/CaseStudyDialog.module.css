@@ -1,0 +1,263 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.bar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+
+.barRow {
+  max-width: var(--container);
+  margin: 0 auto;
+  min-height: 60px;
+  padding: 10px clamp(16px, 3vw, 40px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+}
+
+.counter {
+  font-size: 13px;
+  color: var(--mute);
+  font-variant-numeric: tabular-nums;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.step,
+.close {
+  height: 36px;
+  padding: 0 14px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.step {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+}
+
+.step:hover {
+  border-color: var(--ink);
+}
+
+.close {
+  border: 0;
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.body {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: clamp(28px, 5vw, 64px) clamp(16px, 3vw, 40px) clamp(56px, 8vw, 100px);
+}
+
+.sector {
+  font-size: 13px;
+  color: var(--acc-ink);
+}
+
+.title {
+  margin: 14px 0 18px;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  font-size: clamp(52px, 9vw, 140px);
+  line-height: .88;
+}
+
+.blurb {
+  margin: 0;
+  max-width: 44ch;
+  font-size: clamp(19px, 1.8vw, 25px);
+  line-height: 1.4;
+  color: var(--ink2);
+  text-wrap: pretty;
+}
+
+.gallery {
+  margin-top: clamp(28px, 4vw, 48px);
+}
+
+/* Tall full-page captures scroll inside the frame. */
+.frame {
+  max-height: min(76vh, 860px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border: 1px solid var(--line);
+  background: var(--bg2);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.galleryRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  margin-top: 12px;
+}
+
+.thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.thumb {
+  width: 92px;
+  height: 58px;
+  padding: 0;
+  overflow: hidden;
+  border: 2px solid var(--line);
+  background: var(--bg2);
+  cursor: pointer;
+  opacity: .6;
+  transition: opacity .2s, border-color .2s;
+}
+
+.thumb[data-active] {
+  border-color: var(--acc);
+  opacity: 1;
+}
+
+.thumbImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.caption {
+  font-size: 12px;
+  color: var(--mute);
+  line-height: 1.5;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px clamp(32px, 6vw, 96px);
+  margin-top: clamp(44px, 6vw, 80px);
+}
+
+.detailsMain,
+.detailsSide {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.detailsMain {
+  flex: 2 1 460px;
+}
+
+.detailsSide {
+  flex: 1 1 260px;
+}
+
+.label {
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: var(--mute);
+}
+
+.prose {
+  margin: 0;
+  font-size: clamp(16px, 1.3vw, 19px);
+  line-height: 1.6;
+  color: var(--ink2);
+}
+
+.impact {
+  margin: 0;
+  font-size: clamp(19px, 1.8vw, 25px);
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.role {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.45;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  padding: 6px 11px;
+  border: 1px solid var(--line);
+  font-size: 12.5px;
+}
+
+.live {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 46px;
+  padding: 0 18px;
+  background: var(--acc);
+  color: var(--on-acc);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nextProject {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px 20px;
+  width: 100%;
+  margin-top: clamp(56px, 8vw, 100px);
+  padding: 28px 0 0;
+  border: 0;
+  border-top: 1px solid var(--ink);
+  background: none;
+  color: var(--ink);
+  cursor: pointer;
+  text-align: left;
+}
+
+.nextProject:hover {
+  color: var(--acc-ink);
+}
+
+.nextLabel {
+  font-size: 13px;
+  color: var(--mute);
+}
+
+.nextName {
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  font-size: clamp(36px, 5vw, 72px);
+  line-height: 1;
+}

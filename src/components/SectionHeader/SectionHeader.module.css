@@ -1,0 +1,49 @@
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--section-head-gap);
+  margin-bottom: var(--section-head-mb);
+}
+
+.label {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--mute);
+}
+
+.labelColumn {
+  flex: 1 1 220px;
+}
+
+.number {
+  color: var(--acc-ink);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.column {
+  flex: 3 1 520px;
+}
+
+.heading {
+  margin: 0;
+  font-size: var(--h2-size);
+  line-height: 1;
+  letter-spacing: var(--h2-tracking);
+  font-weight: 600;
+}
+
+.balance {
+  text-wrap: balance;
+}
+
+.intro {
+  margin: 18px 0 0;
+  max-width: 56ch;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--ink2);
+}

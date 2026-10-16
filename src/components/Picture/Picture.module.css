@@ -1,0 +1,4 @@
+/* The wrapper adds no box, so the <img> lays out exactly like the reference's bare <img>. */
+.picture {
+  display: contents;
+}

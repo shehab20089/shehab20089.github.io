@@ -1,0 +1,200 @@
+.hero {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: clamp(40px, 8vh, 96px) var(--gutter) clamp(56px, 9vh, 110px);
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+  color: var(--ink2);
+  animation: reveal 900ms var(--ease-out) backwards;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--status);
+  flex: none;
+  animation: pulse 1800ms ease-out infinite;
+}
+
+.name {
+  margin: clamp(28px, 5vw, 64px) 0 0;
+  font-weight: 640;
+  font-size: clamp(66px, 15vw, 230px);
+  line-height: .88;
+  letter-spacing: -0.055em;
+}
+
+.firstLine {
+  display: block;
+  animation: rise 1150ms var(--ease-out) 80ms backwards;
+}
+
+.secondLine {
+  display: block;
+  padding-left: 22%;
+}
+
+.secondLineText {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: .08em;
+  animation: rise 1150ms var(--ease-out) 290ms backwards;
+}
+
+/* The accent square after "Mohsen", sitting like a full stop. */
+.stop {
+  width: .15em;
+  height: .15em;
+  margin-bottom: .14em;
+  background: var(--acc);
+  flex: none;
+}
+
+.leadRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 32px clamp(32px, 6vw, 96px);
+  margin-top: clamp(36px, 6vw, 72px);
+}
+
+.lead {
+  flex: 2 1 420px;
+  margin: 0;
+  max-width: 26ch;
+  font-size: clamp(24px, 2.8vw, 42px);
+  line-height: 1.14;
+  letter-spacing: -0.03em;
+  font-weight: 450;
+  text-wrap: balance;
+  animation: reveal 900ms var(--ease-out) 240ms backwards;
+}
+
+.ctas {
+  flex: 1 1 260px;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: reveal 900ms var(--ease-out) 320ms backwards;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.primary {
+  padding: 17px 20px;
+  background: var(--acc);
+  color: var(--on-acc);
+  font-weight: 500;
+  transition: background .25s, color .25s;
+}
+
+.outline {
+  padding: 16px 20px;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  font-weight: 500;
+  transition: background .25s, color .25s;
+}
+
+.primary:hover,
+.outline:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.text {
+  padding: 12px 20px;
+  color: var(--ink2);
+}
+
+.text:hover {
+  color: var(--acc-ink);
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  gap: 20px 32px;
+  margin-top: clamp(48px, 7vw, 88px);
+  padding-top: 18px;
+  border-top: 1px solid var(--ink);
+}
+
+.factLabel {
+  font-size: 12px;
+  color: var(--mute);
+  margin-bottom: 6px;
+}
+
+.factValue {
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.factLinks {
+  display: flex;
+  gap: 16px;
+  font-size: 15px;
+}
+
+.factLinks a {
+  color: var(--ink);
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(34%) skewY(2.5deg);
+  }
+}
+
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 0 0 rgba(31, 164, 99, .55);
+  }
+
+  to {
+    box-shadow: 0 0 0 9px rgba(31, 164, 99, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .meta,
+  .dot,
+  .firstLine,
+  .secondLineText,
+  .lead,
+  .ctas {
+    animation: none;
+  }
+}

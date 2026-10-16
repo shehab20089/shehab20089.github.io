@@ -1,0 +1,106 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+
+.row {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 2.4vw, 30px);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: none;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.mark {
+  width: 11px;
+  height: 11px;
+  background: var(--acc);
+  flex: none;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* Nav and clock exist from 960px up; the Menu button (command palette) below that. */
+.nav {
+  display: none;
+  align-items: center;
+  gap: 26px;
+}
+
+.navLink {
+  font-size: 14px;
+  color: var(--mute);
+  text-decoration: none;
+  transition: color .2s;
+}
+
+.navLink:hover,
+.navLink[aria-current] {
+  color: var(--ink);
+}
+
+.clock {
+  display: none;
+  font-size: 13px;
+  color: var(--mute);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.menu {
+  height: 34px;
+  padding: 0 14px;
+  border: 0;
+  background: var(--ink);
+  color: var(--bg);
+  cursor: pointer;
+  font-size: 13px;
+  flex: none;
+}
+
+@media (min-width: 960px) {
+  .nav {
+    display: flex;
+  }
+
+  .clock {
+    display: inline;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+/* Sits on the header's bottom border (margin -1px) and fills from the left. */
+.progressTrack {
+  height: 2px;
+  margin-bottom: -1px;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background: var(--acc);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+}

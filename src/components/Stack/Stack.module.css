@@ -1,0 +1,35 @@
+.stack {
+  scroll-margin-top: var(--scroll-offset);
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: var(--section-pad) var(--gutter);
+}
+
+.list {
+  border-top: 1px solid var(--ink);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px clamp(16px, 3vw, 40px);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.category {
+  flex: 0 0 220px;
+  font-size: 13px;
+  color: var(--mute);
+  padding-top: 4px;
+}
+
+.items {
+  flex: 1 1 360px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 24px;
+  font-size: clamp(17px, 1.5vw, 21px);
+  letter-spacing: -0.015em;
+  line-height: 1.4;
+}
