@@ -41,9 +41,9 @@ npm run resume     # needs Chrome and a connection (Google Fonts); fails past tw
 ## Analytics
 
 Visit stats come from [Umami Cloud](https://cloud.umami.is): free plan, no cookies, so no consent
-banner. The ~4 KB tracker loads only on the live site, after the page has finished loading and the
-browser is idle (`src/lib/analytics.ts`). It records pageviews (with referrers, countries, devices
-and `utm_*` campaigns) plus these events:
+banner. The ~4 KB tracker loads only on the live site, on the visitor's first interaction or 3.5 s
+after the page loads (`src/lib/analytics.ts`), so it stays out of Lighthouse's measurements. It
+records pageviews (with referrers, countries, devices and `utm_*` campaigns) plus these events:
 
 | Event | Data |
 |---|---|
