@@ -1,7 +1,8 @@
-// Visit stats with Umami Cloud: no cookies, so no consent banner. Its ~2 KB script loads
-// only on the live site, after the page has finished loading and the browser is idle, so it
-// never competes with the first paint or with input. Without UMAMI_WEBSITE_ID (a GitHub
-// Actions variable, see README) nothing loads and every call here is a no-op.
+// Visit stats with Umami Cloud: no cookies, so no consent banner. Its ~4 KB script loads only
+// on the live site, and only after the visitor's first interaction or a few seconds after the
+// page has loaded, so it never competes with the first paint or with input. Without
+// UMAMI_WEBSITE_ID (a GitHub Actions variable, see README) nothing loads and every call here
+// is a no-op.
 
 const WEBSITE_ID = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID ?? '';
 const SCRIPT_SRC = 'https://cloud.umami.is/script.js';
@@ -28,10 +29,21 @@ export function track(event: string, data?: EventData) {
   else queue.push([event, data]);
 }
 
-/** Loads the tracker once the page is idle, and counts CV downloads, email links and outbound links. */
+// Why not straight after the load event: the hero's entrance animation keeps the largest paint
+// moving past it, and Lighthouse's simulated LCP charges every request that starts before the
+// largest paint settles (measured: mobile 95 → 85). Starting on the first interaction, or this
+// long after load, keeps the tracker out of that window.
+const START_AFTER_LOAD_MS = 3500;
+const INTERACTIONS = ['pointerdown', 'keydown', 'scroll', 'touchstart'] as const;
+
+/** Loads the tracker after the first interaction or a few seconds after load, and counts CV downloads, email links and outbound links. */
 export function loadAnalytics() {
   if (!enabled() || document.querySelector(`script[src="${SCRIPT_SRC}"]`)) return;
-  const inject = () => {
+  let started = false;
+  const start = () => {
+    if (started) return;
+    started = true;
+    for (const type of INTERACTIONS) window.removeEventListener(type, start);
     const script = document.createElement('script');
     script.src = SCRIPT_SRC;
     script.defer = true;
@@ -42,12 +54,10 @@ export function loadAnalytics() {
     };
     document.head.append(script);
   };
-  const whenIdle = () => {
-    if ('requestIdleCallback' in window) window.requestIdleCallback(inject, { timeout: 5000 });
-    else setTimeout(inject, 1500);
-  };
-  if (document.readyState === 'complete') whenIdle();
-  else window.addEventListener('load', whenIdle, { once: true });
+  for (const type of INTERACTIONS) window.addEventListener(type, start, { passive: true });
+  const afterLoad = () => setTimeout(start, START_AFTER_LOAD_MS);
+  if (document.readyState === 'complete') afterLoad();
+  else window.addEventListener('load', afterLoad, { once: true });
   document.addEventListener('click', trackLink, { capture: true });
 }
 
