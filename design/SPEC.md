@@ -65,6 +65,7 @@ Final results at 1440×900 and 390×844, light and dark:
 | 13 | On touch and narrow screens the command menu shows a "Close ✕" button in place of the "esc" hint. | Touch users can't press Esc, and tapping outside the panel was the only other way out. Desktop with a mouse is unchanged. | Approved by you, built |
 | 14 | The case-study caption ends with "Open full size ↗", which opens the original screenshot in a new tab. | Dense dashboards are hard to read at phone width; the original can be zoomed there. | Approved by you, built |
 | 15 | Case studies can show a "Key decision" block between Solution and Impact (GoPay, Amplifidor, SparkFlow, WalaPlus and Shamel360 have one), in the same label and prose styles. | Both external reviews asked for the decisions behind the products, not only their features. | Approved by you, built |
+| 16 | Cookie-free Umami Cloud analytics (`src/lib/analytics.ts`): the ~4 KB tracker loads only on the live site, after the load event and once the browser is idle; it sends pageviews and six events (README). No visual change. | You asked to see who visits without hurting performance. Measured with analytics on vs off (4× CPU, median of 5): LCP 1472 vs 1476 ms, blocking time 257 vs 260 ms, the same 2 long tasks. Lighthouse stays at 95 / 100 / 100 / 100 mobile and 100 desktop. Inactive until the `UMAMI_WEBSITE_ID` repository variable is set. | Built |
 
 No design issues are open.
 

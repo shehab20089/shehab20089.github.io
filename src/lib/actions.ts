@@ -1,4 +1,5 @@
 import { content } from '@/content';
+import { track } from './analytics';
 import { asset, fileName } from './asset';
 import { prefersReducedMotion } from './motion';
 import { ui } from './ui-store';
@@ -23,6 +24,7 @@ export async function copyEmail() {
     copied = copyWithSelection(email);
   }
   ui.showToast(copied ? content.toast.emailCopied : email);
+  track('Copy email');
 }
 
 // Fallback for browsers or contexts without the async Clipboard API.
@@ -53,5 +55,7 @@ export function download(path: string) {
 }
 
 export function openUrl(url: string) {
+  const { hostname, pathname } = new URL(url);
+  track('Outbound link', { url: `${hostname}${pathname}`.replace(/\/$/, ''), from: 'menu' });
   window.open(url, '_blank', 'noopener');
 }

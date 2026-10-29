@@ -38,6 +38,27 @@ The two résumé PDFs in `public/assets/` (Frontend and Full-stack) are printed 
 npm run resume     # needs Chrome and a connection (Google Fonts); fails past two pages
 ```
 
+## Analytics
+
+Visit stats come from [Umami Cloud](https://cloud.umami.is): free plan, no cookies, so no consent
+banner. The ~4 KB tracker loads only on the live site, after the page has finished loading and the
+browser is idle (`src/lib/analytics.ts`). It records pageviews (with referrers, countries, devices
+and `utm_*` campaigns) plus these events:
+
+| Event | Data |
+|---|---|
+| `Case study` | `project` |
+| `Download CV` | `version` (Frontend / Full-stack), `from` (top / contact / menu) |
+| `Outbound link` | `url`, `from` |
+| `Copy email`, `Email link`, `Open email draft` | `from` where it applies |
+
+To turn it on, add the site in Umami and set its website ID as a repository variable: Settings →
+Secrets and variables → Actions → Variables → `UMAMI_WEBSITE_ID`. The next deploy picks it up;
+without the variable nothing loads.
+
+To keep your own visits out of the stats, run this once per browser on the live site, in the
+developer console: `localStorage.setItem('umami.disabled', 1)`.
+
 ## Check against the design
 
 ```bash

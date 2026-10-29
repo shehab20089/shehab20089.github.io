@@ -12,6 +12,8 @@ const nextConfig: NextConfig = {
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
     NEXT_PUBLIC_SITE_URL: siteUrl.endsWith('/') ? siteUrl : `${siteUrl}/`,
+    // Umami Cloud website ID; empty means no analytics (see src/lib/analytics.ts).
+    NEXT_PUBLIC_UMAMI_WEBSITE_ID: process.env.UMAMI_WEBSITE_ID ?? '',
   },
 };
 

@@ -43,6 +43,8 @@ jobs:
           # base path. Both values come from the repository's Pages settings.
           BASE_PATH: ${{ steps.pages.outputs.base_path }}
           SITE_URL: ${{ steps.pages.outputs.base_url }}
+          # Turns on Umami analytics once set (Settings → Secrets and variables → Actions → Variables).
+          UMAMI_WEBSITE_ID: ${{ vars.UMAMI_WEBSITE_ID }}
 
       - uses: actions/upload-pages-artifact@v5
         with:

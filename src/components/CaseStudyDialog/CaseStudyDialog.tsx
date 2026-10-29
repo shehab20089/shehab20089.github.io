@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import { Picture } from '@/components/Picture/Picture';
 import { a11y } from '@/content/a11y';
 import { content, format } from '@/content';
+import { track } from '@/lib/analytics';
 import { asset } from '@/lib/asset';
 import { trapFocus } from '@/lib/focus-trap';
 import { EASE_IN, EASE_OUT, prefersReducedMotion } from '@/lib/motion';
@@ -40,6 +41,12 @@ function Dialog({ index }: { index: number }) {
     closeRef.current?.focus({ preventScroll: true });
     return () => opener?.focus({ preventScroll: true });
   }, []);
+
+  // Analytics: which case studies get opened, including through "Next project" and ?case= links.
+  useEffect(() => {
+    const project = projects[index];
+    if (project) track('Case study', { project: project.name });
+  }, [index, projects]);
 
   // Closing: play the exit, then unmount.
   useEffect(() => {

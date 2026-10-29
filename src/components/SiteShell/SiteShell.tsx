@@ -8,6 +8,7 @@ import { HoverPreview } from '@/components/HoverPreview/HoverPreview';
 import { Toast } from '@/components/Toast/Toast';
 import { useCaseUrl } from '@/hooks/useCaseUrl';
 import { useReveal } from '@/hooks/useReveal';
+import { loadAnalytics } from '@/lib/analytics';
 import { getUi, ui, useUi } from '@/lib/ui-store';
 
 /** Client root: page-wide behaviours, and the overlays that sit above the sections. */
@@ -15,6 +16,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
   useReveal();
   useCaseUrl();
   useShortcuts();
+  useEffect(loadAnalytics, []);
   useScrollLock(useUi((s) => s.openCase >= 0 || s.paletteOpen));
 
   return (

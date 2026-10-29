@@ -4,6 +4,7 @@ import type { FormEvent } from 'react';
 import { content } from '@/content';
 import type { FormField } from '@/content';
 import { copyEmail } from '@/lib/actions';
+import { track } from '@/lib/analytics';
 import { fileName, resolveHref } from '@/lib/asset';
 import { cx } from '@/lib/cx';
 import styles from './Contact.module.css';
@@ -144,5 +145,6 @@ function sendMail(event: FormEvent<HTMLFormElement>) {
   const email = value('email');
   const subject = `Portfolio inquiry${name ? ` — ${name}` : ''}`;
   const body = `${value('message')}\n\n— ${name}${email ? ` · ${email}` : ''}`;
+  track('Open email draft');
   window.location.href = `mailto:${content.person.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
