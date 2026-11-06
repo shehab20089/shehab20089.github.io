@@ -52,7 +52,8 @@ export const education: [school: string, detail: string, year: string][] = [
 
 const aiTools = 'Claude, Codex, OpenCode, Cursor, GitHub Copilot, ChatGPT, Windsurf';
 
-// The current role keeps six items, strongest first: leadership, ownership, impact.
+// The current role keeps six items (seven in the full-stack version, with Yally), strongest
+// first: leadership, ownership, impact.
 const bitbang = {
   gopay:
     'Owned the **GoPay** frontend, a SADAD-integrated B2B billing platform: refactored its legacy, hard-to-scale codebase into a feature-based architecture, set the standards the team builds on, and revamped the Biller dashboard.',
@@ -72,7 +73,7 @@ const walaplus: Role = {
   bullets: [
     "Sole frontend developer: modernized every product's frontend onto a current stack — including rebuilding the legacy Blade PHP client portal as a modern SPA — and worked on almost all of the company's products.",
     'Built retailer- and partner-facing portals (offers, vouchers, WalaOne operations) and translated Figma design-system foundations into reusable React and Vue components.',
-    'Dockerized frontend projects, defined the frontend stack for new products, and supported hiring through technical interviews.',
+    'Dockerized frontend projects, defined the stack for new products, and supported hiring with technical interviews.',
   ],
 };
 
@@ -116,7 +117,7 @@ const earlier: Role[] = [
 ];
 
 const bitbangRole = (rest: Omit<Role, 'title' | 'company' | 'place' | 'dates' | 'current'>): Role => ({
-  title: 'Senior Frontend Engineer / Frontend Lead',
+  title: 'Senior Full-Stack Engineer / Frontend Lead',
   company: 'BitBang',
   place: 'Remote',
   dates: 'Mar 2024 – Present',
@@ -156,24 +157,24 @@ export const resumes: Resume[] = [
         'Delivered a React credit-service portal that improved client self-service and day-to-day usability.',
         'Built an internal Audit Portal in React and TypeScript for monitoring, investigation, and analysis workflows.',
         "Diagnosed and fixed a major performance issue in the Operations Portal's transaction filters, cutting wait times by ~80% for a portal serving thousands of clients.",
-        'Implemented a Vue Collector Portal for payment-collection workflows, and contributed Node.js and Express.js endpoints and database migrations.',
+        'Implemented a Vue Collector Portal for payment-collection workflows, and took backend tasks in Node.js and Express.js: Google social login, endpoints and database migrations.',
       ]),
       ...earlier,
     ],
   },
   {
     file: 'assets/Shehab_Mohsen_Resume_FullStack_2026.pdf',
-    headline: 'Senior Full-Stack Engineer · Frontend-Focused',
+    headline: 'Senior Full-Stack Engineer · Frontend Lead',
     summary:
-      'Senior full-stack engineer with a frontend focus and 6+ years across fintech, e-commerce, and healthcare: **React, Next.js, TypeScript, and Vue/Nuxt** on the front, **Node.js, NestJS, Prisma, and PostgreSQL** behind it. **Leads a team of 7+ engineers** and owns architecture, from data-heavy dashboards to realtime systems.',
+      'Senior full-stack engineer with a frontend focus and 6+ years across fintech, SaaS, e-commerce, and healthcare: **React, Next.js, TypeScript, and Vue/Nuxt** on the front, **Node.js, NestJS, C#/.NET, Prisma, and PostgreSQL** behind it, plus AI features such as meeting transcription. **Leads a team of 7+ engineers** and owns architecture, from data-heavy dashboards to realtime systems.',
     skills: [
       ['Core stack', 'React.js, Next.js, TypeScript, JavaScript, Vue.js, Nuxt.js'],
-      ['Backend', 'Node.js, NestJS, Express.js, Fastify, REST, GraphQL, Socket.IO, BullMQ'],
+      ['Backend', 'Node.js, NestJS, Express.js, Fastify, C#, .NET (ABP), Entity Framework Core, REST, GraphQL, Socket.IO, BullMQ'],
       ['Data', 'PostgreSQL, Prisma, MongoDB, SQL, Redis'],
+      ['AI in products', 'OpenAI, AWS Transcribe, OpenRouter'],
       ['State', 'TanStack Query, Redux, Zustand, Pinia, Apollo Client'],
       ['UI & styling', 'Tailwind CSS, SCSS, Framer Motion, shadcn/ui, Storybook, design systems'],
-      ['Testing', 'Jest, Vitest, React Testing Library, Playwright'],
-      ['Tooling', 'Vite, Webpack, Docker, GitHub, Bitbucket, Jira'],
+      ['Testing & tooling', 'Jest, Vitest, React Testing Library, Playwright, xUnit, Vite, Webpack, Docker, GitHub, Bitbucket, Jira'],
       ['AI-assisted dev', aiTools],
     ],
     experience: [
@@ -185,16 +186,17 @@ export const resumes: Resume[] = [
             'React 19 · TypeScript · TanStack Query · NestJS · Fastify · Prisma · PostgreSQL · Redis · Socket.IO · BullMQ',
           bullets: [
             "BitBang's internal task and project-management tool: I initiated it from team bench time, gathered the features, wrote the requirements, and designed the database (ERDs), security, and UI/UX. It **replaced BitBang's Jira subscription** and runs every team project with minimal issues.",
-            'Built with AI-assisted development (Claude Code, Codex, Claude Design): workspaces, boards, backlog, sprints, and issues; a rich-text editor with mentions; realtime updates over Socket.IO and Redis; BullMQ workers for notifications.',
+            'Built with AI-assisted development (Claude Code, Codex, Claude Design): workspaces, boards, backlog, sprints, and issues; a rich-text editor with mentions; realtime updates over Socket.IO and Redis; BullMQ workers for notifications; and an MCP server that lets AI agents take tickets and update their status.',
             'Production hardening: Microsoft Entra SSO plus email/password auth, tenant and project isolation in queries and database constraints, indexed paginated reads, and virtualized boards.',
           ],
         },
         bullets: [
+          'Delivered full-stack features on **Yally**, an AI workplace platform: React web app plus C#/.NET (ABP, EF Core) backend work — legacy .doc to .docx conversion, after-commit realtime chat events, billing and permission rules — and Arabic/English transcription for its Microsoft Teams meeting bot (OpenAI, AWS Transcribe).',
           "Led frontend architecture across BitBang's products, worked with backend teams on API contracts, and mentored a team of 7+ engineers, with an onboarding redesign that cut ramp-up to 2 weeks.",
           bitbang.gopay,
           bitbang.amplifidor,
           bitbang.shamel,
-          `${bitbang.uiLibrary}, supporting the Tasheelat and Face Children initiatives.`,
+          'Built a shadcn-inspired shared UI library with a CLI used across BitBang projects, and the touch-first Kun admin portal.',
         ],
       }),
       walaplus,
@@ -202,7 +204,7 @@ export const resumes: Resume[] = [
         'Built a React credit-service portal for client self-service and an internal Audit Portal in React and TypeScript.',
         "Diagnosed and fixed a major performance issue in the Operations Portal's transaction filters, cutting wait times by ~80% for a portal serving thousands of clients.",
         'Implemented a Vue Collector Portal for payment-collection workflows and extended the Vue-based Operations Portal.',
-        'Contributed backend endpoints, database migrations, and cross-stack workflow support in Node.js and Express.js.',
+        'Delivered backend tasks in Node.js and Express.js: Google social login, API endpoint changes, and database migration scripts.',
       ]),
       ...earlier,
     ],
