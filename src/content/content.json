@@ -832,8 +832,32 @@
       }
     ]
   },
-  "beyond": {
+  "lab": {
     "number": "06",
+    "label": "Lab",
+    "heading": "Things I build ==on my own time==.",
+    "items": [
+      {
+        "kicker": "Full-stack · Developer tool",
+        "title": "ForgePath",
+        "description": "A CLI-first practice platform for experienced engineers: deterministic tests run in Docker, and an AI mentor comments afterwards but decides nothing. NestJS API, React app and a Node CLI, with challenges on Postgres lost updates and deadlocks, idempotent queues and NestJS request-state leaks.",
+        "links": []
+      },
+      {
+        "kicker": "Game dev · Turath Games",
+        "title": "The Last Abbasid",
+        "description": "A 2D pixel-art action game set in Baghdad in 1258. A demo of Chapter I is out in English and Arabic; the full game is planned for Steam.",
+        "links": [
+          {
+            "label": "Play the Chapter I demo ↗",
+            "href": "https://shehab20089.itch.io/the-last-abbasid"
+          }
+        ]
+      }
+    ]
+  },
+  "beyond": {
+    "number": "07",
     "label": "Beyond the keyboard",
     "heading": "Side interests that ==sharpen== the craft.",
     "items": [
@@ -855,7 +879,7 @@
     ]
   },
   "contact": {
-    "number": "07",
+    "number": "08",
     "label": "Let's talk",
     "heading": "Let's build something that lasts.",
     "emailLabel": "Email",
@@ -983,6 +1007,12 @@
         "hint": "Section",
         "action": "scrollTo",
         "target": "#stack"
+      },
+      {
+        "label": "Lab",
+        "hint": "Section",
+        "action": "scrollTo",
+        "target": "#lab"
       },
       {
         "label": "Beyond the keyboard",

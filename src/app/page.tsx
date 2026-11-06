@@ -4,6 +4,7 @@ import { Contact } from '@/components/Contact/Contact';
 import { Experience } from '@/components/Experience/Experience';
 import { Header } from '@/components/Header/Header';
 import { Hero } from '@/components/Hero/Hero';
+import { Lab } from '@/components/Lab/Lab';
 import { Principles } from '@/components/Principles/Principles';
 import { SiteShell } from '@/components/SiteShell/SiteShell';
 import { Stack } from '@/components/Stack/Stack';
@@ -20,6 +21,7 @@ export default function Home() {
         <Experience />
         <Principles />
         <Stack />
+        <Lab />
         <Beyond />
         <Contact />
       </main>

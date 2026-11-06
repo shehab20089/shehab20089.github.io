@@ -154,6 +154,9 @@ export interface Content {
   stack: SectionCopy & {
     groups: { category: string; items: string[] }[];
   };
+  lab: SectionCopy & {
+    items: (Card & { links: Link[] })[];
+  };
   beyond: SectionCopy & {
     items: Card[];
   };

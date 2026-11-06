@@ -67,6 +67,7 @@ Final results at 1440×900 and 390×844, light and dark:
 | 15 | Case studies can show a "Key decision" block between Solution and Impact (GoPay, Amplifidor, SparkFlow, WalaPlus and Shamel360 have one), in the same label and prose styles. | Both external reviews asked for the decisions behind the products, not only their features. | Approved by you, built |
 | 16 | Cookie-free Umami Cloud analytics (`src/lib/analytics.ts`): the ~4 KB tracker loads only on the live site, on the first interaction (pointer, key, scroll or touch) or 3.5 s after load, and sends pageviews plus six events (README). No visual change. | You asked to see who visits without hurting the scores. Starting it right after the load event cost Lighthouse mobile 10 points (95 → 85): the hero's entrance animation keeps the largest paint moving past the load event, and the simulation charges requests that start before it settles. With the delay, Lighthouse scores 95 mobile with the tracker allowed or blocked. In a real browser, LCP and blocking time didn't change either way. | Built |
 | 17 | Case studies show a "Layers" line between Role and Stack, in Role's label and text styles, saying which parts of the product the work covered (for example "Database · API · Frontend"). | Your full-stack positioning brief. | Built |
+| 18 | A new Lab section (06) sits between Stack and Beyond, with ForgePath and The Last Abbasid; Beyond becomes 07 and Contact 08. It uses Beyond's card grid with a row of links under each description, on the page background so its cards don't run into Beyond's `--bg2` band. The command menu has a Lab entry; the header nav is unchanged. | Your brief: most recent work is in private client repos, so the site needs things a reviewer can open. | Built |
 
 No design issues are open.
 
@@ -110,7 +111,7 @@ No design issues are open.
 | 2026-11-06 | Selected Work · Also shipped | Added "Member app CMS" first, without naming the client. With five cards, the grid at 1440 shows four in a row and the fifth on its own below. |
 
 The reference page predates these, so `npm run compare` reports them as differences wherever they
-appear (the hero, About, Stack, Work, Beyond and the footer), and later sections shift accordingly.
+appear (the hero, About, Experience, How I think, Stack, Lab, Work, Beyond and the footer), and later sections shift accordingly.
 
 SparkFlow's five screenshots (`public/assets/sparkflow-*.png`, 1920×1200) were taken from a local
 run of the SparkFlow repo against throwaway Postgres and Redis containers seeded with its demo data
