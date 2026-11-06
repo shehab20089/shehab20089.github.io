@@ -155,7 +155,7 @@ export interface Content {
     groups: { category: string; items: string[] }[];
   };
   lab: SectionCopy & {
-    items: (Card & { links: Link[] })[];
+    items: (Card & { image?: Screenshot; links: Link[] })[];
   };
   contact: SectionCopy & {
     emailLabel: string;

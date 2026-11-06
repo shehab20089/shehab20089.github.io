@@ -901,6 +901,13 @@
         "kicker": "Game dev · Turath Studios",
         "title": "The Last Abbasid",
         "description": "A 2D pixel-art action game set in Baghdad in 1258. A demo of Chapter I is out in English and Arabic; the full game is planned for Steam.",
+        "image": {
+          "src": "assets/lab-the-last-abbasid.png",
+          "caption": "The Last Abbasid",
+          "alt": "The Last Abbasid — a warrior on the rooftops of Baghdad as the city burns in 1258",
+          "width": 1260,
+          "height": 540
+        },
         "links": [
           {
             "label": "Play the Chapter I demo ↗",

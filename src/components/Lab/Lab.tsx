@@ -1,3 +1,4 @@
+import { Picture } from '@/components/Picture/Picture';
 import { SectionHeader } from '@/components/SectionHeader/SectionHeader';
 import { content } from '@/content';
 import styles from './Lab.module.css';
@@ -10,6 +11,14 @@ export function Lab() {
       <div className={styles.grid}>
         {lab.items.map((item) => (
           <div key={item.title} data-reveal="" className={styles.item}>
+            {item.image && (
+              <Picture
+                image={item.image}
+                alt={item.image.alt}
+                sizes="(min-width: 1320px) 600px, (min-width: 660px) 46vw, 92vw"
+                className={styles.image}
+              />
+            )}
             <div className={styles.kicker}>{item.kicker}</div>
             <h3 className={styles.title}>{item.title}</h3>
             <p className={styles.description}>{item.description}</p>
