@@ -155,6 +155,13 @@
           "height": 1200
         },
         {
+          "src": "assets/sparkflow-data-model.png",
+          "caption": "Data model (simplified)",
+          "alt": "SparkFlow — simplified data model: workspaces and members, projects, boards, sprints and issues, linked to test plans, execution cycles and bug reports",
+          "width": 1920,
+          "height": 1200
+        },
+        {
           "src": "assets/sparkflow-board.png",
           "caption": "Scrum board",
           "alt": "SparkFlow — Scrum board",
@@ -202,8 +209,40 @@
         "Node.js · Playwright",
         "OpenAI · AWS Transcribe"
       ],
-      "live": null,
-      "images": []
+      "live": {
+        "url": "https://app.yally.ai/",
+        "label": "app.yally.ai"
+      },
+      "images": [
+        {
+          "src": "assets/yally-dashboard.png",
+          "caption": "Personal dashboard",
+          "alt": "Yally — personal dashboard with task completion, project progress, overdue work items and a meeting calendar",
+          "width": 1920,
+          "height": 1000
+        },
+        {
+          "src": "assets/yally-assistant-arabic.png",
+          "caption": "AI assistant, in Arabic and right to left",
+          "alt": "Yally — the AI assistant home page in Arabic, with the whole layout mirrored right to left",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "assets/yally-compliance.png",
+          "caption": "Compliance violations found in documents",
+          "alt": "Yally — compliance page listing violations found in documents, by severity and status, beside the admin menu",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "assets/yally-documents.png",
+          "caption": "Documents and knowledge center",
+          "alt": "Yally — knowledge center listing Word and PDF documents",
+          "width": 1920,
+          "height": 860
+        }
+      ]
     },
     {
       "slug": "gopay",
@@ -653,9 +692,9 @@
         "when": "Jul 2026 – Present",
         "current": true,
         "role": "Founder & Game Developer",
-        "company": "Turath Games",
+        "company": "Turath Studios",
         "tag": "Own studio",
-        "description": "My independent studio for games and animation inspired by Arab and Islamic history and heritage. A demo of Chapter I of The Last Abbasid, a 2D pixel-art action game set in Baghdad in 1258, is out on itch.io in English and Arabic; the full game is planned for Steam."
+        "description": "My independent creative studio for bringing Islamic and Arab history, heritage and faith to people through games, animation and art. A demo of Chapter I of The Last Abbasid, a 2D pixel-art action game set in Baghdad in 1258, is out on itch.io in English and Arabic; the full game is planned for Steam."
       },
       {
         "when": "Mar 2024 – Present",
@@ -865,13 +904,17 @@
         "links": []
       },
       {
-        "kicker": "Game dev · Turath Games",
+        "kicker": "Game dev · Turath Studios",
         "title": "The Last Abbasid",
         "description": "A 2D pixel-art action game set in Baghdad in 1258. A demo of Chapter I is out in English and Arabic; the full game is planned for Steam.",
         "links": [
           {
             "label": "Play the Chapter I demo ↗",
             "href": "https://shehab20089.itch.io/the-last-abbasid"
+          },
+          {
+            "label": "Turath Studios on LinkedIn ↗",
+            "href": "https://www.linkedin.com/company/turath-studios"
           }
         ]
       }
