@@ -61,6 +61,17 @@
   color: var(--bg);
 }
 
+/* On phones the label gives way, so the counter, Prev, Next and Close stay on one row. */
+@media (max-width: 440px) {
+  .barRow {
+    column-gap: 10px;
+  }
+
+  .counterLabel {
+    display: none;
+  }
+}
+
 .body {
   max-width: var(--container);
   margin: 0 auto;

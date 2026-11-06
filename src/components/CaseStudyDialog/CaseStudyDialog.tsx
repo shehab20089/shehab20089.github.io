@@ -94,6 +94,7 @@ function Dialog({ index }: { index: number }) {
       <div className={styles.bar}>
         <div className={styles.barRow}>
           <span className={styles.counter}>
+            <span className={styles.counterLabel}>{caseStudy.counterLabel} </span>
             {format(caseStudy.counter, { number: project.number, total: String(projects.length).padStart(2, '0') })}
           </span>
           <span className={styles.spacer} />

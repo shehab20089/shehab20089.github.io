@@ -994,7 +994,8 @@
     }
   },
   "caseStudy": {
-    "counter": "Case study {number} / {total}",
+    "counterLabel": "Case study",
+    "counter": "{number} / {total}",
     "prev": "← Prev",
     "next": "Next →",
     "close": "Close ✕",

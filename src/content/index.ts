@@ -171,6 +171,7 @@ export interface Content {
     footer: { copyright: string; backToTop: string };
   };
   caseStudy: {
+    counterLabel: string;
     counter: string;
     prev: string;
     next: string;
@@ -202,7 +203,7 @@ export function oneOf<const T extends string>(value: string, options: readonly T
   return match;
 }
 
-/** Fills {placeholders} in a content.json template, e.g. "Case study {number} / 06". */
+/** Fills {placeholders} in a content.json template, e.g. "{number} / {total}". */
 export function format(template: string, values: Record<string, string | number>): string {
   return template.replace(/\{(\w+)\}/g, (placeholder, key: string) => String(values[key] ?? placeholder));
 }

@@ -71,6 +71,7 @@ Final results at 1440×900 and 390×844, light and dark:
 | 19 | The Work table shows a project's Layers as a second line under its Role, in Sector's size and colour, when it says more than "Frontend": today SparkFlow, Yally and Fatura. There is no new column. | Your live-site review: the Role column said "Frontend" on 7 of 9 rows, so the full-stack work only showed once a case study was open. | Built |
 | 20 | The reference's Beyond section is removed, with its command-menu entry and component. Lab is 06 and Contact is 07. | Your live-site review: its Game dev and Godot cards repeated Lab and the Turath Studios role, and the Flutter start is already in Experience. | Built |
 | 21 | Lab items can show an image above the kicker, at full card width through Picture, square-cornered like the case-study images. The Last Abbasid has one, copied from your GitHub profile repo; ForgePath's card stays text only until it has a screenshot. | Your live-site review: the Lab cards were text only, in a section meant for things a reviewer can open. | Built |
+| 22 | At 440px and below, the case-study header shortens "Case study 01 / 09" to "01 / 09". | Your live-site review: at 390px the Close button dropped to a second line. The counter, Prev, Next and Close now share one row. | Built |
 
 No design issues are open.
 
