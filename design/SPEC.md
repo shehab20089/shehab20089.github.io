@@ -112,6 +112,7 @@ No design issues are open.
 | 2026-11-06 | Résumés | Both: the new BitBang title, and Fatura names the backend tasks. Frontend keeps its "Senior Frontend Engineer · Full-Stack Capable" headline for frontend-only applications. Full-stack: headline, summary and skills updated (C#, .NET, Entity Framework Core, xUnit, a new "AI in products" cell), a Yally bullet first after the SparkFlow box, and the MCP server in that box. To stay on two pages: BitBang has seven items in this version, the UI-library bullet is one line (dropping Persona, Moyasar, Tasheelat and Face Children here), Testing and Tooling share a cell, and the shared Walaplus Docker bullet is shorter. |
 | 2026-11-06 | Selected Work · Yally | Added Yally as case study 02, with four screenshots and a live link to https://app.yally.ai/. The command menu has a Yally entry. |
 | 2026-11-06 | Lab | The Last Abbasid card also links to the Turath Studios page on LinkedIn, beside the demo link. |
+| 2026-11-06 | Experience · order | BitBang first, Turath Studios directly under it; both are still marked current. On a phone the studio was pushing the senior role below the fold. |
 
 The reference page predates these, so `npm run compare` reports them as differences wherever they
 appear (the hero, About, Experience, How I think, Stack, Lab, Work, Beyond and the footer), and later sections shift accordingly.

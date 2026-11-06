@@ -689,20 +689,20 @@
     "heading": "Six years, across fintech, platforms & operations.",
     "roles": [
       {
-        "when": "Jul 2026 – Present",
-        "current": true,
-        "role": "Founder & Game Developer",
-        "company": "Turath Studios",
-        "tag": "Own studio",
-        "description": "My independent creative studio for bringing Islamic and Arab history, heritage and faith to people through games, animation and art. A demo of Chapter I of The Last Abbasid, a 2D pixel-art action game set in Baghdad in 1258, is out on itch.io in English and Arabic; the full game is planned for Steam."
-      },
-      {
         "when": "Mar 2024 – Present",
         "current": true,
         "role": "Senior Full-Stack Engineer / Frontend Lead",
         "company": "BitBang",
         "tag": null,
         "description": "Full-stack delivery on Yally, an AI workplace platform — React and C#/.NET, plus its Teams meeting bot with Arabic and English transcription — and a CMS for a multi-tenant mobile platform. Owns the GoPay frontend, led the Amplifidor and Shamel360 frontend teams, and initiated SparkFlow, the in-house platform that replaced the company's Jira. Leads and mentors engineers and sets the standards that keep delivery fast and maintainable."
+      },
+      {
+        "when": "Jul 2026 – Present",
+        "current": true,
+        "role": "Founder & Game Developer",
+        "company": "Turath Studios",
+        "tag": "Own studio",
+        "description": "My independent creative studio for bringing Islamic and Arab history, heritage and faith to people through games, animation and art. A demo of Chapter I of The Last Abbasid, a 2D pixel-art action game set in Baghdad in 1258, is out on itch.io in English and Arabic; the full game is planned for Steam."
       },
       {
         "when": "Mar 2023 – Mar 2024",
