@@ -119,6 +119,7 @@ No design issues are open.
 | 2026-11-06 | Selected Work · SparkFlow | The blurb now leads with the MCP server handing tickets to AI agents. Key decision drops "minimal issues", which Impact already says. |
 | 2026-11-06 | Selected Work · Also shipped | Removed 21 Farmer, which sat alone on a second row at 1440. Four cards now fit one row. |
 | 2026-11-06 | Experience · Résumés | The company is spelled WalaPlus in Experience and on both résumés, as in its case study. |
+| 2026-11-06 | Selected Work · Yally | The live link is now the public site, https://www.yally.ai/, because app.yally.ai opens at a sign-in screen. Impact drops the ticket count, which came from counting ticket IDs in commit messages. |
 
 The reference page predates these, so `npm run compare` reports them as differences wherever they
 appear (the hero, About, Experience, How I think, Stack, Lab, Work and the footer, and Beyond is gone), and later sections shift accordingly.

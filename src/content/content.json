@@ -200,7 +200,7 @@
       "problem": "Organisations wanted one bilingual workspace where documents, chat, meetings and compliance live together — with AI that can work across all of it.",
       "solution": "Full-stack work across the React web app and the C#/.NET (ABP, EF Core) backend: Word 97–2003 files viewable and editable through a .docx rendition, realtime chat events, one set of access rules for attachments, billing and storage-limit rules, and user, role and permission management — plus reliable recording and Arabic, English and mixed-language transcription for its Microsoft Teams meeting bot.",
       "decision": "Converted legacy .doc files in a short-lived, capped child process, so one bad file can never block other requests — and pushed realtime chat events only after the database commit, so nobody sees a message that was rolled back.",
-      "impact": "Closed 100+ QA tickets across documents, calendar, compliance, billing and user management in one release pass, and added Arabic and mixed-language meeting transcription.",
+      "impact": "Closed a full QA release pass across documents, calendar, compliance, billing and user management, and added Arabic and mixed-language meeting transcription.",
       "role": "Full-Stack Engineer — BitBang",
       "layers": "Backend · Frontend · Meeting bot",
       "stack": [
@@ -210,8 +210,8 @@
         "OpenAI · AWS Transcribe"
       ],
       "live": {
-        "url": "https://app.yally.ai/",
-        "label": "app.yally.ai"
+        "url": "https://www.yally.ai/",
+        "label": "yally.ai"
       },
       "images": [
         {
