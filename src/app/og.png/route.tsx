@@ -58,7 +58,7 @@ export async function GET() {
             alignItems: 'center',
             paddingBottom: 22,
             borderBottom: '2px solid rgba(17,17,18,.14)',
-            fontSize: 22,
+            fontSize: 20,
             color: '#3B3B3F',
           }}
         >
