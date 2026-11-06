@@ -67,7 +67,7 @@ const bitbang = {
 
 const walaplus: Role = {
   title: 'Senior Frontend Developer',
-  company: 'Walaplus',
+  company: 'WalaPlus',
   place: 'Remote',
   dates: 'Mar 2023 – Mar 2024',
   bullets: [
