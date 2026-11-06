@@ -185,8 +185,29 @@
       ]
     },
     {
-      "slug": "gopay",
+      "slug": "yally",
       "number": "02",
+      "name": "Yally",
+      "sector": "AI workplace · SaaS",
+      "blurb": "An AI workplace platform — documents, chat, calendar, meetings and compliance in one Arabic/English workspace.",
+      "problem": "Organisations wanted one bilingual workspace where documents, chat, meetings and compliance live together — with AI that can work across all of it.",
+      "solution": "Full-stack work across the React web app and the C#/.NET (ABP, EF Core) backend: Word 97–2003 files viewable and editable through a .docx rendition, realtime chat events, one set of access rules for attachments, billing and storage-limit rules, and user, role and permission management — plus reliable recording and Arabic, English and mixed-language transcription for its Microsoft Teams meeting bot.",
+      "decision": "Converted legacy .doc files in a short-lived, capped child process, so one bad file can never block other requests — and pushed realtime chat events only after the database commit, so nobody sees a message that was rolled back.",
+      "impact": "Closed 100+ QA tickets across documents, calendar, compliance, billing and user management in one release pass, and added Arabic and mixed-language meeting transcription.",
+      "role": "Full-Stack Engineer — BitBang",
+      "layers": "Backend · Frontend · Meeting bot",
+      "stack": [
+        "React · TypeScript",
+        "C# · .NET · EF Core",
+        "Node.js · Playwright",
+        "OpenAI · AWS Transcribe"
+      ],
+      "live": null,
+      "images": []
+    },
+    {
+      "slug": "gopay",
+      "number": "03",
       "name": "GoPay",
       "sector": "Fintech · Billing & Collections",
       "blurb": "A SADAD-integrated B2B billing and collections platform for Saudi Arabia — public site, operator dashboard and customer apps.",
@@ -239,7 +260,7 @@
     },
     {
       "slug": "amplifidor",
-      "number": "03",
+      "number": "04",
       "name": "Amplifidor",
       "sector": "Creator economy · Influencer × Brand",
       "blurb": "A two-sided influencer × brand platform — brands launch affiliate programs; creators, agents and agencies join, promote them and get paid per milestone.",
@@ -296,7 +317,7 @@
     },
     {
       "slug": "shamel360",
-      "number": "04",
+      "number": "05",
       "name": "Shamel360",
       "sector": "Supply chain · Warehouse fulfillment",
       "blurb": "Shamel360's warehouse fulfillment portal — inbound receiving, outbound picking and shipping, live inventory, products and merchants in one console.",
@@ -353,7 +374,7 @@
     },
     {
       "slug": "walaplus",
-      "number": "05",
+      "number": "06",
       "name": "WalaPlus",
       "sector": "Loyalty · Rewards SaaS",
       "blurb": "A loyalty and employee-rewards platform for Saudi enterprises — points, offers and cashback across a network of real retail brands.",
@@ -406,7 +427,7 @@
     },
     {
       "slug": "fatura",
-      "number": "06",
+      "number": "07",
       "name": "Fatura",
       "sector": "Fintech · B2B Distribution",
       "blurb": "A B2B wholesale-ordering and credit platform for FMCG distribution — including the operation that runs Coca-Cola’s distribution in Egypt.",
@@ -462,7 +483,7 @@
     },
     {
       "slug": "moller-auto",
-      "number": "07",
+      "number": "08",
       "name": "Møller Auto",
       "sector": "Automotive · E-commerce",
       "blurb": "The used-car marketplace for Volkswagen and Audi’s official dealer network across the Baltics.",
@@ -521,7 +542,7 @@
     },
     {
       "slug": "printerbase",
-      "number": "08",
+      "number": "09",
       "name": "Printerbase",
       "sector": "E-commerce · Retail",
       "blurb": "One of the UK’s established printer, ink & toner retailers — 200,000+ customers, rated 4.8/5 on Trustpilot.",
@@ -1031,6 +1052,12 @@
         "hint": "Case study",
         "action": "openCase",
         "target": "sparkflow"
+      },
+      {
+        "label": "Yally",
+        "hint": "Case study",
+        "action": "openCase",
+        "target": "yally"
       },
       {
         "label": "GoPay",
