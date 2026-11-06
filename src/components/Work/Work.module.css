@@ -114,6 +114,11 @@
   color: var(--ink2);
 }
 
+/* A second line under the role; it inherits the same type as the sector. */
+.layers {
+  display: block;
+}
+
 .row .open {
   font-size: 14px;
   color: var(--acc-ink);

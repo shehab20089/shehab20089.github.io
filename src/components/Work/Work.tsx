@@ -45,7 +45,11 @@ export function Work() {
                 <span className={styles.no}>{project.number}</span>
                 <span className={styles.name}>{project.name}</span>
                 <span className={styles.sector}>{project.sector}</span>
-                <span className={styles.role}>{project.role}</span>
+                <span className={styles.role}>
+                  {project.role}
+                  {/* "Frontend" alone would only repeat the role. */}
+                  {project.layers && project.layers !== 'Frontend' && <span className={styles.layers}>{project.layers}</span>}
+                </span>
                 <span className={styles.open}>{work.rowCta}</span>
                 {/* Touch devices get the cover inline; hover devices get the floating preview. */}
                 <span className={styles.cover}>
