@@ -649,12 +649,6 @@
       "title": "BitBang & Shamel360",
       "description": "BitBang's company site and the landing page for Shamel360, a supply-chain SaaS — responsive Next.js pages, Shamel360 in English and Arabic (RTL).",
       "meta": "Senior FE · Next.js · RTL / i18n"
-    },
-    {
-      "kicker": "AgriTech · IoT",
-      "title": "21 Farmer",
-      "description": "A map-first farm dashboard: draw fields on satellite maps, bind them to sensor gateways, and read eight sensor metrics per field over time, with recommendations.",
-      "meta": "Frontend Engineer · Maps · IoT"
     }
   ],
   "about": {
