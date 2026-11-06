@@ -29,6 +29,8 @@ export interface Project {
   decision?: string;
   impact: string;
   role: string;
+  /** Which parts of the product the work covered, e.g. "Database · API · Frontend". Shown between Role and Stack. */
+  layers?: string;
   stack: string[];
   live: { url: string; label: string } | null;
   images: Screenshot[];
@@ -174,7 +176,7 @@ export interface Content {
     next: string;
     close: string;
     closeAria: string;
-    labels: { problem: string; solution: string; decision: string; impact: string; role: string; stack: string; live: string };
+    labels: { problem: string; solution: string; decision: string; impact: string; role: string; layers: string; stack: string; live: string };
     imageCounter: string;
     tallHint: string;
     fullSize: string;

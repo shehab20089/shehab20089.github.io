@@ -183,6 +183,12 @@ function Dialog({ index }: { index: number }) {
               <div className={styles.label}>{labels.role}</div>
               <p className={styles.role}>{project.role}</p>
             </div>
+            {project.layers && (
+              <div>
+                <div className={styles.label}>{labels.layers}</div>
+                <p className={styles.role}>{project.layers}</p>
+              </div>
+            )}
             <div>
               <div className={styles.label}>{labels.stack}</div>
               <div className={styles.chips}>

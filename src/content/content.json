@@ -127,8 +127,66 @@
   },
   "projects": [
     {
-      "slug": "gopay",
+      "slug": "sparkflow",
       "number": "01",
+      "name": "SparkFlow",
+      "sector": "Internal platform · Project management",
+      "blurb": "BitBang's in-house, Jira-style project-management platform — boards, backlog, sprints and reporting, with test management built in.",
+      "problem": "Several of us — me included — were between client projects. I pitched turning that bench time into a product BitBang could use: one place to plan, track and test delivery work, with Microsoft sign-in, strict project isolation and QA tied to the same issues.",
+      "solution": "I gathered the features, wrote the requirements, and designed the database (ERDs), its security and the UI/UX, then built it with AI-assisted development: a NestJS (Fastify) API over PostgreSQL and Prisma, Redis-backed realtime and BullMQ jobs, and a React frontend — workspaces, boards, backlog, sprints, a rich-text editor with mentions, dashboards, reports and native test management. It also ships an MCP server: developers create tickets in bulk and hand them to AI agents, which move each ticket's status when the work is done, so SparkFlow plugs straight into AI-assisted workflows.",
+      "decision": "Design first, then build fast: the requirements, ERDs and a security model with tenant and project isolation enforced in the database came before any code, and AI-assisted development (Claude Code, Codex, Claude Design) kept the build fast. It went into company-wide use with minimal issues. I kept redesigning it from the teams' feedback until it was good enough to replace Jira outright.",
+      "impact": "Replaced BitBang's Jira subscription — every team project now runs on it, with minimal issues since launch, backed by 94 data models and 600+ automated test files.",
+      "role": "Initiator & Full-Stack Engineer — BitBang",
+      "layers": "Database · API · Frontend",
+      "stack": [
+        "NestJS · Fastify",
+        "PostgreSQL · Prisma",
+        "Redis · BullMQ",
+        "React · TypeScript",
+        "MCP server"
+      ],
+      "live": null,
+      "images": [
+        {
+          "src": "assets/sparkflow-dashboard.png",
+          "caption": "Project dashboard",
+          "alt": "SparkFlow — project dashboard with sprint progress and team workload",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "assets/sparkflow-board.png",
+          "caption": "Scrum board",
+          "alt": "SparkFlow — Scrum board",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "assets/sparkflow-backlog.png",
+          "caption": "Backlog grouped by sprint",
+          "alt": "SparkFlow — Backlog grouped by sprint",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "assets/sparkflow-sprint.png",
+          "caption": "Sprint planning and team workload",
+          "alt": "SparkFlow — Sprint planning and team workload",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "assets/sparkflow-reports.png",
+          "caption": "Reports & analytics",
+          "alt": "SparkFlow — Reports & analytics",
+          "width": 1920,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "slug": "gopay",
+      "number": "02",
       "name": "GoPay",
       "sector": "Fintech · Billing & Collections",
       "blurb": "A SADAD-integrated B2B billing and collections platform for Saudi Arabia — public site, operator dashboard and customer apps.",
@@ -136,7 +194,8 @@
       "solution": "The GoPay frontend, end to end: the marketing site plus the operator dashboard — one-time and recurring payments, invoicing (GoInvoice / ZATCA), reconciliations and approvals — wired to mada, Apple Pay, Visa, Mastercard and SADAD.",
       "decision": "Rebuilt GoPay's legacy, hard-to-scale frontend on a feature-based architecture instead of patching it, and set the standards every developer on the team builds on — the most important change I made to the product.",
       "impact": "Trusted by leading Saudi organisations — including the Royal Commission for AlUla, the Gulf Health Council and Tawzea Aquapor.",
-      "role": "Senior Frontend Engineer / Frontend Lead — BitBang",
+      "role": "Frontend Lead — BitBang",
+      "layers": "Frontend",
       "stack": [
         "React",
         "TypeScript",
@@ -180,7 +239,7 @@
     },
     {
       "slug": "amplifidor",
-      "number": "02",
+      "number": "03",
       "name": "Amplifidor",
       "sector": "Creator economy · Influencer × Brand",
       "blurb": "A two-sided influencer × brand platform — brands launch affiliate programs; creators, agents and agencies join, promote them and get paid per milestone.",
@@ -189,6 +248,7 @@
       "decision": "Set up a feature-based architecture and a strict review loop aimed at pixel-perfect output, so two engineers could ship in parallel without the UI drifting. The frontend consistently delivered faster than the project's mobile and backend teams.",
       "impact": "One bilingual codebase serving four account types — creators, agents, brands and agencies — with 1,500+ interface strings in English and Arabic.",
       "role": "Frontend Lead — BitBang",
+      "layers": "Frontend",
       "stack": [
         "React · TypeScript",
         "GraphQL · Apollo",
@@ -235,116 +295,8 @@
       ]
     },
     {
-      "slug": "sparkflow",
-      "number": "03",
-      "name": "SparkFlow",
-      "sector": "Internal platform · Project management",
-      "blurb": "BitBang's in-house, Jira-style project-management platform — boards, backlog, sprints and reporting, with test management built in.",
-      "problem": "Several of us — me included — were between client projects. I pitched turning that bench time into a product BitBang could use: one place to plan, track and test delivery work, with Microsoft sign-in, strict project isolation and QA tied to the same issues.",
-      "solution": "I gathered the features, wrote the requirements, and designed the database (ERDs), its security and the UI/UX, then built it with AI-assisted development: a NestJS (Fastify) API over PostgreSQL and Prisma, Redis-backed realtime and BullMQ jobs, and a React frontend — workspaces, boards, backlog, sprints, a rich-text editor with mentions, dashboards, reports and native test management.",
-      "decision": "Design first, then build fast: the requirements, ERDs and a security model with tenant and project isolation enforced in the database came before any code, and AI-assisted development (Claude Code, Codex, Claude Design) kept the build fast. It went into company-wide use with minimal issues.",
-      "impact": "Replaced BitBang's Jira subscription — every team project now runs on it, with minimal issues since launch, backed by 94 data models and 600+ automated test files.",
-      "role": "Initiator & Full-Stack Engineer — BitBang",
-      "stack": [
-        "NestJS · Fastify",
-        "PostgreSQL · Prisma",
-        "Redis · BullMQ",
-        "React · TypeScript"
-      ],
-      "live": null,
-      "images": [
-        {
-          "src": "assets/sparkflow-dashboard.png",
-          "caption": "Project dashboard",
-          "alt": "SparkFlow — project dashboard with sprint progress and team workload",
-          "width": 1920,
-          "height": 1200
-        },
-        {
-          "src": "assets/sparkflow-board.png",
-          "caption": "Scrum board",
-          "alt": "SparkFlow — Scrum board",
-          "width": 1920,
-          "height": 1200
-        },
-        {
-          "src": "assets/sparkflow-backlog.png",
-          "caption": "Backlog grouped by sprint",
-          "alt": "SparkFlow — Backlog grouped by sprint",
-          "width": 1920,
-          "height": 1200
-        },
-        {
-          "src": "assets/sparkflow-sprint.png",
-          "caption": "Sprint planning and team workload",
-          "alt": "SparkFlow — Sprint planning and team workload",
-          "width": 1920,
-          "height": 1200
-        },
-        {
-          "src": "assets/sparkflow-reports.png",
-          "caption": "Reports & analytics",
-          "alt": "SparkFlow — Reports & analytics",
-          "width": 1920,
-          "height": 1200
-        }
-      ]
-    },
-    {
-      "slug": "walaplus",
-      "number": "04",
-      "name": "WalaPlus",
-      "sector": "Loyalty · Rewards SaaS",
-      "blurb": "A loyalty and employee-rewards platform for Saudi enterprises — points, offers and cashback across a network of real retail brands.",
-      "problem": "Enterprises needed to run points, rewards, offers and cashback for thousands of employees and family accounts — across dozens of merchants — from one admin, in Arabic and English.",
-      "solution": "As the company's sole frontend developer, I modernized every product's frontend onto a current stack and built this bilingual (RTL / LTR) admin: customizable dashboards, points-pool management, reward catalogs, retailer and offer administration, employee invites by email or file, and reports on transactions, points and savings.",
-      "decision": "Rebuilt the legacy, server-rendered Blade PHP client portal as a modern SPA, then moved the company's other products onto the same modern stack — working across almost every product and supporting hiring along the way.",
-      "impact": "A platform tracking 2.8B+ loyalty points across 114 retailers — including LandMark, HungerStation and Careem.",
-      "role": "Senior Frontend Developer — WalaPlus",
-      "stack": [
-        "React",
-        "TypeScript",
-        "RTL / i18n",
-        "Data-viz"
-      ],
-      "live": {
-        "url": "https://walaplus.com",
-        "label": "walaplus.com"
-      },
-      "images": [
-        {
-          "src": "assets/walaplus-rewards.jpg",
-          "caption": "Points and rewards report",
-          "alt": "WalaPlus admin — rewards and points dashboard",
-          "width": 1788,
-          "height": 1768
-        },
-        {
-          "src": "assets/walaplus-transactions.jpg",
-          "caption": "Transactions report",
-          "alt": "WalaPlus — Transactions report",
-          "width": 1788,
-          "height": 3886
-        },
-        {
-          "src": "assets/walaplus-home.jpg",
-          "caption": "Admin home",
-          "alt": "WalaPlus — Admin home",
-          "width": 1905,
-          "height": 2017
-        },
-        {
-          "src": "assets/walaplus-employees.jpg",
-          "caption": "Employees",
-          "alt": "WalaPlus — Employees",
-          "width": 1788,
-          "height": 893
-        }
-      ]
-    },
-    {
       "slug": "shamel360",
-      "number": "05",
+      "number": "04",
       "name": "Shamel360",
       "sector": "Supply chain · Warehouse fulfillment",
       "blurb": "Shamel360's warehouse fulfillment portal — inbound receiving, outbound picking and shipping, live inventory, products and merchants in one console.",
@@ -353,6 +305,7 @@
       "decision": "A feature-based architecture in a monorepo, with one shared UI package for the fulfillment and merchant portals, so complex components are built once and reused; virtualization keeps very large tables fast.",
       "impact": "One console for the full fulfillment loop across multiple warehouses — 38 routes over nearly 100 API endpoints, built on the routing, layout and shared components I set up.",
       "role": "Frontend Lead — BitBang",
+      "layers": "Frontend",
       "stack": [
         "React 19 · TypeScript",
         "TanStack Query · Zustand",
@@ -399,15 +352,69 @@
       ]
     },
     {
+      "slug": "walaplus",
+      "number": "05",
+      "name": "WalaPlus",
+      "sector": "Loyalty · Rewards SaaS",
+      "blurb": "A loyalty and employee-rewards platform for Saudi enterprises — points, offers and cashback across a network of real retail brands.",
+      "problem": "Enterprises needed to run points, rewards, offers and cashback for thousands of employees and family accounts — across dozens of merchants — from one admin, in Arabic and English.",
+      "solution": "As the company's sole frontend developer, I modernized every product's frontend onto a current stack and built this bilingual (RTL / LTR) admin: customizable dashboards, points-pool management, reward catalogs, retailer and offer administration, employee invites by email or file, and reports on transactions, points and savings.",
+      "decision": "Rebuilt the legacy, server-rendered Blade PHP client portal as a modern SPA, then moved the company's other products onto the same modern stack — working across almost every product and supporting hiring along the way.",
+      "impact": "A platform tracking 2.8B+ loyalty points across 114 retailers — including LandMark, HungerStation and Careem.",
+      "role": "Senior Frontend Developer — WalaPlus",
+      "layers": "Frontend",
+      "stack": [
+        "React",
+        "TypeScript",
+        "RTL / i18n",
+        "Data-viz"
+      ],
+      "live": {
+        "url": "https://walaplus.com",
+        "label": "walaplus.com"
+      },
+      "images": [
+        {
+          "src": "assets/walaplus-rewards.jpg",
+          "caption": "Points and rewards report",
+          "alt": "WalaPlus admin — rewards and points dashboard",
+          "width": 1788,
+          "height": 1768
+        },
+        {
+          "src": "assets/walaplus-transactions.jpg",
+          "caption": "Transactions report",
+          "alt": "WalaPlus — Transactions report",
+          "width": 1788,
+          "height": 3886
+        },
+        {
+          "src": "assets/walaplus-home.jpg",
+          "caption": "Admin home",
+          "alt": "WalaPlus — Admin home",
+          "width": 1905,
+          "height": 2017
+        },
+        {
+          "src": "assets/walaplus-employees.jpg",
+          "caption": "Employees",
+          "alt": "WalaPlus — Employees",
+          "width": 1788,
+          "height": 893
+        }
+      ]
+    },
+    {
       "slug": "fatura",
       "number": "06",
       "name": "Fatura",
       "sector": "Fintech · B2B Distribution",
       "blurb": "A B2B wholesale-ordering and credit platform for FMCG distribution — including the operation that runs Coca-Cola’s distribution in Egypt.",
       "problem": "Distributors, operations, auditors, collectors and retail clients each needed their own workflow over one shared catalog, order flow and credit ledger.",
-      "solution": "A shared React / TypeScript / Vue frontend with role-specific portals — orders & transactions, a catalog and ad-campaign builder, and BelAgel credit collections. My part: I delivered the React credit-service portal, built the internal Audit Portal in React and TypeScript, implemented the Vue Collector Portal, and contributed Node / Express endpoints and database migrations.",
+      "solution": "A shared React / TypeScript / Vue frontend with role-specific portals — orders & transactions, a catalog and ad-campaign builder, and BelAgel credit collections. My part: I delivered the React credit-service portal, built the internal Audit Portal in React and TypeScript, implemented the Vue Collector Portal, and took backend tasks in Node / Express: Google social login, API changes and database migrations.",
       "impact": "Diagnosed and fixed a major performance issue in the Operations Portal's transaction filters, cutting wait times by ~80% for a portal serving thousands of clients.",
       "role": "Frontend Developer — Fatura",
+      "layers": "Frontend · some API work",
       "stack": [
         "React",
         "TypeScript",
@@ -463,6 +470,7 @@
       "solution": "A performant listing and detail experience on Magento: faceted search over 800+ cars, spec-dense car pages, a leasing calculator, trade-in, and a dealership locator spanning Latvia, Estonia and Lithuania. I owned most of the storefront's frontend and the styling of its CMS pages.",
       "impact": "800+ live used-car listings served across the Baltic VW & Audi dealer network.",
       "role": "Frontend Developer — Scandiweb",
+      "layers": "Frontend",
       "stack": [
         "React",
         "TypeScript",
@@ -521,6 +529,7 @@
       "solution": "Storefront and content surfaces built to convert on Magento — product discovery and comparison, subscription-print and managed-print journeys, and the checkout basket — all aligned to the brand system. I owned most of the frontend and the styling of the CMS-driven pages.",
       "impact": "Part of a storefront serving 200,000+ customers, rated 4.8/5 on Trustpilot and 4.9/5 on Google.",
       "role": "Frontend Developer — Scandiweb",
+      "layers": "Frontend",
       "stack": [
         "JavaScript",
         "Magento",
@@ -557,6 +566,12 @@
     }
   ],
   "alsoShipped": [
+    {
+      "kicker": "Multi-tenant mobile",
+      "title": "Member app CMS",
+      "description": "A CMS with draft/publish revisions that updates a white-label Expo member app live and builds each published revision into store releases, on a .NET API with OpenAPI contracts.",
+      "meta": "Full-stack · .NET · React · Expo"
+    },
     {
       "kicker": "Gym Operations",
       "title": "Kun Admin Portal",
@@ -923,6 +938,7 @@
       "decision": "Key decision",
       "impact": "Impact",
       "role": "Role",
+      "layers": "Layers",
       "stack": "Stack",
       "live": "Live"
     },
@@ -981,6 +997,12 @@
         "target": "#contact"
       },
       {
+        "label": "SparkFlow",
+        "hint": "Case study",
+        "action": "openCase",
+        "target": "sparkflow"
+      },
+      {
         "label": "GoPay",
         "hint": "Case study",
         "action": "openCase",
@@ -993,22 +1015,16 @@
         "target": "amplifidor"
       },
       {
-        "label": "SparkFlow",
+        "label": "Shamel360",
         "hint": "Case study",
         "action": "openCase",
-        "target": "sparkflow"
+        "target": "shamel360"
       },
       {
         "label": "WalaPlus",
         "hint": "Case study",
         "action": "openCase",
         "target": "walaplus"
-      },
-      {
-        "label": "Shamel360",
-        "hint": "Case study",
-        "action": "openCase",
-        "target": "shamel360"
       },
       {
         "label": "Fatura",
