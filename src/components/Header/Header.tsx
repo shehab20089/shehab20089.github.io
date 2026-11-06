@@ -9,7 +9,7 @@ import { useScrollProgress } from '@/hooks/useScrollProgress';
 import { ui } from '@/lib/ui-store';
 import styles from './Header.module.css';
 
-const SECTION_IDS = ['top', 'work', 'about', 'experience', 'principles', 'stack', 'beyond', 'contact'] as const;
+const SECTION_IDS = ['top', 'work', 'about', 'experience', 'principles', 'stack', 'contact'] as const;
 
 const timeFormat = new Intl.DateTimeFormat('en-GB', {
   timeZone: content.person.timezone,

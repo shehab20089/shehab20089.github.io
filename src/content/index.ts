@@ -157,9 +157,6 @@ export interface Content {
   lab: SectionCopy & {
     items: (Card & { links: Link[] })[];
   };
-  beyond: SectionCopy & {
-    items: Card[];
-  };
   contact: SectionCopy & {
     emailLabel: string;
     copyButton: string;

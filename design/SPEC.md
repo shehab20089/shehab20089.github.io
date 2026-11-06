@@ -69,6 +69,7 @@ Final results at 1440×900 and 390×844, light and dark:
 | 17 | Case studies show a "Layers" line between Role and Stack, in Role's label and text styles, saying which parts of the product the work covered (for example "Database · API · Frontend"). | Your full-stack positioning brief. | Built |
 | 18 | A new Lab section (06) sits between Stack and Beyond, with ForgePath and The Last Abbasid; Beyond becomes 07 and Contact 08. It uses Beyond's card grid with a row of links under each description, on the page background so its cards don't run into Beyond's `--bg2` band. The command menu has a Lab entry; the header nav is unchanged. | Your brief: most recent work is in private client repos, so the site needs things a reviewer can open. | Built |
 | 19 | The Work table shows a project's Layers as a second line under its Role, in Sector's size and colour, when it says more than "Frontend": today SparkFlow, Yally and Fatura. There is no new column. | Your live-site review: the Role column said "Frontend" on 7 of 9 rows, so the full-stack work only showed once a case study was open. | Built |
+| 20 | The reference's Beyond section is removed, with its command-menu entry and component. Lab is 06 and Contact is 07. | Your live-site review: its Game dev and Godot cards repeated Lab and the Turath Studios role, and the Flutter start is already in Experience. | Built |
 
 No design issues are open.
 
@@ -117,7 +118,7 @@ No design issues are open.
 | 2026-11-06 | Selected Work · SparkFlow | The blurb now leads with the MCP server handing tickets to AI agents. Key decision drops "minimal issues", which Impact already says. |
 
 The reference page predates these, so `npm run compare` reports them as differences wherever they
-appear (the hero, About, Experience, How I think, Stack, Lab, Work, Beyond and the footer), and later sections shift accordingly.
+appear (the hero, About, Experience, How I think, Stack, Lab, Work and the footer, and Beyond is gone), and later sections shift accordingly.
 
 SparkFlow's five screenshots (`public/assets/sparkflow-*.png`, 1920×1200) were taken from a local
 run of the SparkFlow repo against throwaway Postgres and Redis containers seeded with its demo data

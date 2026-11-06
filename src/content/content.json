@@ -920,30 +920,8 @@
       }
     ]
   },
-  "beyond": {
-    "number": "07",
-    "label": "Beyond the keyboard",
-    "heading": "Side interests that ==sharpen== the craft.",
-    "items": [
-      {
-        "kicker": "Game dev",
-        "title": "Building interactive systems",
-        "description": "Gameplay logic, loops, and feel — a different lens on state, timing, and feedback that keeps coming back into how I build UI."
-      },
-      {
-        "kicker": "Godot",
-        "title": "Prototyping in an open engine",
-        "description": "Scenes, nodes, and signals — small pieces composed into a whole, the same event-driven thinking behind a good component API."
-      },
-      {
-        "kicker": "Mobile dev",
-        "title": "Small screens, real constraints",
-        "description": "Where I started, with Flutter — touch, gestures, and flaky connections still shape how I build interfaces that hold up on any device."
-      }
-    ]
-  },
   "contact": {
-    "number": "08",
+    "number": "07",
     "label": "Let's talk",
     "heading": "Let's build something that lasts.",
     "emailLabel": "Email",
@@ -1077,12 +1055,6 @@
         "hint": "Section",
         "action": "scrollTo",
         "target": "#lab"
-      },
-      {
-        "label": "Beyond the keyboard",
-        "hint": "Section",
-        "action": "scrollTo",
-        "target": "#beyond"
       },
       {
         "label": "Contact",

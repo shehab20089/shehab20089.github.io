@@ -1,5 +1,4 @@
 import { About } from '@/components/About/About';
-import { Beyond } from '@/components/Beyond/Beyond';
 import { Contact } from '@/components/Contact/Contact';
 import { Experience } from '@/components/Experience/Experience';
 import { Header } from '@/components/Header/Header';
@@ -22,7 +21,6 @@ export default function Home() {
         <Principles />
         <Stack />
         <Lab />
-        <Beyond />
         <Contact />
       </main>
     </SiteShell>
