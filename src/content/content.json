@@ -894,7 +894,7 @@
       {
         "kicker": "Full-stack · Developer tool",
         "title": "ForgePath",
-        "description": "A CLI-first practice platform for experienced engineers: deterministic tests run in Docker, and an AI mentor comments afterwards but decides nothing. NestJS API, React app and a Node CLI, with challenges on Postgres lost updates and deadlocks, idempotent queues and NestJS request-state leaks.",
+        "description": "A personal, local-first learning path from no programming experience to advanced backend ownership: deterministic tests run in Docker, and an optional AI critique comments afterwards but decides nothing. NestJS API, React app and a Node CLI, with challenges on Postgres lost updates and deadlocks, idempotent queues and NestJS request-state leaks.",
         "image": {
           "src": "assets/lab-forgepath.png",
           "caption": "ForgePath",

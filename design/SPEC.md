@@ -123,6 +123,7 @@ No design issues are open.
 | 2026-11-06 | Selected Work · Yally | The live link is now the public site, https://www.yally.ai/, because app.yally.ai opens at a sign-in screen. Impact drops the ticket count, which came from counting ticket IDs in commit messages. |
 | 2026-11-06 | Hero | The status reads "Open to senior, lead & product engineering roles", matching LinkedIn. It fits one line at 390. The share card sets its top row at 20px instead of 22px, so the longer line still fits beside the eyebrow. |
 | 2026-11-06 | Lab · ForgePath | The card now has an image: the workspace after a real run of the Prevent a Lost Update challenge, 28 of 28 tests passed. It was captured from a local run on a throwaway home with the repo's reference solution, so no learner data is in it. The repo is still private, so the card has no link. |
+| 2026-11-06 | Lab · ForgePath | The card now describes a learning path from no programming experience to advanced backend ownership, as the repo's README does, instead of a platform for experienced engineers. The AI mentor is called AI critique, as in the app. |
 
 The reference page predates these, so `npm run compare` reports them as differences wherever they
 appear (the hero, About, Experience, How I think, Stack, Lab, Work and the footer, and Beyond is gone), and later sections shift accordingly.
