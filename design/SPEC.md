@@ -70,7 +70,7 @@ Final results at 1440×900 and 390×844, light and dark:
 | 18 | A new Lab section (06) sits between Stack and Beyond, with ForgePath and The Last Abbasid; Beyond becomes 07 and Contact 08. It uses Beyond's card grid with a row of links under each description, on the page background so its cards don't run into Beyond's `--bg2` band. The command menu has a Lab entry; the header nav is unchanged. | Your brief: most recent work is in private client repos, so the site needs things a reviewer can open. | Built |
 | 19 | The Work table shows a project's Layers as a second line under its Role, in Sector's size and colour, when it says more than "Frontend": today SparkFlow, Yally and Fatura. There is no new column. | Your live-site review: the Role column said "Frontend" on 7 of 9 rows, so the full-stack work only showed once a case study was open. | Built |
 | 20 | The reference's Beyond section is removed, with its command-menu entry and component. Lab is 06 and Contact is 07. | Your live-site review: its Game dev and Godot cards repeated Lab and the Turath Studios role, and the Flutter start is already in Experience. | Built |
-| 21 | Lab items can show an image above the kicker, at full card width through Picture, square-cornered like the case-study images. The Last Abbasid has one, copied from your GitHub profile repo; ForgePath's card stays text only until it has a screenshot. | Your live-site review: the Lab cards were text only, in a section meant for things a reviewer can open. | Built |
+| 21 | Lab items can show an image above the kicker, at full card width through Picture, square-cornered like the case-study images. The Last Abbasid has one, copied from your GitHub profile repo; ForgePath has a screenshot of a test run. | Your live-site review: the Lab cards were text only, in a section meant for things a reviewer can open. | Built |
 | 22 | At 440px and below, the case-study header shortens "Case study 01 / 09" to "01 / 09". | Your live-site review: at 390px the Close button dropped to a second line. The counter, Prev, Next and Close now share one row. | Built |
 
 No design issues are open.
@@ -122,6 +122,7 @@ No design issues are open.
 | 2026-11-06 | Experience · Résumés | The company is spelled WalaPlus in Experience and on both résumés, as in its case study. |
 | 2026-11-06 | Selected Work · Yally | The live link is now the public site, https://www.yally.ai/, because app.yally.ai opens at a sign-in screen. Impact drops the ticket count, which came from counting ticket IDs in commit messages. |
 | 2026-11-06 | Hero | The status reads "Open to senior, lead & product engineering roles", matching LinkedIn. It fits one line at 390. The share card sets its top row at 20px instead of 22px, so the longer line still fits beside the eyebrow. |
+| 2026-11-06 | Lab · ForgePath | The card now has an image: the workspace after a real run of the Prevent a Lost Update challenge, 28 of 28 tests passed. It was captured from a local run on a throwaway home with the repo's reference solution, so no learner data is in it. The repo is still private, so the card has no link. |
 
 The reference page predates these, so `npm run compare` reports them as differences wherever they
 appear (the hero, About, Experience, How I think, Stack, Lab, Work and the footer, and Beyond is gone), and later sections shift accordingly.

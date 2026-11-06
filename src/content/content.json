@@ -895,6 +895,13 @@
         "kicker": "Full-stack · Developer tool",
         "title": "ForgePath",
         "description": "A CLI-first practice platform for experienced engineers: deterministic tests run in Docker, and an AI mentor comments afterwards but decides nothing. NestJS API, React app and a Node CLI, with challenges on Postgres lost updates and deadlocks, idempotent queues and NestJS request-state leaks.",
+        "image": {
+          "src": "assets/lab-forgepath.png",
+          "caption": "ForgePath",
+          "alt": "ForgePath's workspace after a test run on the Prevent a Lost Update challenge: 28 of 28 tests passed in 10.4 seconds",
+          "width": 1260,
+          "height": 540
+        },
         "links": []
       },
       {
