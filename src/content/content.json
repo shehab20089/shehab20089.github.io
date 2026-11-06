@@ -743,12 +743,14 @@
           "Vue.js",
           "Nuxt.js",
           "TypeScript",
-          "JavaScript"
+          "JavaScript",
+          "Expo"
         ]
       },
       {
         "category": "State & Data",
         "items": [
+          "TanStack Query",
           "Redux",
           "Zustand",
           "Pinia",
@@ -763,45 +765,54 @@
           "Tailwind CSS",
           "SCSS",
           "shadcn/ui",
+          "Radix",
           "MUI",
           "Storybook",
           "Framer Motion"
         ]
       },
       {
-        "category": "Testing & Tooling",
+        "category": "Backend",
         "items": [
-          "Jest",
-          "React Testing Library",
-          "Docker",
-          "Vite",
-          "Webpack",
-          "GitHub",
-          "Bitbucket",
-          "Jira"
+          "Node.js",
+          "NestJS / Fastify",
+          "Express.js",
+          "C# / .NET (ABP)",
+          "Entity Framework Core",
+          "PostgreSQL / Prisma",
+          "Redis / BullMQ",
+          "OpenAPI"
         ]
       },
       {
-        "category": "Backend exposure",
+        "category": "Testing & Tooling",
         "items": [
-          "Node.js",
-          "Express.js",
-          "NestJS",
-          "SQL",
-          "Prisma",
-          "Redis"
+          "Jest",
+          "Vitest",
+          "React Testing Library",
+          "Playwright",
+          "xUnit",
+          "Docker",
+          "GitHub Actions",
+          "Vite"
+        ]
+      },
+      {
+        "category": "AI in products",
+        "items": [
+          "OpenAI",
+          "AWS Transcribe",
+          "OpenRouter",
+          "LLM configuration"
         ]
       },
       {
         "category": "AI tooling",
         "items": [
-          "==Claude==",
+          "==Claude Code==",
           "==Codex==",
-          "OpenCode",
           "Cursor",
-          "GitHub Copilot",
-          "ChatGPT",
-          "Windsurf"
+          "GitHub Copilot"
         ]
       }
     ]
