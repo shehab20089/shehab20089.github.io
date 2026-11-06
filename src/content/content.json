@@ -1,10 +1,10 @@
 {
   "_notes": "Verbatim copy — do not rewrite. Inline markers: **bold**, *italic*, ==accent== (span coloured --acc-ink). Paths are relative to the site root (/assets/...).",
   "meta": {
-    "title": "Shehab Mohsen — Senior Frontend Engineer · Full-Stack Capable",
-    "description": "Senior frontend engineer (full-stack capable) with 6+ years shipping fintech dashboards, design systems and data-heavy products — GoPay, WalaPlus, Fatura, Møller Auto. Cairo, remote UTC+2. Open to senior / lead roles.",
-    "ogTitle": "Shehab Mohsen — Senior Frontend Engineer · Full-Stack Capable",
-    "ogDescription": "6+ years of fintech dashboards, design systems and data-heavy interfaces. Open to senior / lead remote roles.",
+    "title": "Shehab Mohsen — Senior Full-Stack Engineer · Frontend Lead",
+    "description": "Senior full-stack engineer with a frontend-first background: 6+ years shipping fintech, SaaS and AI-powered products in React/Next.js, Node.js/NestJS and C#/.NET — GoPay, SparkFlow, Yally, WalaPlus. Cairo, remote UTC+2. Open to senior / lead roles.",
+    "ogTitle": "Shehab Mohsen — Senior Full-Stack Engineer · Frontend Lead",
+    "ogDescription": "6+ years of fintech, SaaS and AI-powered products, from the database to the interface. Open to senior / lead remote roles.",
     "twitterCard": "summary_large_image",
     "lang": "en"
   },
@@ -54,13 +54,13 @@
     "menuButton": "Menu"
   },
   "hero": {
-    "eyebrow": "Senior Frontend Engineer · Full-Stack Capable · 6+ Years",
+    "eyebrow": "Senior Full-Stack Engineer · Frontend Lead · 6+ Years",
     "status": "Open to senior / lead remote roles",
     "nameLines": [
       "Shehab",
       "Mohsen"
     ],
-    "lead": "I build the ==systems behind the pixels== — full-stack range, a frontend-first bias, and code that stays fast long after launch.",
+    "lead": "I build the ==systems behind the pixels== — from the database and API to the interface, with a frontend-first bias and code that stays fast long after launch.",
     "ctas": [
       {
         "label": "View work",
@@ -71,7 +71,7 @@
       {
         "label": "Download résumé",
         "icon": "↓",
-        "href": "assets/Shehab_Mohsen_Resume_Frontend_2026.pdf",
+        "href": "assets/Shehab_Mohsen_Resume_FullStack_2026.pdf",
         "download": true,
         "variant": "outline"
       },
@@ -89,11 +89,11 @@
       },
       {
         "label": "Focus",
-        "value": "Fintech dashboards, data-heavy interfaces, design systems"
+        "value": "Fintech and SaaS products, AI features, design systems"
       },
       {
         "label": "Core stack",
-        "value": "React · Next.js · TypeScript · Node.js · Design Systems"
+        "value": "React · Next.js · TypeScript · Node.js / NestJS · C#/.NET"
       },
       {
         "label": "Elsewhere",
@@ -587,15 +587,15 @@
     "label": "About",
     "heading": "A senior engineer who cares about the parts users ==don't== see.",
     "paragraphs": [
-      "I'm a frontend engineer who's comfortable across the stack, drawn to the unglamorous half of the job — the architecture, the tokens, the component contracts, the performance budgets. The work that decides whether a product feels solid six months after launch, or starts to rot.",
-      "For **six-plus years** I've shipped fintech dashboards, admin portals, and design-system-driven apps. I translate ambiguous designs into clean interfaces, raise the floor through reviews and standards, and use *AI tooling daily* as a multiplier — while owning every decision that ships."
+      "I'm a full-stack engineer with a frontend-first bias, drawn to the unglamorous half of the job — the data models, the API contracts, the component contracts, the performance budgets. The work that decides whether a product feels solid six months after launch, or starts to rot.",
+      "For **six-plus years** I've shipped fintech dashboards, admin portals, and design-system-driven apps — and lately the C#/.NET and Node services behind them, plus AI features like meeting transcription. I translate ambiguous designs into clean interfaces, raise the floor through reviews and standards, and use *AI tooling daily* as a multiplier — while owning every decision that ships."
     ],
     "portrait": {
       "src": "assets/portrait.png",
       "alt": "Portrait of Shehab Mohsen",
       "badge": "Open to remote",
       "captionLeft": "Shehab Mohsen",
-      "captionRight": "Frontend Engineer · Cairo",
+      "captionRight": "Full-Stack Engineer · Cairo",
       "width": 1122,
       "height": 1402
     },
@@ -603,6 +603,7 @@
       "6+ years",
       "Senior / Lead",
       "React · Next · TS",
+      "Node · NestJS · .NET",
       "Design Systems",
       "Remote · UTC+2"
     ]
@@ -613,12 +614,20 @@
     "heading": "Six years, across fintech, platforms & operations.",
     "roles": [
       {
+        "when": "Jul 2026 – Present",
+        "current": true,
+        "role": "Founder & Game Developer",
+        "company": "Turath Games",
+        "tag": "Own studio",
+        "description": "My independent studio for games and animation inspired by Arab and Islamic history and heritage. A demo of Chapter I of The Last Abbasid, a 2D pixel-art action game set in Baghdad in 1258, is out on itch.io in English and Arabic; the full game is planned for Steam."
+      },
+      {
         "when": "Mar 2024 – Present",
         "current": true,
-        "role": "Senior Frontend Engineer / Frontend Lead",
+        "role": "Senior Full-Stack Engineer / Frontend Lead",
         "company": "BitBang",
         "tag": null,
-        "description": "Owns the GoPay frontend — a SADAD-integrated B2B billing platform — led the Amplifidor and Shamel360 frontend teams, and initiated SparkFlow, the in-house platform that replaced the company's Jira. Leads and mentors engineers and sets the standards that keep delivery fast and maintainable."
+        "description": "Full-stack delivery on Yally, an AI workplace platform — React and C#/.NET, plus its Teams meeting bot with Arabic and English transcription — and a CMS for a multi-tenant mobile platform. Owns the GoPay frontend, led the Amplifidor and Shamel360 frontend teams, and initiated SparkFlow, the in-house platform that replaced the company's Jira. Leads and mentors engineers and sets the standards that keep delivery fast and maintainable."
       },
       {
         "when": "Mar 2023 – Mar 2024",
@@ -634,7 +643,7 @@
         "role": "Frontend Developer",
         "company": "Fatura LLC",
         "tag": null,
-        "description": "Built ordering, operations, audit and collector portals — plus the BelAgel credit-collections system — on a shared React, TypeScript and Vue frontend, with Node/Express endpoints. The platform also powered Coca-Cola’s distribution operations in Egypt."
+        "description": "Built ordering, operations, audit and collector portals — plus the BelAgel credit-collections system — on a shared React, TypeScript and Vue frontend, and took backend tasks in Node/Express: Google social login, API changes and migration scripts. The platform also powered Coca-Cola’s distribution operations in Egypt."
       },
       {
         "when": "Feb 2022 – Nov 2022",
@@ -676,18 +685,18 @@
   "principles": {
     "number": "04",
     "label": "How I think",
-    "heading": "A frontend that ==lasts==.",
+    "heading": "Software that ==lasts==.",
     "intro": "Everything below is in service of one idea: code that the next engineer — or future me — can pick up and move forward without flinching.",
     "items": [
       {
         "number": "01",
-        "title": "Component architecture",
-        "description": "Composable components with clear boundaries and predictable APIs. The shape of the code should make the wrong thing awkward to write."
+        "title": "Data and contracts first",
+        "description": "ERDs, typed API contracts and access rules settled before the UI. When the shape of the data is right, the screens mostly follow."
       },
       {
         "number": "02",
-        "title": "Reusable patterns",
-        "description": "Extract once, reuse everywhere. One source of truth beats five near-copies that drift apart over a year."
+        "title": "Component architecture",
+        "description": "Composable components with clear boundaries and predictable APIs, extracted once and reused everywhere. The shape of the code should make the wrong thing awkward to write."
       },
       {
         "number": "03",
@@ -696,8 +705,8 @@
       },
       {
         "number": "04",
-        "title": "Reviews & standards",
-        "description": "Reviews that raise the floor, not the ego. Readable, tested, maintainable code as the default."
+        "title": "Correct under failure",
+        "description": "Side effects after the commit, idempotent jobs, and slow work that can't block anyone else. Systems should fail small and recover on their own."
       },
       {
         "number": "05",
@@ -706,17 +715,19 @@
       },
       {
         "number": "06",
-        "title": "Developer experience",
-        "description": "Tooling and docs that make the whole team faster. DX is a feature the users never see but always feel."
+        "title": "Reviews & standards",
+        "description": "Reviews that raise the floor, not the ego, and tooling that makes the whole team faster. Readable, tested, maintainable code as the default."
       }
     ],
     "codeSample": [
       "// how I want a feature to read on day one",
       "type Feature = {",
-      "  contract: \"clear\", states: \"handled\",",
-      "  perf: \"budgeted\", tested: \"yes\",",
+      "  data: \"modelled\", perf: \"budgeted\",",
+      "  contract: \"typed end to end\",",
+      "  states: \"handled\", tested: \"yes\",",
       "}",
-      "// if a teammate can ship on top of it tomorrow, it shipped."
+      "// if a teammate can ship on top of it",
+      "// tomorrow, it shipped."
     ]
   },
   "stack": {
@@ -885,7 +896,7 @@
       }
     },
     "footer": {
-      "copyright": "© 2026 Shehab Mohsen — Senior Frontend Engineer · Frontend Lead",
+      "copyright": "© 2026 Shehab Mohsen — Senior Full-Stack Engineer · Frontend Lead",
       "backToTop": "Back to top ↑"
     }
   },
